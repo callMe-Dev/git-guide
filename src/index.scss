@@ -1,5 +1,7 @@
+// Aqui se importan todos los archivos scss para que sean aplicados
+
 /* Root styles */
-@import './css/root.css';
+@import './css/root.scss';
 
 body {
   margin: 0;
@@ -12,9 +14,9 @@ body {
 }
 
 /* CSS Files */
-@import './App.css';
-@import './components/index.css';
-@import './css/root.css';
+@import './App.scss';
+@import './components/index.scss';
+@import './css/root.scss';
 
 /* Globals */
-@import './css/global/layout.css';
+@import './css/global/layout.scss';
