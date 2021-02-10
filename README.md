@@ -14,4 +14,8 @@ Para hacer tu contribucion debe hacerse en una rama diferente a la de **main** y
 
 Tambien puedes unirte a nuestra comunidad de Discord y conocer o colaborar con mas programadores y te puedes unir a mas proyectos para aprender mas cosas :D
 
+### Importante
+
+Puedes leer los Detalles en [/details](./DETAILS.md) para que tu **pull request** sea aceptado sin problemas :D
+
 **🚀 Discord:** [callMeDev](https://discord.gg/RTdXPfbz3K)🌟
