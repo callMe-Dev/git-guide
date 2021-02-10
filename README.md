@@ -12,4 +12,4 @@ Puedes contribuir al proyecto con un `pull request` al proyecto y con gusto revi
 
 Tambien puedes unirte a nuestra comunidad de Discord y conocer o colaborar con mas programadores y te puedes unir a mas proyectos para aprender mas cosas :D
 
-**Discord:** [callMeDev](https://discord.gg/RTdXPfbz3K)🌟
+**🚀 Discord:** [callMeDev](https://discord.gg/RTdXPfbz3K)🌟
