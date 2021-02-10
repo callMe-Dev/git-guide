@@ -1,0 +1,11 @@
+.header {
+  @apply pt-6 text-lg;
+}
+
+.header-title {
+  @apply p-2 bg-blue-600 inline-block rounded-lg text-blue-50;
+}
+
+.header-title i {
+  margin-right: 0.5rem;
+}
