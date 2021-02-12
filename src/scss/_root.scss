@@ -2,16 +2,17 @@
   font-size: 16px;
 
   --orange-principal: #f26419;
-  --orange-sec: #f56a21;
-  --orange-third: #ffa957;
+  --orange-sec: #ff7043;
+  --orange-third: #fea856;
 
   --blue-principal: #2f4858;
-  --blue-sec: #33658a;
-  --blue-third: #9fddff;
+  --blue-sec: #386a8f;
+  --blue-third: #4bbfff;
 
   --gray: #7b919e;
   --gray-sec: #cfd2cd;
-  --dark-gray: #456578;
+  --gray-third: #e0e0e0;
+  --dark-gray: #5b6b75;
 
   --white-principal: #fafafa;
   --white-sec: #f5f5f5;
@@ -25,8 +26,17 @@
   --roboto-mono-font: 'Roboto Mono', monospace, -apple-system,
     BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell',
     'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif, serif;
-  // Textos y contenido
+  // Contenido
   --lato-font: 'Lato', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto',
     'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif;
+
+  // Properties
+  --radius: 10px;
 }
+
+// Media queries:mobile: 350pxipad: 700px
+$mobile: 350px;
+$ipad: 700px;
+$laptop: 1000px;
+$desk-large: 1500px;
