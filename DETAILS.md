@@ -1,6 +1,8 @@
 # Estos son solo unos detalles en caso tengas alguna duda de la estructura de los archivos
 
-- Para agregar contenido para mandar un **pull request** debes hacerlo a la rama `Dev`
+- Para agregar contenido para mandar un **pull request** debes hacerlo a la rama `main`
+
+- Recuerden siempre tener la rama main actualizada que pasara hacia la rama `Dev` antes de pasar a la `main`
 
 - Si estas en el grupo de **Discord** puedes preguntar si alguien ya esta haciendo algun _comando_ o va a hacer alguno
 
