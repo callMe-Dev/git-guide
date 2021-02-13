@@ -18,6 +18,6 @@ Tambien puedes unirte a nuestra comunidad de Discord y conocer o colaborar con m
 
 Puedes leer los Detalles en [/details](./DETAILS.md) para que tu **pull request** sea aceptado sin problemas :D
 
-Los **pull request** deberan pasar a la rama `Dev` para que pase a revision
+Los **pull request** seran revisados por algun miembro de la organizacion que aceptara estos cambios para la rama `main`
 
 ## 🚀 Discord: [callMeDev](https://discord.gg/RTdXPfbz3K)🌟
