@@ -8,6 +8,8 @@
 
 - Si estas en el grupo de **Discord** puedes preguntar si alguien ya esta haciendo algun _comando_ o va a hacer alguno
 
+- Tambien puedes revisar la pestaña de **projects** para que veas las actividades a realizar
+
 - Los componentes deben estar dentro de una carpeta donde tengas:
 - - El componente
 - - Los estilos **scss** del componente
