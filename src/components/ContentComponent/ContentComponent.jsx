@@ -3,7 +3,7 @@ import ContentHome from '../ContentHome/ContentHome';
 
 export default function ContentComponent() {
   return (
-    <div>
+    <div className='ContentComponent'>
       <ContentHome />
     </div>
   );

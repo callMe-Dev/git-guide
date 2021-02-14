@@ -1,7 +1,9 @@
 import React, { useState } from 'react';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
+// Components
 import ContentComponent from '../../components/ContentComponent/ContentComponent';
 import NavMobile from '../../components/NavMobile/NavMobile';
+import MenuMobile from '../../components/MenuMobile/MenuMobile';
 
 export default function Layout() {
   const [showMenu, setShowMenu] = useState(false);
@@ -12,7 +14,7 @@ export default function Layout() {
         <NavMobile setShowMenu={setShowMenu} showMenu={showMenu} />
         <Switch>
           <Route exact path='/'>
-            {showMenu ? <p>Menu</p> : ContentComponent}
+            {showMenu ? <MenuMobile /> : ContentComponent}
           </Route>
         </Switch>
       </div>

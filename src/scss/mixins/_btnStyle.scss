@@ -1,0 +1,17 @@
+@mixin btnStyle($width: 100px) {
+  align-self: center;
+  border: none;
+  border-radius: var(--radius);
+  cursor: pointer;
+  font-size: 1.2rem;
+  line-height: 1;
+  outline: none;
+  padding: 0.6rem 0.2rem;
+  text-align: center;
+  width: $width;
+  @include userNoSelect;
+
+  &:active {
+    transform: scale(0.96, 0.96);
+  }
+}

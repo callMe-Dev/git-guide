@@ -2,11 +2,11 @@ import React from 'react';
 
 export default function ContentHome() {
   return (
-    <div className='ContentHome'>
+    <section className='ContentHome'>
       <h1 className='ContentHome__title'>
         Bienvenido a la guía básica de los comandos de <span>Git</span>
       </h1>
-      <div className='ContentHome__content'>
+      <article className='ContentHome__content'>
         <p>
           Esta guía fue construida para aquellas personas que les cuesta un poco
           aprender a utilizar Git
@@ -24,9 +24,9 @@ export default function ContentHome() {
           Antes de comenzar a aprender vamos a sentar las bases y preparar lo
           necesario para empezar a utilizar Git
         </p>
-      </div>
+      </article>
       <h2 className='ContentHome__subTitle'>¿Que es Git?</h2>
-      <div className='ContentHome__content'>
+      <article className='ContentHome__content'>
         <p>
           Es un sistema de control de versiones que nos va a servir para
           trabajar en equipo de una manera mucho más simple y optima cuando
@@ -53,9 +53,9 @@ export default function ContentHome() {
         >
           <i className='fas fa-paperclip'></i>Conocer mas acerca de Git!
         </a>
-      </div>
+      </article>
       <h2 className='ContentHome__subTitle'>Importancia de Git</h2>
-      <div className='ContentHome__content'>
+      <article className='ContentHome__content'>
         <p>
           El control de versiones es una de las tareas fundamentales para la
           administración de un proyecto de desarrollo de software en general.
@@ -67,7 +67,7 @@ export default function ContentHome() {
           los cambio entre distintas versiones de un mismo código o hacer ramas
           para tener diferentes versiones y probar nuevas características.
         </p>
-      </div>
-    </div>
+      </article>
+    </section>
   );
 }
