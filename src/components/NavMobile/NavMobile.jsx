@@ -9,9 +9,13 @@ export default function NavMobile({ setShowMenu, showMenu }) {
     setShowMenu(!showMenu);
   };
 
+  const closeClickMenu = () => {
+    setShowMenu(false);
+  };
+
   return (
     <header className='NavMobile'>
-      <Link to='/' onClick={handleClickMenu} className='NavMobile__link'>
+      <Link to='/' onClick={closeClickMenu} className='NavMobile__link'>
         <img src={gitLogoMobile} alt='git logo' />
       </Link>
       {showMenu ? (

@@ -1,4 +1,9 @@
 @mixin titleStyle {
   font-size: 1.4rem;
   font-family: var(--roboto-mono-font);
+  margin-bottom: 1.25rem;
+
+  span {
+    color: var(--orange-sec);
+  }
 }

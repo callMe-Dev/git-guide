@@ -1,13 +1,13 @@
 import React from 'react';
 import { useHistory } from 'react-router-dom';
 
-export default function CommandsContainer({ setShowMenu, showMenu }) {
+export default function CommandsContainer({ setShowMenu }) {
   let history = useHistory();
 
   const handlePushView = (viewText) => {
     if (viewText === undefined) return;
     history.push(`/${viewText}`);
-    setShowMenu(!showMenu);
+    setShowMenu(false);
   };
 
   return (
