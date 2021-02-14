@@ -4,6 +4,7 @@ import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 import ContentComponent from '../../components/ContentComponent/ContentComponent';
 import NavMobile from '../../components/NavMobile/NavMobile';
 import MenuMobile from '../../components/MenuMobile/MenuMobile';
+import InstallWindows from '../../components/InstallWindows/InstallWindows';
 
 export default function Layout() {
   const [showMenu, setShowMenu] = useState(false);
@@ -12,11 +13,18 @@ export default function Layout() {
     <Router>
       <div className='Layout'>
         <NavMobile setShowMenu={setShowMenu} showMenu={showMenu} />
-        <Switch>
-          <Route exact path='/'>
-            {showMenu ? <MenuMobile /> : ContentComponent}
-          </Route>
-        </Switch>
+        {showMenu ? (
+          <MenuMobile setShowMenu={setShowMenu} showMenu={showMenu} />
+        ) : (
+          <Switch>
+            <Route exact path='/'>
+              <ContentComponent />
+            </Route>
+            <Route path='/windows'>
+              <InstallWindows />
+            </Route>
+          </Switch>
+        )}
       </div>
     </Router>
   );

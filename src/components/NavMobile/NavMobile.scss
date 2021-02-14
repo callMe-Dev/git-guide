@@ -9,4 +9,8 @@
     @include userNoSelect;
     cursor: pointer;
   }
+
+  &__link {
+    @include userNoSelect;
+  }
 }

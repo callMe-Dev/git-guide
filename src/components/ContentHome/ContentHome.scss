@@ -2,9 +2,8 @@
   @include layout(0 20px);
 
   &__title {
-    font-size: 1.4rem;
+    @include titleStyle;
     margin-bottom: 1.25rem;
-    font-family: var(--roboto-mono-font);
     span {
       color: var(--orange-sec);
     }
