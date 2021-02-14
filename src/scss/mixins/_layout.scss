@@ -1,5 +1,5 @@
 // La funcion del layout es que los contenedores padres tengan un padding
 // para tener espaciado en la pagina
-@mixin layout($padding) {
+@mixin layout($padding: 40px) {
   padding: $padding;
 }

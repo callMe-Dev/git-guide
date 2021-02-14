@@ -1,19 +1,12 @@
-import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
-// Components
-import Header from './components/Header/Header';
 // Views
-import HomePage from './views/HomePage/HomePage';
+import Layout from './views/Layout/Layout';
 
 function App() {
   return (
-    <Router>
-      <div className='App'>
-        <Header />
-        <Switch>
-          <Route exact path='/' component={HomePage} />
-        </Switch>
-      </div>
-    </Router>
+    // Aqui podemos seleccionar que elementos se van a renderizar
+    <div className='App'>
+      <Layout />
+    </div>
   );
 }
 

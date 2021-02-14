@@ -1,0 +1,12 @@
+.NavMobile {
+  @include layout(40px 20px);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  align-content: center;
+
+  img {
+    @include userNoSelect;
+    cursor: pointer;
+  }
+}
