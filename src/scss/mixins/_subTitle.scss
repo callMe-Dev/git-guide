@@ -1,0 +1,8 @@
+@mixin subTitle {
+  color: var(--orange-principal);
+  font-size: 1.6rem;
+
+  @media (min-width: $ipad) {
+    font-size: 2rem;
+  }
+}

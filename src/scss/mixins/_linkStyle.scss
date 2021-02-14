@@ -1,0 +1,12 @@
+@mixin linkStyle {
+  text-decoration: none;
+  font-size: 1rem;
+  letter-spacing: 0.1px;
+  color: var(--blue-sec);
+  transition: var(--transition);
+  font-weight: 700;
+
+  &:hover {
+    @include underlineText;
+  }
+}

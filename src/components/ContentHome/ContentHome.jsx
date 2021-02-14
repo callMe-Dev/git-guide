@@ -25,7 +25,49 @@ export default function ContentHome() {
           necesario para empezar a utilizar Git
         </p>
       </div>
-      <h2 className='ContentHome__subTitle'>Que es Git?</h2>
+      <h2 className='ContentHome__subTitle'>¿Que es Git?</h2>
+      <div className='ContentHome__content'>
+        <p>
+          Es un sistema de control de versiones que nos va a servir para
+          trabajar en equipo de una manera mucho más simple y optima cuando
+          estamos desarrollando software.
+        </p>
+        <p>
+          Con Git podemos controlar todos los cambios que se hacen en nuestra
+          aplicación y en nuestro código, pudiendo volver al código previo a
+          cualquier modificación, abrir diferentes ramas de desarrollo, etc.
+        </p>
+        <p>
+          Vamos a poder trabajar en equipo de una manera muy sencilla y
+          optimizada, de forma que si tenemos dos o más personas trabajando en
+          ciertas funcionalidades del proyecto, nosotros podemos estar
+          trabajando en nuestra parte del código por separado.
+        </p>
+
+        <a
+          href='https://git-scm.com/about'
+          target='_blank'
+          rel='noreferrer'
+          accessKey='git'
+          className='ContentHome__content__link'
+        >
+          <i className='fas fa-paperclip'></i>Conocer mas acerca de Git!
+        </a>
+      </div>
+      <h2 className='ContentHome__subTitle'>Importancia de Git</h2>
+      <div className='ContentHome__content'>
+        <p>
+          El control de versiones es una de las tareas fundamentales para la
+          administración de un proyecto de desarrollo de software en general.
+          Surge de la necesidad de mantener y llevar control del código que
+          vamos programando, conservando sus distintos estados.
+        </p>
+        <p>
+          Aunque trabajemos solos, sabemos que surge la necesidad de gestionar
+          los cambio entre distintas versiones de un mismo código o hacer ramas
+          para tener diferentes versiones y probar nuevas caracteristicas.
+        </p>
+      </div>
     </div>
   );
 }

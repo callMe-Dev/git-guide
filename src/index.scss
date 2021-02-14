@@ -2,10 +2,13 @@
 @import './scss/root.scss';
 
 // Mixins
+@import './scss/mixins/underlineText';
 @import './scss/mixins/layout';
+@import './scss/mixins/subTitle';
+@import './scss/mixins/linkStyle';
 
 /* Globals */
 @import './scss/global/globals.scss';
 
-/* CSS Files */
+/* SCSS Components Files */
 @import './components/index.scss';
