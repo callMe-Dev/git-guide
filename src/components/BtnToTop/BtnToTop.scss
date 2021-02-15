@@ -1,0 +1,22 @@
+.BtnToTop {
+  background: var(--blue-principal);
+  padding: 0.5rem;
+  position: sticky;
+  bottom: 0vw;
+  right: 0;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  justify-content: flex-end;
+  justify-self: end;
+  text-align: right;
+  margin: 20px;
+  margin-left: auto;
+  border-radius: var(--radius);
+
+  img {
+    width: 20px;
+    height: 20px;
+    margin: auto;
+  }
+}
