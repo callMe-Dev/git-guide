@@ -6,20 +6,7 @@
   }
 
   &__content {
-    color: var(--black-third);
-    line-height: 1.4;
-
-    p {
-      margin-bottom: 0.9rem;
-    }
-
-    &__link {
-      @include linkStyle;
-
-      i {
-        margin-right: 0.3rem;
-      }
-    }
+    @include contentStyle;
   }
 
   &__subTitle {

@@ -4,4 +4,8 @@
   &__title {
     @include titleStyle;
   }
+
+  &__content {
+    @include contentStyle;
+  }
 }

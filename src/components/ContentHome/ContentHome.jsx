@@ -49,7 +49,6 @@ export default function ContentHome() {
           target='_blank'
           rel='noreferrer'
           accessKey='git'
-          className='ContentHome__content__link'
         >
           <i className='fas fa-paperclip'></i>Conocer mas acerca de Git!
         </a>
