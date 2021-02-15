@@ -4,7 +4,7 @@ import gitLogoMobile from '../../assets/gitLogoMobile.svg';
 import menuImg from '../../assets/menu.svg';
 import cancelLogo from '../../assets/cancel.svg';
 
-export default function NavMobile({ setShowMenu, showMenu }) {
+export default function NavMobile({ setShowMenu, showMenu, reference }) {
   const handleClickMenu = () => {
     setShowMenu(!showMenu);
   };
@@ -14,7 +14,7 @@ export default function NavMobile({ setShowMenu, showMenu }) {
   };
 
   return (
-    <header className='NavMobile'>
+    <header className='NavMobile' ref={reference}>
       <Link to='/' onClick={closeClickMenu} className='NavMobile__link'>
         <img src={gitLogoMobile} alt='git logo' />
       </Link>
