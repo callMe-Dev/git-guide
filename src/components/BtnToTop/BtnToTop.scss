@@ -2,7 +2,7 @@
   background: var(--blue-principal);
   padding: 0.5rem;
   position: sticky;
-  bottom: 0vw;
+  bottom: 0;
   right: 0;
   width: 40px;
   height: 40px;
@@ -13,10 +13,20 @@
   margin: 20px;
   margin-left: auto;
   border-radius: var(--radius);
+  transition: var(--transition);
 
   img {
     width: 20px;
     height: 20px;
     margin: auto;
   }
+}
+
+.noView {
+  opacity: 0;
+}
+
+.view {
+  opacity: 1;
+  transition-delay: 1s;
 }
