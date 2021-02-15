@@ -21,3 +21,5 @@ Puedes leer los Detalles en [/details](./DETAILS.md) para que tu **pull request*
 Los **pull request** seran revisados por algun miembro de la organizacion que aceptara estos cambios para la rama `main`
 
 ## 🚀 Discord: [callMeDev](https://discord.gg/RTdXPfbz3K)🌟
+
+### Si quieres revisar las actividades a realizar o tareas pendientes, revisa la pestaña de [projects](https://github.com/callMe-Dev/git-guide/projects/1)
