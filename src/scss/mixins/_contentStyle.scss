@@ -1,0 +1,25 @@
+@mixin contentStyle {
+  color: var(--black-third);
+  line-height: 1.4;
+
+  p {
+    margin: 0.9rem 0;
+  }
+
+  a {
+    @include linkStyle;
+
+    i {
+      margin-right: 0.3rem;
+      color: var(--blue-sec);
+    }
+  }
+
+  img {
+    display: block;
+    max-width: 300px;
+    margin: 2rem auto;
+  }
+
+  @include codeStyle;
+}

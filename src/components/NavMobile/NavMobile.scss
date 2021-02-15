@@ -1,5 +1,5 @@
 .NavMobile {
-  @include layout(40px 20px);
+  @include layout(20px 20px 40px 20px);
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -8,5 +8,9 @@
   img {
     @include userNoSelect;
     cursor: pointer;
+  }
+
+  &__link {
+    @include userNoSelect;
   }
 }

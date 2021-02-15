@@ -1,0 +1,23 @@
+@mixin codeStyle {
+  code {
+    background: var(--blue-principal);
+    border-radius: var(--radius);
+    border: 4px solid var(--blue-sec);
+    color: var(--white-sec);
+    display: block;
+    font-family: var(--roboto-mono-font);
+    font-weight: 500;
+    font-size: 1.15rem;
+    padding: 0.8rem 1rem;
+    letter-spacing: 0.05px;
+
+    span {
+      color: var(--orange-third);
+    }
+
+    i {
+      color: var(--blue-sec);
+      margin-right: 1rem;
+    }
+  }
+}

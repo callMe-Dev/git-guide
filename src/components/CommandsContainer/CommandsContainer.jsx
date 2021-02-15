@@ -1,6 +1,15 @@
 import React from 'react';
+import { useHistory } from 'react-router-dom';
 
-export default function CommandsContainer() {
+export default function CommandsContainer({ setShowMenu }) {
+  let history = useHistory();
+
+  const handlePushView = (viewText) => {
+    if (viewText === undefined) return;
+    history.push(`/${viewText}`);
+    setShowMenu(false);
+  };
+
   return (
     <div className='CommandsContainer'>
       <article className='CommandsContianer__content'>
@@ -8,9 +17,24 @@ export default function CommandsContainer() {
           Como instalar Git:
         </h1>
         <div className='CommandsContainer__content__flex'>
-          <button className='CommandsContainer__content-btnOs'>Windows</button>
-          <button className='CommandsContainer__content-btnOs'>Linux</button>
-          <button className='CommandsContainer__content-btnOs'>Mac Os</button>
+          <button
+            className='CommandsContainer__content-btnOs'
+            onClick={() => handlePushView('windows')}
+          >
+            Windows
+          </button>
+          <button
+            className='CommandsContainer__content-btnOs'
+            onClick={() => handlePushView('linux')}
+          >
+            Linux
+          </button>
+          <button
+            className='CommandsContainer__content-btnOs'
+            onClick={() => handlePushView('macos')}
+          >
+            Mac Os
+          </button>
         </div>
       </article>
       <article className='CommandsContianer__content'>
