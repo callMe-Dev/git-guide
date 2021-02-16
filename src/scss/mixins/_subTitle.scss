@@ -1,9 +1,9 @@
 @mixin subTitle {
   font-family: var(--roboto-mono-font);
   color: var(--orange-principal);
-  font-size: 1.4rem;
+  font-size: 1.3rem;
 
   @media (min-width: $ipad) {
-    font-size: 1.7rem;
+    font-size: 1.55rem;
   }
 }

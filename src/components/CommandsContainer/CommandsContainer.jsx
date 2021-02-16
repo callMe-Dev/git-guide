@@ -35,6 +35,12 @@ export default function CommandsContainer({ setShowMenu }) {
           >
             Mac Os
           </button>
+          <button
+            className='CommandsContainer__content-btnConfig'
+            onClick={() => handlePushView('config')}
+          >
+            Configurar
+          </button>
         </div>
       </article>
       <article className='CommandsContianer__content'>

@@ -7,6 +7,7 @@ import NavMobile from '../../components/NavMobile/NavMobile';
 import MenuMobile from '../../components/MenuMobile/MenuMobile';
 import InstallWindows from '../../components/InstallWindows/InstallWindows';
 import BtnToTop from '../../components/BtnToTop/BtnToTop';
+import GitConfigView from '../../components/GitConfigView/GitConfigView';
 
 export default function Layout() {
   const [showMenu, setShowMenu] = useState(false);
@@ -27,11 +28,15 @@ export default function Layout() {
           <MenuMobile setShowMenu={setShowMenu} showMenu={showMenu} />
         ) : (
           <Switch>
+            {/* @TODO: Convert to a simple RoutesFile */}
             <Route exact path='/'>
               <ContentComponent />
             </Route>
             <Route path='/windows'>
               <InstallWindows />
+            </Route>
+            <Route path='/config'>
+              <GitConfigView />
             </Route>
           </Switch>
         )}
