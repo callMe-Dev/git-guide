@@ -5,11 +5,27 @@
     @include titleStyle;
   }
 
+  &__subTitle {
+    @include subTitle;
+  }
+
   &__content {
     @include contentStyle;
   }
 
-  &__subTitle {
-    @include subTitle;
+  /*
+    Este estilo se puede repetir para varios fuentes en esta vista 
+    en alguna otra en caso sea necesario
+    solamente seria hacerlo mas dinamico en un mixin o componente
+  */
+  &__btn {
+    @include btnStyle;
+    margin-top: 1rem;
+    background: var(--blue-sec);
+    color: var(--white-sec);
+    border: 3px solid var(--blue-principal);
+    width: auto;
+    padding-left: 1rem;
+    padding-right: 1rem;
   }
 }

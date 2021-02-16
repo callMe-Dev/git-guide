@@ -1,9 +1,8 @@
-import React from 'react';
+import React, { useState } from 'react';
 
-export default function configTerminal({
-  showImportantNote,
-  setShowImportantNote,
-}) {
+export default function configTerminal() {
+  const [showImportantNote, setShowImportantNote] = useState(false);
+
   const handleShowImportantNote = () => {
     setShowImportantNote(!showImportantNote);
   };
