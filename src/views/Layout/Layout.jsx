@@ -8,6 +8,7 @@ import MenuMobile from '../../components/MenuMobile/MenuMobile';
 import InstallWindows from '../../components/InstallWindows/InstallWindows';
 import BtnToTop from '../../components/BtnToTop/BtnToTop';
 import GitConfigView from '../../components/GitConfigView/GitConfigView';
+import Commands from '../../components/Commands/Commands';
 
 export default function Layout() {
   const [showMenu, setShowMenu] = useState(false);
@@ -39,7 +40,7 @@ export default function Layout() {
               <GitConfigView />
             </Route>
             <Route path="/commands">
-
+              <Commands/>
             </Route>
           </Switch>
         )}
