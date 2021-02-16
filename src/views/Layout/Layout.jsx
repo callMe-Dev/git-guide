@@ -38,6 +38,9 @@ export default function Layout() {
             <Route path='/config'>
               <GitConfigView />
             </Route>
+            <Route path="/commands">
+
+            </Route>
           </Switch>
         )}
         <BtnToTop inView={inView} />
