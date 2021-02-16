@@ -1,0 +1,15 @@
+.GitConfigView {
+  @include layout(20px);
+
+  &__title {
+    @include titleStyle;
+  }
+
+  &__content {
+    @include contentStyle;
+  }
+
+  &__subTitle {
+    @include subTitle;
+  }
+}

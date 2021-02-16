@@ -4,6 +4,13 @@
 
   p {
     margin: 0.9rem 0;
+
+    span {
+      margin: 0 0.1rem;
+      font-weight: 700;
+      letter-spacing: 0.1px;
+      color: var(--blue-sec);
+    }
   }
 
   a {

@@ -7,8 +7,9 @@
 
     &__flex {
       align-items: center;
-      column-gap: 1.5rem;
+      column-gap: 1.4rem;
       display: flex;
+      flex-wrap: wrap;
       justify-content: flex-start;
       margin-top: 1.6rem;
       margin-bottom: 3rem;
@@ -19,6 +20,18 @@
       color: var(--black-principal);
       background: var(--orange-sec);
       border: 2px solid var(--black-sec);
+
+      &:nth-child(1) {
+        width: 100px;
+      }
+    }
+
+    &-btnConfig {
+      @include btnStyle(110px);
+      border: 3px solid var(--blue-sec);
+      background: var(--blue-principal);
+      color: var(--white-principal);
+      margin-top: 1.3rem;
     }
 
     &-btnRepo {
