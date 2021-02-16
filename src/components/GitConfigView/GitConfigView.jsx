@@ -1,6 +1,10 @@
-import React from 'react';
+import React, { useState } from 'react';
+import ConfigManual from './configManual/configManual';
+import ConfigTerminal from './configTerminal/configTerminal';
 
 export default function GitConfigView() {
+  const [showImportantNote, setShowImportantNote] = useState(false);
+
   return (
     <section className='GitConfigView'>
       <h1 className='GitConfigView__title'>
@@ -13,24 +17,46 @@ export default function GitConfigView() {
           instalado
         </p>
       </article>
-      <h2 className='GitConfigView__subTitle'>Configurar manualmente:</h2>
+      <ConfigTerminal
+        showImportantNote={showImportantNote}
+        setShowImportantNote={setShowImportantNote}
+      />
+      <ConfigManual />
+      <h2 className='GitConfigView__subTitle'>Comprobar configuracion:</h2>
       <article className='GitConfigView__content'>
         <p>
-          Archivo <span> ~/.gitconfig</span> o <span>~/.config/git/config</span>
-          : Este archivo es específico de tu usuario. Puedes hacer que Git lea y
-          escriba específicamente en este archivo pasando la opción{' '}
-          <span>--global.</span>
+          Si quieres comprobar tu configuración, puedes usar el siguiente
+          comando para mostrar todas las propiedades que Git ha configurado:
+        </p>
+        <code>
+          $ git <span>config --list</span>
+        </code>
+        <code>
+          $ git <span>config --list</span>
+          <br />
+          <br />
+          <span>user.name</span> = John Doe <br /> <span>user.email</span> =
+          johndoe@example.com <br />
+          <span>color.status</span> = auto
+          <br />
+          <span>color.branch</span> = auto <br /> <span>color.interactive</span>{' '}
+          = auto <br /> <span>color.diff</span> = auto
+        </code>
+        <p>
+          Puede que veas claves repetidas, porque Git lee la misma clave de
+          distintos archivos <span>(/etc/gitconfig y ~/.gitconfig</span>, por
+          ejemplo)
         </p>
         <p>
-          En Windows, Git busca el archivo <span>.gitconfig</span> en el
-          directorio $HOME (para mucha gente será
-          <span>(C:\Users\$USER)</span>
+          En estos casos, Git usa el último valor para cada clave única que ve
         </p>
         <p>
-          También busca el archivo <span>/etc/gitconfig</span>, aunque esta ruta
-          es relativa a la raíz MSys, que es donde decidiste instalar Git en tu
-          sistema Windows cuando ejecutaste el instalador.
+          También puedes comprobar el valor que Git utilizará para una clave
+          específica ejecutando git config <span>key</span>:
         </p>
+        <code>
+          $ git <span>config user.name</span> John Doe
+        </code>
       </article>
     </section>
   );

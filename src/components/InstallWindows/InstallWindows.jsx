@@ -48,8 +48,7 @@ export default function InstallWindows() {
         </p>
 
         <code>
-          <i className='fas fa-terminal'></i>
-          git <span>--version</span>
+          $ git <span>--version</span>
         </code>
 
         <p>
