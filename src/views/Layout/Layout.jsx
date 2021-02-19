@@ -9,6 +9,7 @@ import InstallWindows from '../../components/InstallWindows/InstallWindows';
 import BtnToTop from '../../components/BtnToTop/BtnToTop';
 import GitConfigView from '../../components/GitConfigView/GitConfigView';
 import Commands from '../../components/Commands/Commands';
+import CommandContent from '../../components/Commands/CommandContent/CommandContent';
 
 export default function Layout() {
   const [showMenu, setShowMenu] = useState(false);
@@ -41,6 +42,9 @@ export default function Layout() {
             </Route>
             <Route path="/commands">
               <Commands/>
+            </Route>
+            <Route path="/git-init">
+              <CommandContent description="Esta es la descripción de git init"/>
             </Route>
           </Switch>
         )}
