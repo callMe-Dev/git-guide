@@ -44,7 +44,7 @@ export default function Layout() {
               <Commands/>
             </Route>
             <Route path="/git-init">
-              <CommandContent description="Esta es la descripción de git init"/>
+              <CommandContent description="Prueba desde layout"/>
             </Route>
           </Switch>
         )}
