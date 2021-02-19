@@ -11,9 +11,9 @@ export default function Commands() {
 
 
   return (
-    <div>
+    <div className="commandContainer">
       <button
-        className='commands__name'
+        className='commandContainer__command__name'
         onClick={() => handlePushView('git-init')}
       >
         Git init
