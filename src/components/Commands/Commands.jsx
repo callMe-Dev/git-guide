@@ -1,11 +1,24 @@
-import React from 'react'
+import React from 'react';
+import { useHistory } from 'react-router-dom';
 
-const Commands = () => {
+export default function Commands() {
+  let history = useHistory();
+
+  const handlePushView = (viewText) => {
+    if (viewText === undefined) return;
+    history.push(`/${viewText}`);
+  };
+
+
   return (
     <div>
-      <h1>Commands</h1>
+      <button
+        className='commands__name'
+        onClick={() => handlePushView('git-init')}
+      >
+        Git init
+      </button>
+      
     </div>
   )
 }
-
-export default Commands
