@@ -1,64 +1,32 @@
 import React from 'react';
-import { useHistory } from 'react-router-dom';
+import { useHistory, useRouteMatch } from 'react-router-dom';
 
-export default function CommandsContainer({ setShowMenu }) {
+export default function CommandsContainer() {
   let history = useHistory();
+  /*
+   * Esto da la URL en la que se encuentra que seria '/commands'
+   *
+   * Y solo agrega el texto de la derecha
+   */
+  const match = useRouteMatch();
 
   const handlePushView = (viewText) => {
     if (viewText === undefined) return;
-    history.push(`/${viewText}`);
-    setShowMenu(false);
+
+    // Esto enviara al usuario al texto que se coloque dependiendo del comando
+    // En este caso es '/commands/${viewText}'
+    history.push(`${match.url}/${viewText}`);
   };
 
   return (
-    <div className='CommandsContainer'>
-      <article className='CommandsContianer__content'>
-        <h1 className='CommandsContainer__content__title'>
-          Como instalar Git:
-        </h1>
-        <div className='CommandsContainer__content__flex'>
-          <button
-            className='CommandsContainer__content-btnOs'
-            onClick={() => handlePushView('windows')}
-          >
-            Windows
-          </button>
-          <button
-            className='CommandsContainer__content-btnOs'
-            onClick={() => handlePushView('linux')}
-          >
-            Linux
-          </button>
-          <button
-            className='CommandsContainer__content-btnOs'
-            onClick={() => handlePushView('macos')}
-          >
-            Mac Os
-          </button>
-          <button
-            className='CommandsContainer__content-btnConfig'
-            onClick={() => handlePushView('config')}
-          >
-            Configurar
-          </button>
-        </div>
-      </article>
-      <article className='CommandsContianer__content'>
-        <h1 className='CommandsContainer__content__title'>
-          Como crear un repositorio:
-        </h1>
-        <div className='CommandsContainer__content__flex'>
-          <button className='CommandsContainer__content-btnRepo'>Github</button>
-          <button className='CommandsContainer__content-btnRepo'>Gitlab</button>
-        </div>
-      </article>
-      <article className='CommandsContianer__content'>
-        <button className='CommandsContainer__content-btnKnowMore'
-          onClick={() => handlePushView('commands')}
-        >
-          Conocer Comandos
-        </button>
-      </article>
+    <div className='CommandContainer'>
+      <p
+        className='CommandContainer__command__name'
+        onClick={() => handlePushView('git-init')}
+      >
+        <i className='fas fa-hashtag'></i>
+        <span>git</span> init
+      </p>
     </div>
   );
 }
