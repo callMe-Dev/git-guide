@@ -1,0 +1,21 @@
+.commandContainer {
+  margin: 3rem 0 0 1.25rem;
+
+  &__command__name {
+    display: block;
+    background-color: transparent;
+    border: none;
+    font-family: var(--roboto-mono-font);
+    font-size: 30px;
+    font-weight: bold;
+    color: var(--orange-principal);
+    cursor: pointer;
+    outline: none;
+    margin: 1rem 0 1rem 0;
+  }
+
+  &__command__name:hover {
+    color: var(--orange-sec);
+    transition: var(--transition);
+  }
+}

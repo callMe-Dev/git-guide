@@ -8,6 +8,8 @@ import MenuMobile from '../../components/MenuMobile/MenuMobile';
 import InstallWindows from '../../components/InstallWindows/InstallWindows';
 import BtnToTop from '../../components/BtnToTop/BtnToTop';
 import GitConfigView from '../../components/GitConfigView/GitConfigView';
+import Commands from '../../components/Commands/Commands';
+import CommandContent from '../../components/Commands/CommandContent/CommandContent';
 
 export default function Layout() {
   const [showMenu, setShowMenu] = useState(false);
@@ -38,6 +40,12 @@ export default function Layout() {
             <Route path='/config'>
               <GitConfigView />
             </Route>
+            <Route path="/commands">
+              <Commands/>
+            </Route>
+            <Route path="/git-init">
+              <CommandContent description="Prueba desde layout"/>
+            </Route>
           </Switch>
         )}
         <BtnToTop inView={inView} />
@@ -45,3 +53,4 @@ export default function Layout() {
     </Router>
   );
 }
+
