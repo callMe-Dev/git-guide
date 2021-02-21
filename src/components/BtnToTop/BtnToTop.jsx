@@ -2,7 +2,6 @@ import arrowTop from '../../assets/arrowTop.svg';
 
 export default function BtnToTop({ inView }) {
   const scrollToTop = () => {
-    // @TODO: Añadir referencia al objeto window para no mutarlo
     window.scrollTo(0, 0);
   };
 

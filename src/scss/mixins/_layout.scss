@@ -2,5 +2,4 @@
 // para tener espaciado en la pagina
 @mixin layout($padding: 40px) {
   padding: $padding;
-  padding-top: 0;
 }
