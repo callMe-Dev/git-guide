@@ -9,6 +9,7 @@ import InstallWindows from '../../components/InstallWindows/InstallWindows';
 import BtnToTop from '../../components/BtnToTop/BtnToTop';
 import GitConfigView from '../../components/GitConfigView/GitConfigView';
 import CommandsContainer from '../../components/CommandsContainer/CommandsContainer';
+import GitInit from '../../components/CommandsContainer/commands/gitInit/gitInit';
 
 export default function Layout() {
   const [showMenu, setShowMenu] = useState(false);
@@ -39,12 +40,14 @@ export default function Layout() {
             <Route path='/config'>
               <GitConfigView />
             </Route>
-            <Route path='/commands'>
-              <CommandsContainer />
-            </Route>
-            <Route path='/commands/git-init'>
-              <ContentComponent />
-            </Route>
+            <Route path='/commands' component={CommandsContainer}></Route>
+            {/*
+             *
+             * Debemos cambiar esto por un routes nested
+             * En lo mientras usarlo en el mismo Layout
+             *
+             */}
+            <Route path='/git-init' component={GitInit} />
           </Switch>
         )}
         <BtnToTop inView={inView} />
