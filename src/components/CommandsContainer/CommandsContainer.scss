@@ -1,38 +1,42 @@
 .CommandContainer {
-  @include layout(20px);
+  @include layout(20px 5px);
 
-  &__command__name {
-    display: inline-block;
-    align-items: center;
-    font-size: 1.5rem;
-    color: var(--orange-principal);
-    font-family: var(--roboto-mono-font);
-    font-weight: bold;
-    margin: 1rem 0 1rem 0;
-    outline: none;
-    cursor: pointer;
-    opacity: 0.85;
-    transition: var(--transition);
+  &__command {
+    display: block;
 
-    i {
-      color: var(--orange-sec);
-      opacity: 0;
-      visibility: hidden;
-      margin-right: 0.5rem;
-    }
-
-    &:hover {
-      opacity: 1;
+    &__name {
+      display: inline-block;
+      align-items: center;
+      font-size: 1.5rem;
+      color: var(--orange-principal);
+      font-family: var(--roboto-mono-font);
+      font-weight: bold;
+      margin: 1rem 0 1rem 0;
+      outline: none;
+      cursor: pointer;
+      opacity: 0.85;
       transition: var(--transition);
 
       i {
-        opacity: 1;
-        visibility: visible;
+        color: var(--orange-sec);
+        opacity: 0;
+        visibility: hidden;
+        margin-right: 0.5rem;
       }
-    }
 
-    span {
-      font-family: var(--lato-font);
+      &:hover {
+        opacity: 1;
+        transition: var(--transition);
+
+        i {
+          opacity: 1;
+          visibility: visible;
+        }
+      }
+
+      span {
+        font-family: var(--lato-font);
+      }
     }
   }
 }

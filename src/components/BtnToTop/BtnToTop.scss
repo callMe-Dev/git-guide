@@ -1,10 +1,12 @@
 .BtnToTop {
+  @include btnStyle;
+
+  width: 40px;
   background: var(--blue-principal);
   padding: 0.5rem;
   position: sticky;
   bottom: 0;
   right: 0;
-  width: 40px;
   height: 40px;
   display: flex;
   justify-content: flex-end;
