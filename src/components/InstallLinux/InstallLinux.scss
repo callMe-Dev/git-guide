@@ -1,0 +1,26 @@
+.InstallLinux {
+  @include layout(20px);
+
+  &__title {
+    @include titleStyle;
+  }
+
+  &__subTitle {
+    @include subTitle;
+  }
+
+  &__content {
+    @include contentStyle;
+  }
+
+  &__btn {
+    @include btnStyle;
+    margin-top: 1rem;
+    background: var(--blue-sec);
+    color: var(--white-sec);
+    border: 3px solid var(--blue-principal);
+    width: auto;
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+}

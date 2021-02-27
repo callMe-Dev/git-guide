@@ -5,11 +5,13 @@ import { useInView } from 'react-intersection-observer';
 import ContentComponent from '../../components/ContentComponent/ContentComponent';
 import NavMobile from '../../components/NavMobile/NavMobile';
 import MenuMobile from '../../components/MenuMobile/MenuMobile';
-import InstallWindows from '../../components/InstallWindows/InstallWindows';
 import BtnToTop from '../../components/BtnToTop/BtnToTop';
 import GitConfigView from '../../components/GitConfigView/GitConfigView';
 import CommandsContainer from '../../components/CommandsContainer/CommandsContainer';
 import GitInit from '../../components/CommandsContainer/commands/gitInit/gitInit';
+// Install Components
+import InstallWindows from '../../components/InstallWindows/InstallWindows';
+import InstallLinux from '../../components/InstallLinux/InstallLinux';
 
 export default function Layout() {
   const [showMenu, setShowMenu] = useState(false);
@@ -34,9 +36,14 @@ export default function Layout() {
             <Route exact path='/'>
               <ContentComponent />
             </Route>
+            {/* Install Routes */}
             <Route path='/windows'>
               <InstallWindows />
             </Route>
+            <Route path='/linux'>
+              <InstallLinux />
+            </Route>
+            {/* * * * * * * * * * * */}
             <Route path='/config'>
               <GitConfigView />
             </Route>
