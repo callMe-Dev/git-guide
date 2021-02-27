@@ -4,6 +4,9 @@ import ButtonShowInfo from './buttonShowInfo/buttonShowInfo';
 import Debian from './distros/debian/debian';
 import Fedora from './distros/fedora/fedora';
 import Gentoo from './distros/gentoo/gentoo';
+import CentOs from './distros/centOs/centOs';
+import Arch from './distros/arch/arch';
+import Others from './distros/others/others';
 
 export default function InstallLinux() {
   return (
@@ -40,6 +43,9 @@ export default function InstallLinux() {
       <ButtonShowInfo distName='Debian/Ubuntu' component={<Debian />} />
       <ButtonShowInfo distName='Fedora' component={<Fedora />} />
       <ButtonShowInfo distName='Gentoo' component={<Gentoo />} />
+      <ButtonShowInfo distName='CentOs' component={<CentOs />} />
+      <ButtonShowInfo distName='Arch Linux' component={<Arch />} />
+      <ButtonShowInfo distName='Others' component={<Others />} />
     </section>
   );
 }

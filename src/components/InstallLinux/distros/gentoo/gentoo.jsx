@@ -13,6 +13,13 @@ export default function gentoo() {
         anchorKey='gentoo linux'
         url='https://packages.gentoo.org/packages/dev-vcs/git'
       />
+
+      <p>
+        Y para instalarlo mediante <span>shell</span> debes hacer este comando
+      </p>
+      <code>
+        $ sudo <span>emerge --ask --verbose dev-vcs/git</span>
+      </code>
     </article>
   );
 }

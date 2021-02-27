@@ -23,6 +23,7 @@
     width: auto;
     padding-left: 0.7rem;
     padding-right: 0.7rem;
+    transition: var(--transition);
 
     i {
       margin-right: 0.5rem;
@@ -37,7 +38,15 @@
   transform: rotate(90deg);
 }
 
+// Utils
+@import './buttonShowInfo/buttonShowInfo.scss';
 // Distros imports
+/* @TODO: Reducir esta cantidad de archivos en una misma clase 
+*  para reducir la cantidad en todos los que sea posible
+*/
 @import './distros/debian/debian.scss';
 @import './distros/fedora/fedora.scss';
 @import './distros/gentoo/gentoo.scss';
+@import './distros/centOs/centOs.scss';
+@import './distros/arch/arch.scss';
+@import './distros/others/others.scss';
