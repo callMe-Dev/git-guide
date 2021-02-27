@@ -8,8 +8,12 @@ export default function buttonShowInfo({ distName, component }) {
   return (
     <>
       <button className='InstallLinux__btn' onClick={handleShowInfo}>
+        <i
+          className={'far fa-caret-square-right' + (showInfo ? ' rotate' : ' ')}
+        ></i>
         {distName}
       </button>
+      {/* El componente se renderizara que le pasemos por props */}
       {showInfo ? component : ''}
     </>
   );

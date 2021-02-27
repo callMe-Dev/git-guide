@@ -1,4 +1,5 @@
 import React from 'react';
+import AnchorTag from '../AnchorTag/AnchorTag';
 
 export default function ContentHome() {
   return (
@@ -44,14 +45,11 @@ export default function ContentHome() {
           trabajando en nuestra parte del código por separado.
         </p>
 
-        <a
-          href='https://git-scm.com/about'
-          target='_blank'
-          rel='noreferrer'
-          accessKey='git'
-        >
-          <i className='fas fa-paperclip'></i>Conocer mas acerca de Git!
-        </a>
+        <AnchorTag
+          anchorText='Conocer mas acerca de Git!'
+          url='https://git-scm.com/about'
+          anchorKey='git'
+        />
       </article>
       <h2 className='ContentHome__subTitle'>Importancia de Git</h2>
       <article className='ContentHome__content'>

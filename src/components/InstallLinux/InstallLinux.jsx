@@ -1,7 +1,9 @@
 import React from 'react';
 import ButtonShowInfo from './buttonShowInfo/buttonShowInfo';
-import Debian from './debian/debian';
-import Fedora from './fedora/fedora';
+// Distros
+import Debian from './distros/debian/debian';
+import Fedora from './distros/fedora/fedora';
+import Gentoo from './distros/gentoo/gentoo';
 
 export default function InstallLinux() {
   return (
@@ -35,8 +37,9 @@ export default function InstallLinux() {
         @distName: string = nombre en el boton
         @component: React.Component = un componente que se renderizara al dar click
        */}
-      <ButtonShowInfo distName='debian' component={<Debian />} /> <br />
-      <ButtonShowInfo distName='fedora' component={<Fedora />} />
+      <ButtonShowInfo distName='Debian/Ubuntu' component={<Debian />} />
+      <ButtonShowInfo distName='Fedora' component={<Fedora />} />
+      <ButtonShowInfo distName='Gentoo' component={<Gentoo />} />
     </section>
   );
 }
