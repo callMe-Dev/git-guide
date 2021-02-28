@@ -1,6 +1,8 @@
 import React, { useState } from 'react';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 import { useInView } from 'react-intersection-observer';
+// Sidebar
+import SideBar from '../SideBar/SideBar';
 // Components
 import ContentComponent from '../../components/ContentComponent/ContentComponent';
 import NavMobile from '../../components/NavMobile/NavMobile';
@@ -22,6 +24,8 @@ export default function Layout() {
 
   return (
     <Router>
+      <SideBar />
+
       <div className='Layout'>
         <NavMobile
           setShowMenu={setShowMenu}
@@ -29,7 +33,7 @@ export default function Layout() {
           reference={ref}
         />
         {showMenu ? (
-          <MenuMobile setShowMenu={setShowMenu} showMenu={showMenu} />
+          <MenuMobile setShowMenu={setShowMenu} />
         ) : (
           <Switch>
             {/* @TODO: Convert to a simple RoutesFile */}

@@ -6,13 +6,11 @@ export default function BtnToTop({ inView }) {
   };
 
   return (
-    <>
-      <div
-        className={'BtnToTop ' + `${!inView ? 'view' : 'noView'}`}
-        onClick={scrollToTop}
-      >
-        <img src={arrowTop} alt='arrow to top' className='BtnToTop__arrow' />
-      </div>
-    </>
+    <div
+      className={'BtnToTop ' + `${!inView ? 'view' : 'noView'}`}
+      onClick={scrollToTop}
+    >
+      <img src={arrowTop} alt='arrow to top' className='BtnToTop__arrow' />
+    </div>
   );
 }

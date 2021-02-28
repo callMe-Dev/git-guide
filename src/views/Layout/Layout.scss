@@ -1,3 +1,7 @@
 .Layout {
   display: block;
+
+  @media (min-width: $ipad) {
+    padding-top: 4rem;
+  }
 }
