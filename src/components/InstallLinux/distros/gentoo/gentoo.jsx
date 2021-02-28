@@ -3,7 +3,7 @@ import AnchorTag from '../../../AnchorTag/AnchorTag';
 
 export default function gentoo() {
   return (
-    <article className='gentoo__content'>
+    <article className='dist__content'>
       <p>
         Dentro de la propia store de <span>Gentoo Linux</span> puedes revisar el
         package de <span>Git</span>

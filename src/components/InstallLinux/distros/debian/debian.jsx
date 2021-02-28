@@ -2,7 +2,7 @@ import React from 'react';
 
 export default function debian() {
   return (
-    <article className='debian__content'>
+    <article className='dist__content'>
       <p>
         Para instalar <span>Git</span> en distros derivadas de{' '}
         <span>Debian</span> necesitamos abrir una terminal

@@ -2,7 +2,7 @@ import React from 'react';
 
 export default function fedora() {
   return (
-    <article className='fedora__content'>
+    <article className='dist__content'>
       <p>
         Desde tu <span>shell</span>, instala <span>Git</span> usando{' '}
         <span>{'dnf'}</span>

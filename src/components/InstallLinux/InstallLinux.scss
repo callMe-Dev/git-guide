@@ -40,13 +40,12 @@
 
 // Utils
 @import './buttonShowInfo/buttonShowInfo.scss';
-// Distros imports
-/* @TODO: Reducir esta cantidad de archivos en una misma clase 
-*  para reducir la cantidad en todos los que sea posible
+
+// Esta es una clase para las distros y tengan estilo de contenido
+/*
+* @note: Si necesitas agregar diferentes objetos o botones, has un archivo propio dentro
+* de ese componente, y no pongas esta clase
 */
-@import './distros/debian/debian.scss';
-@import './distros/fedora/fedora.scss';
-@import './distros/gentoo/gentoo.scss';
-@import './distros/centOs/centOs.scss';
-@import './distros/arch/arch.scss';
-@import './distros/others/others.scss';
+.dist__content {
+  @include contentStyle;
+}

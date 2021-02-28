@@ -2,7 +2,7 @@ import React from 'react';
 
 export default function centOs() {
   return (
-    <article className='centOs__content'>
+    <article className='dist__content'>
       <p>
         Para instalar <span>Git</span> en <span>CentOs</span> te recomendamos
         usar Yum, con el siguiente comando:
