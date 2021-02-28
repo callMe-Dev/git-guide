@@ -15,6 +15,9 @@ import GitInit from '../../components/CommandsContainer/commands/gitInit/gitInit
 import InstallWindows from '../../components/InstallWindows/InstallWindows';
 import InstallLinux from '../../components/InstallLinux/InstallLinux';
 
+/* * * * * * * * * * * * ** * * * * * * * */
+/* * * * * * * * * Layout * * * * * * * * */
+/* * * * * * * * * * * * ** * * * * * * * */
 export default function Layout() {
   const [showMenu, setShowMenu] = useState(false);
 
