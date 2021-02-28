@@ -53,7 +53,8 @@ export default function CommandsContainer({ setShowMenu }) {
         </div>
       </article>
       <article className='CommandsContianer__content'>
-        <button className='CommandsContainer__content-btnKnowMore'
+        <button
+          className='CommandsContainer__content-btnKnowMore'
           onClick={() => handlePushView('commands')}
         >
           Conocer Comandos

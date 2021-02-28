@@ -1,3 +1,16 @@
 .App {
   position: relative;
+  min-height: 100vh;
+
+  &__grid {
+    @media (min-width: $ipad) {
+      display: grid;
+      column-gap: 2rem;
+      grid-template-columns: 280px 1fr;
+    }
+
+    @media (min-width: 800px) {
+      grid-template-columns: 350px 1fr;
+    }
+  }
 }

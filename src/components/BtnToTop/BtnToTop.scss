@@ -29,6 +29,16 @@
 }
 
 .view {
-  opacity: 1;
+  opacity: 0.9;
   transition-delay: 1s;
+
+  @media (min-width: $ipad) {
+    opacity: 0.5;
+    transition-delay: 0;
+    transition: var(--transition);
+
+    &:hover {
+      opacity: 1;
+    }
+  }
 }

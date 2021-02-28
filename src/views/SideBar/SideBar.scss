@@ -1,0 +1,35 @@
+.SideBar {
+  display: none;
+
+  @media (min-width: $ipad) {
+    display: block;
+    background: var(--gray-third);
+    border-radius: 0 var(--radius) var(--radius) 0;
+    padding: 1rem;
+    padding-top: 2rem;
+
+    height: 100vh;
+    position: sticky;
+    top: 0;
+    left: 0;
+    // Esto da un scroll al Sidebar
+    overflow: auto;
+    overflow-y: hidden;
+    &:hover {
+      overflow-y: visible;
+    }
+  }
+
+  &__scroll {
+    max-height: 700px;
+  }
+
+  &__line {
+    width: 200px;
+    height: 5px;
+    background: var(--orange-sec);
+    border-radius: var(--radius);
+    margin-top: 0.5rem;
+    margin-bottom: 1rem;
+  }
+}

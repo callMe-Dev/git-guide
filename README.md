@@ -1,5 +1,9 @@
 # 🌿 Git Basic Guide
 
+### v0.1
+
+![Preview](./src/assets/views/view-4.jpg)
+
 ## 🌐 About
 
 Esta es una pequeña guia sobre los comandos basicos de git, esto es para aquellas personas que se les dificulta aprender algunos comandos sobre **Git**

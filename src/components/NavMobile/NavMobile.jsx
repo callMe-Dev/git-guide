@@ -1,23 +1,16 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
-import gitLogoMobile from '../../assets/gitLogoMobile.svg';
 import menuImg from '../../assets/menu.svg';
 import cancelLogo from '../../assets/cancel.svg';
+import Logo from '../Logo/Logo';
 
 export default function NavMobile({ setShowMenu, showMenu, reference }) {
   const handleClickMenu = () => {
     setShowMenu(!showMenu);
   };
 
-  const closeClickMenu = () => {
-    setShowMenu(false);
-  };
-
   return (
     <header className='NavMobile' ref={reference}>
-      <Link to='/' onClick={closeClickMenu} className='NavMobile__link'>
-        <img src={gitLogoMobile} alt='git logo' />
-      </Link>
+      <Logo setShowMenu={setShowMenu} />
       {showMenu ? (
         <img src={cancelLogo} alt='menu active' onClick={handleClickMenu} />
       ) : (

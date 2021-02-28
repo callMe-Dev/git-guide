@@ -5,6 +5,10 @@
   display: flex;
   justify-content: space-between;
 
+  @media (min-width: $ipad) {
+    display: none;
+  }
+
   img {
     @include userNoSelect;
     cursor: pointer;
