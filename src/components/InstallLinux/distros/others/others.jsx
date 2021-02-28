@@ -3,7 +3,7 @@ import AnchorTag from '../../../AnchorTag/AnchorTag';
 
 export default function others() {
   return (
-    <article className='others__content'>
+    <article className='dist__content'>
       <p>
         Existen demasiadas distros <span>Linux</span> en el mundo pero puedes
         buscar en caso tengas alguna distro no muy conocida
