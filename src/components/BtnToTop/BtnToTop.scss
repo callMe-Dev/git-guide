@@ -17,6 +17,10 @@
   border-radius: var(--radius);
   transition: var(--transition);
 
+  @media (min-width: $ipad) {
+    display: none;
+  }
+
   img {
     width: 20px;
     height: 20px;

@@ -1,0 +1,9 @@
+.SideBar {
+  display: none;
+
+  @media (min-width: $ipad) {
+    display: block;
+    background: var(--gray-third);
+    border-radius: 0 var(--radius) var(--radius) 0;
+  }
+}
