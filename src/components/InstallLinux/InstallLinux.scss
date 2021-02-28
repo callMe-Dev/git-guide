@@ -1,0 +1,51 @@
+.InstallLinux {
+  @include layout(20px);
+
+  &__title {
+    @include titleStyle;
+  }
+
+  &__subTitle {
+    @include subTitle;
+  }
+
+  &__content {
+    @include contentStyle;
+  }
+
+  &__btn {
+    @include btnStyle;
+    display: block;
+    margin-top: 1rem;
+    background: var(--blue-sec);
+    color: var(--white-sec);
+    border: 3px solid var(--blue-principal);
+    width: auto;
+    padding-left: 0.7rem;
+    padding-right: 0.7rem;
+    transition: var(--transition);
+
+    i {
+      margin-right: 0.5rem;
+      color: var(--black-third);
+      transition: var(--transition);
+    }
+  }
+}
+
+.rotate {
+  transition: var(--transition);
+  transform: rotate(90deg);
+}
+
+// Utils
+@import './buttonShowInfo/buttonShowInfo.scss';
+
+// Esta es una clase para las distros y tengan estilo de contenido
+/*
+* @note: Si necesitas agregar diferentes objetos o botones, has un archivo propio dentro
+* de ese componente, y no pongas esta clase
+*/
+.dist__content {
+  @include contentStyle;
+}

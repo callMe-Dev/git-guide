@@ -1,0 +1,51 @@
+import React from 'react';
+import ButtonShowInfo from './buttonShowInfo/buttonShowInfo';
+// Distros
+import Debian from './distros/debian/debian';
+import Fedora from './distros/fedora/fedora';
+import Gentoo from './distros/gentoo/gentoo';
+import CentOs from './distros/centOs/centOs';
+import Arch from './distros/arch/arch';
+import Others from './distros/others/others';
+
+export default function InstallLinux() {
+  return (
+    <section className='InstallLinux'>
+      <h1 className='InstallWindows__title'>
+        Como instalar <span>Git</span> en Linux
+      </h1>
+      <article className='InstallLinux__content'>
+        <p>
+          Una pequeña nota es que <span>Git</span> fue desarrollado
+          originalmente para la versión del sistema operativo Linux
+        </p>
+
+        <p>
+          Por lo tanto, tiene sentido que sea fácil de configurar para
+          ejecutarse en Linux
+        </p>
+        <p>
+          Puede instalar <span>Git</span> en Linux a través de la herramienta de
+          administración de paquetes que viene con cada distribucion
+        </p>
+        <p>
+          Selecciona o has <span>click</span>
+          en tu distribucion para desplegar la informacion ;D
+        </p>
+      </article>
+      <h2 className='InstallLinux__subTitle'>Distribuciones:</h2>
+      {/* 
+        Este boton mostrara la informacion del componente 
+        
+        @distName: string = nombre en el boton
+        @component: React.Component = un componente que se renderizara al dar click
+       */}
+      <ButtonShowInfo distName='Debian/Ubuntu' component={<Debian />} />
+      <ButtonShowInfo distName='Fedora' component={<Fedora />} />
+      <ButtonShowInfo distName='Gentoo' component={<Gentoo />} />
+      <ButtonShowInfo distName='CentOs' component={<CentOs />} />
+      <ButtonShowInfo distName='Arch Linux' component={<Arch />} />
+      <ButtonShowInfo distName='Others' component={<Others />} />
+    </section>
+  );
+}
