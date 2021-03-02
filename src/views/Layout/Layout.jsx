@@ -14,7 +14,7 @@ import GitInit from '../../components/CommandsContainer/commands/gitInit/gitInit
 // Install Components
 import InstallWindows from '../../components/InstallWindows/InstallWindows';
 import InstallLinux from '../../components/InstallLinux/InstallLinux';
-
+import InstallMacOs from '../../components/InstallMacOs/InstallMacos';
 /* * * * * * * * * * * * ** * * * * * * * */
 /* * * * * * * * * Layout * * * * * * * * */
 /* * * * * * * * * * * * ** * * * * * * * */
@@ -49,6 +49,9 @@ export default function Layout() {
             </Route>
             <Route path='/linux'>
               <InstallLinux />
+            </Route>
+            <Route path='/macos'>
+              <InstallMacOs />
             </Route>
             {/* * * * * * * * * * * */}
             <Route path='/config'>
