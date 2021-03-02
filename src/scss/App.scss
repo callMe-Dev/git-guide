@@ -1,6 +1,7 @@
 .App {
   position: relative;
   min-height: 100vh;
+  scroll-behavior: smooth;
 
   &__grid {
     @media (min-width: $ipad) {
@@ -11,6 +12,10 @@
 
     @media (min-width: 800px) {
       grid-template-columns: 350px 1fr;
+    }
+
+    @media (min-width: $laptop) {
+      grid-template-columns: 430px 1fr;
     }
   }
 }

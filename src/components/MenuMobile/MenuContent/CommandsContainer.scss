@@ -13,6 +13,7 @@
       justify-content: flex-start;
       margin-top: 1.6rem;
       margin-bottom: 3rem;
+      row-gap: 0.5rem;
 
       @media (min-width: $ipad) {
         row-gap: 1rem;
@@ -35,7 +36,6 @@
       border: 3px solid var(--blue-sec);
       background: var(--blue-principal);
       color: var(--white-principal);
-      margin-top: 1.3rem;
 
       @media (min-width: $ipad) {
         margin-top: 0;

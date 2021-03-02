@@ -2,6 +2,10 @@
   color: var(--black-third);
   line-height: 1.4;
 
+  @media (min-width: $ipad) {
+    max-width: 700px;
+  }
+
   p {
     margin: 0.9rem 0;
 
@@ -28,6 +32,8 @@
     margin: 2rem auto;
   }
 
+  // Esta es una clase de una nota importante, para ver como usarlo ver a
+  // /GitConfigView/configTerminal/configTerminal.jsx
   .importantNote {
     background: var(--orange-sec);
     border-radius: var(--radius);
@@ -36,6 +42,8 @@
     text-shadow: 0.3px 0.3px 0.8px var(--shadow);
     // width: 315px;
     margin: 1.5rem 0;
+
+    max-width: 350px;
 
     &__flex {
       @include userNoSelect;
