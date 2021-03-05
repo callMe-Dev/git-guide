@@ -1,0 +1,11 @@
+.GitLab {
+  @include layout(20px);
+
+  &__title {
+    @include titleStyle;
+  }
+
+  &__content {
+    @include contentStyle;
+  }
+}
