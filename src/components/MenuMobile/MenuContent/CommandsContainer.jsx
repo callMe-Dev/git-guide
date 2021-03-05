@@ -49,7 +49,12 @@ export default function CommandsContainer({ setShowMenu }) {
         </h1>
         <div className='CommandsContainer__content__flex'>
           <button className='CommandsContainer__content-btnRepo'>Github</button>
-          <button className='CommandsContainer__content-btnRepo'>Gitlab</button>
+          <button 
+            className='CommandsContainer__content-btnRepo'
+            onClick={() => handlePushView('gitlab')}
+          >
+              Gitlab
+          </button>
         </div>
       </article>
       <article className='CommandsContianer__content'>
