@@ -28,6 +28,9 @@ export default function configTerminal() {
         <code>
           $ git <span> config --global user.email johndoe@example.com</span>
         </code>
+        {/* Debemos convertir en un solo componente para que sea mucho mas facil de utilizar
+            en otros files o contenido
+        */}
         <div className='importantNote'>
           <div
             className='importantNote__flex'
