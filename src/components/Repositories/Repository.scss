@@ -5,6 +5,10 @@
     @include titleStyle;
   }
 
+  &__subTitle {
+    @include subTitle;
+  }
+
   &__content {
     @include contentStyle;
   }

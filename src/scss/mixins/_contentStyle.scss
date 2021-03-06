@@ -15,6 +15,11 @@
       letter-spacing: 0.1px;
       color: var(--blue-sec);
     }
+
+    a {
+      @include linkStyle;
+      display: inline;
+    }
   }
 
   a {

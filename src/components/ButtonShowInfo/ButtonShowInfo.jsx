@@ -1,6 +1,10 @@
 import React, { useState } from 'react';
 
-export default function buttonShowInfo({ distName, component }) {
+/*
+  Este componente lo podemos reutilizar al momento de querer mostrar
+  informacion de manera dinamica cambiando el estado
+*/
+export default function ButtonShowInfo({ textInBtn = '', component = null }) {
   const [showInfo, setShowInfo] = useState(false);
 
   const handleShowInfo = () => setShowInfo(!showInfo);
@@ -8,14 +12,14 @@ export default function buttonShowInfo({ distName, component }) {
   return (
     <>
       <button
-        className='InstallLinux__btn'
+        className='buttonToShowInfo__btn'
         onClick={handleShowInfo}
         id={showInfo ? 'btnActive' : ' '}
       >
         <i
           className={'far fa-caret-square-right' + (showInfo ? ' rotate' : ' ')}
         ></i>
-        {distName}
+        {textInBtn}
       </button>
       {/* El componente se renderizara que le pasemos por props */}
       {showInfo ? component : ''}
