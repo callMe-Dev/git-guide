@@ -33,8 +33,18 @@
 
   img {
     display: block;
-    max-width: 300px;
+    max-width: 330px;
     margin: 2rem auto;
+
+    @media (min-width: $ipad) {
+      width: 100%;
+      max-width: 500px;
+    }
+
+    @media (min-width: $laptop) {
+      width: 100%;
+      max-width: 700px;
+    }
   }
 
   // Esta es una clase de una nota importante, para ver como usarlo ver a

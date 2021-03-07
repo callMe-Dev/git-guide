@@ -1,11 +1,13 @@
 import React from 'react';
 import AnchorTag from '../../AnchorTag/AnchorTag';
+import ButtonShowInfo from '../../ButtonShowInfo/ButtonShowInfo';
 // Assets
-import repoCreate from './../../../assets/github/github-repo-new.png';
+import repoButton from '../../../assets/github/create-repository-button.png';
 import repoName from './../../../assets/github/github-repo-name.png';
 import repoPublicPrivate from './../../../assets/github/create-repository-public-private.png';
-import repoButton from '../../../assets/github/create-repository-button.png';
-import ButtonShowInfo from '../../ButtonShowInfo/ButtonShowInfo';
+import repoCreate from './../../../assets/github/github-repo-new.png';
+import repoCommands from '../../../assets/github/github-repo-commands.png';
+import GitIgnore from '../GitIgnore';
 
 export default function Github() {
   return (
@@ -35,13 +37,16 @@ export default function Github() {
         <p>
           Justo despues dale al boton de <span>New</span>
         </p>
-        <img src={repoCreate} alt='github create a new repository' />
+        <img src={repoCreate} alt='boton de nuevo en github' />
         <p>
           Ahora solo coloca el nombre de tu <span>proyecto</span> o{' '}
           <span>repositorio</span>
         </p>
         <p>Recuerda que debe ser corto y conciso</p>
-        <img src={repoName} alt='github repo create with name' />
+        <img
+          src={repoName}
+          alt='input donde debemos poner el nombre de nuestro proyecto'
+        />
         <p>
           Ahi mismo puedes agregar una pequeña <span>descripcion</span>
         </p>
@@ -51,13 +56,16 @@ export default function Github() {
         </p>
         <img
           src={repoPublicPrivate}
-          alt='github repository public or private'
+          alt='estado de visualizacion de github en privado o publico'
         />
         <p>
           Con todo esto solo queda crear el <span>repositorio</span> del
           proyecto
         </p>
-        <img src={repoButton} alt='create a github repository button' />
+        <img
+          src={repoButton}
+          alt='boton de creacion de un repositorio en github'
+        />
       </article>
       <h2 className='Repository__subTitle'>
         Sincronizar tu proyecto con tu repositorio
@@ -81,7 +89,20 @@ export default function Github() {
           Antes de mostrarte los comandos, te recomendamos crear tu archivo{' '}
           <span>.gitignore</span>
         </p>
-        <ButtonShowInfo textInBtn='Crear gitIgnore' />
+        <ButtonShowInfo
+          textInBtn='Crear gitIgnore?'
+          component={<GitIgnore />}
+        />
+        <p>
+          Para poder sincronizar tu proyecto ya creado a <span>Github</span>{' '}
+          sigue estos comandos que da la misma pagina oficial
+        </p>
+        <img src={repoCommands} alt='comandos del repositorio de github' />
+        <p>
+          Ahora con todo esto listo es hora de seguir con los{' '}
+          <span>comandos</span> y asi tener un mejor{' '}
+          <span>flujo de trabajo</span> :D
+        </p>
       </article>
     </section>
   );
