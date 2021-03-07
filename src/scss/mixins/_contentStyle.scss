@@ -35,6 +35,7 @@
     display: block;
     max-width: 330px;
     margin: 2rem auto;
+    border-radius: var(--radius);
 
     @media (min-width: $ipad) {
       width: 100%;

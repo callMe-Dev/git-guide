@@ -75,7 +75,9 @@ export default function Layout() {
              * En lo mientras usarlo en el mismo Layout
              *
              */}
-            <Route path='/commands' component={CommandsContainer}></Route>
+            <div className='Layout__noView'>
+              <Route path='/commands' component={CommandsContainer}></Route>
+            </div>
             <Route path='/git-init' component={GitInit} />
           </Switch>
         )}
