@@ -17,7 +17,7 @@ import InstallLinux from '../../components/InstallLinux/InstallLinux';
 import InstallMacOs from '../../components/InstallMacOs/InstallMacos';
 //Create repository
 import Github from '../../components/Repositories/GitHub/Github';
-import Gitlab from '../../components/Repositories/GitLab/GitLab';
+import GitLab from '../../components/Repositories/GitLab/GitLab';
 /* * * * * * * * * * * * ** * * * * * * * */
 /* * * * * * * * * Layout * * * * * * * * */
 /* * * * * * * * * * * * ** * * * * * * * */
@@ -70,7 +70,7 @@ export default function Layout() {
              *
              */}
             <Route path='/github' component={Github} />
-            <Route path='/gitlab' component={Gitlab} />
+            <Route path='/gitlab' component={GitLab} />
 
             {/*
              *
