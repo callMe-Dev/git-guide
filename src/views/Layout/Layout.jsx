@@ -16,7 +16,8 @@ import InstallWindows from '../../components/InstallWindows/InstallWindows';
 import InstallLinux from '../../components/InstallLinux/InstallLinux';
 import InstallMacOs from '../../components/InstallMacOs/InstallMacos';
 //Create repository
-import GitLab from '../../components/GitLab/GitLab';
+import Github from '../../components/Repositories/GitHub/Github';
+import Gitlab from '../../components/Repositories/GitLab/GitLab';
 /* * * * * * * * * * * * ** * * * * * * * */
 /* * * * * * * * * Layout * * * * * * * * */
 /* * * * * * * * * * * * ** * * * * * * * */
@@ -28,6 +29,7 @@ export default function Layout() {
   });
 
   return (
+    // @TODO: mover los router a archivos separados por vistas, comandos, etc
     <Router>
       <SideBar />
 
@@ -62,13 +64,23 @@ export default function Layout() {
             <Route path='/config'>
               <GitConfigView />
             </Route>
-            <Route path='/commands' component={CommandsContainer}></Route>
+            {/*
+             *
+             * Repositories
+             *
+             */}
+            <Route path='/github' component={Github} />
+            <Route path='/gitlab' component={Gitlab} />
+
             {/*
              *
              * Debemos cambiar esto por un routes nested
              * En lo mientras usarlo en el mismo Layout
              *
              */}
+            <div className='Layout__noView'>
+              <Route path='/commands' component={CommandsContainer}></Route>
+            </div>
             <Route path='/git-init' component={GitInit} />
           </Switch>
         )}

@@ -15,6 +15,11 @@
       letter-spacing: 0.1px;
       color: var(--blue-sec);
     }
+
+    a {
+      @include linkStyle;
+      display: inline;
+    }
   }
 
   a {
@@ -28,53 +33,18 @@
 
   img {
     display: block;
-    max-width: 300px;
+    max-width: 330px;
     margin: 2rem auto;
-  }
-
-  // Esta es una clase de una nota importante, para ver como usarlo ver a
-  // /GitConfigView/configTerminal/configTerminal.jsx
-  .importantNote {
-    background: var(--orange-sec);
     border-radius: var(--radius);
-    padding: 0.5rem 1rem;
-    color: var(--white-principal);
-    text-shadow: 0.3px 0.3px 0.8px var(--shadow);
-    // width: 315px;
-    margin: 1.5rem 0;
 
-    max-width: 350px;
-
-    &__flex {
-      @include userNoSelect;
-      color: var(--white-principal);
-      display: flex;
-      align-items: center;
-      cursor: pointer;
+    @media (min-width: $ipad) {
+      width: 100%;
+      max-width: 500px;
     }
 
-    i {
-      color: var(--white-principal);
-      margin-right: 0.5rem;
-      transition: var(--transition);
-    }
-
-    &__title {
-      color: var(--white-principal);
-      font-family: var(--roboto-mono-font);
-      font-size: 1rem;
-    }
-
-    p {
-      color: var(--white-principal);
-      line-height: 1.5;
-      font-weight: 700;
-      margin: 0.3rem 0;
-      transition: all var(--radius);
-
-      span {
-        color: var(--blue-principal);
-      }
+    @media (min-width: $laptop) {
+      width: 100%;
+      max-width: 700px;
     }
   }
 

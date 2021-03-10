@@ -1,0 +1,15 @@
+.Repository {
+  @include layout(20px);
+
+  &__title {
+    @include titleStyle;
+  }
+
+  &__subTitle {
+    @include subTitle;
+  }
+
+  &__content {
+    @include contentStyle;
+  }
+}

@@ -1,12 +1,7 @@
-import React, { useState } from 'react';
+import React from 'react';
+import ImportantNote from '../../ImportantNote/ImportantNote';
 
 export default function configTerminal() {
-  const [showImportantNote, setShowImportantNote] = useState(false);
-
-  const handleShowImportantNote = () => {
-    setShowImportantNote(!showImportantNote);
-  };
-
   return (
     <>
       <h2 className='GitConfigView__subTitle'>Configurar con Terminal:</h2>
@@ -28,28 +23,22 @@ export default function configTerminal() {
         <code>
           $ git <span> config --global user.email johndoe@example.com</span>
         </code>
-        <div className='importantNote'>
-          <div
-            className='importantNote__flex'
-            onClick={handleShowImportantNote}
-          >
-            <i
-              className={
-                'fas fa-caret-right ' + `${showImportantNote ? ' rotate' : ''}`
-              }
-            ></i>
-            <h3 className='importantNote__title'>Important...</h3>
-          </div>
-          {showImportantNote ? (
-            <p>
-              En caso quieras utilzar <span>Github</span> o <span>Gitlab</span>{' '}
-              te recomendamos utilizar el mismo nombre de usuario o correo
-              electronico para evitar errores de compatibilidad.
-            </p>
-          ) : (
-            ''
-          )}
-        </div>
+        {/* Debemos convertir en un solo componente para que sea mucho mas facil de utilizar
+            en otros files o contenido
+        */}
+        <ImportantNote
+          content={
+            <>
+              {' '}
+              <p>
+                En caso quieras utilzar <span>Github</span> o{' '}
+                <span>Gitlab</span> te recomendamos utilizar el mismo nombre de
+                usuario o correo electronico para evitar errores de
+                compatibilidad.
+              </p>
+            </>
+          }
+        />
       </article>
     </>
   );

@@ -54,6 +54,11 @@ export default function CommandsContainer({ setShowMenu }) {
             onClick={() => handlePushView('gitlab')}
           >
               Gitlab
+          <button
+            className='CommandsContainer__content-btnRepo'
+            onClick={() => handlePushView('github')}
+          >
+            Github
           </button>
         </div>
       </article>

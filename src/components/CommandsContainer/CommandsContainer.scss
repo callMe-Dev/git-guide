@@ -1,6 +1,17 @@
 .CommandContainer {
   @include layout(20px 5px);
 
+  &__title {
+    font-family: var(--roboto-mono-font);
+    padding-left: 0.9rem;
+    color: var(--orange-principal);
+    opacity: 0.8;
+
+    &:hover {
+      opacity: 1;
+    }
+  }
+
   &__command {
     display: block;
 

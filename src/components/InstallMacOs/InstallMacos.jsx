@@ -14,18 +14,11 @@ export default function MacOs() {
         </p>
         <p>
           Para eso, debes dirigirte a la página web de{' '}
-          {/* La etiqueta <a> da varios errores si se usa sola, por eso usamos el componente
-              AnchorTag
-          */}
-          <AnchorTag
-            url='https://brew.sh/index_es'
-            anchorText='Homebrew'
-            anchorKey='git on macOs'
-          />{' '}
-          donde verás un comando similar a este:
+          <a href='https://brew.sh/index_es'>Homebrew</a> donde verás un comando
+          similar a este:
         </p>
         <code>
-          $ curl <span>https://raw.githubusercontent.com/Homebrew...</span>
+          $ curl <span>https://raw.githubusercontent.com/</span>
         </code>
         <p>
           Tienes que copiarlo y pegarlo en la terminal de <span>Mac</span> (para
