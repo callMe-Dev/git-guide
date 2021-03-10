@@ -1,13 +1,13 @@
 import React from 'react';
-import AnchorTag from '../../AnchorTag/AnchorTag';
-import ButtonShowInfo from '../../ButtonShowInfo/ButtonShowInfo';
-// Assets
-import repoButton from '../../../assets/github/create-repository-button.png';
-import repoName from './../../../assets/github/github-repo-name.png';
 import repoPublicPrivate from './../../../assets/github/create-repository-public-private.png';
-import repoCreate from './../../../assets/github/github-repo-new.png';
+import repoButton from '../../../assets/github/create-repository-button.png';
 import repoCommands from '../../../assets/github/github-repo-commands.png';
+import repoCreate from './../../../assets/github/github-repo-new.png';
+import repoName from './../../../assets/github/github-repo-name.png';
+import ButtonShowInfo from '../../ButtonShowInfo/ButtonShowInfo';
+import AnchorTag from '../../AnchorTag/AnchorTag';
 import GitIgnore from '../GitIgnore';
+import ImportantNote from '../../ImportantNote/ImportantNote';
 
 export default function Github() {
   return (
@@ -98,6 +98,19 @@ export default function Github() {
           sigue estos comandos que da la misma pagina oficial
         </p>
         <img src={repoCommands} alt='comandos del repositorio de github' />
+        <ImportantNote
+          content={
+            <>
+              <p>
+                Recuerda que debes colocar en <span>git remote</span> el url de
+                tu proyecto que salga al crear tu repositorio
+              </p>
+              <p>
+                De lo contrario tendras un error o simplemente no funcionara
+              </p>
+            </>
+          }
+        />
         <p>
           Ahora con todo esto listo es hora de seguir con los{' '}
           <span>comandos</span> y asi tener un mejor{' '}
