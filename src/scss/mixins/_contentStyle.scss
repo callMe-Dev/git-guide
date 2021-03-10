@@ -48,52 +48,6 @@
     }
   }
 
-  // Esta es una clase de una nota importante, para ver como usarlo ver a
-  // /GitConfigView/configTerminal/configTerminal.jsx
-  .importantNote {
-    background: var(--orange-sec);
-    border-radius: var(--radius);
-    padding: 0.5rem 1rem;
-    color: var(--white-principal);
-    text-shadow: 0.3px 0.3px 0.8px var(--shadow);
-    // width: 315px;
-    margin: 1.5rem 0;
-
-    max-width: 350px;
-
-    &__flex {
-      @include userNoSelect;
-      color: var(--white-principal);
-      display: flex;
-      align-items: center;
-      cursor: pointer;
-    }
-
-    i {
-      color: var(--white-principal);
-      margin-right: 0.5rem;
-      transition: var(--transition);
-    }
-
-    &__title {
-      color: var(--white-principal);
-      font-family: var(--roboto-mono-font);
-      font-size: 1rem;
-    }
-
-    p {
-      color: var(--white-principal);
-      line-height: 1.5;
-      font-weight: 700;
-      margin: 0.3rem 0;
-      transition: all var(--radius);
-
-      span {
-        color: var(--blue-principal);
-      }
-    }
-  }
-
   @include codeStyle;
 }
 

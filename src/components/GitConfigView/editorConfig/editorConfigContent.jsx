@@ -1,12 +1,7 @@
-import React, { useState } from 'react';
+import React from 'react';
+import ImportantNote from '../../ImportantNote/ImportantNote';
 
 export default function editorConfigContent() {
-  const [showImportantNote, setShowImportantNote] = useState(false);
-
-  const handleShowImportantNote = () => {
-    setShowImportantNote(!showImportantNote);
-  };
-
   return (
     <article className='GitConfigView__content'>
       <p>
@@ -33,17 +28,8 @@ export default function editorConfigContent() {
       <code>
         $ git <span>config --global {'"code --wait"'}</span>
       </code>
-
-      <div className='importantNote'>
-        <div className='importantNote__flex' onClick={handleShowImportantNote}>
-          <i
-            className={
-              'fas fa-caret-right ' + `${showImportantNote ? ' rotate' : ''}`
-            }
-          ></i>
-          <h3 className='importantNote__title'>Important...</h3>
-        </div>
-        {showImportantNote ? (
+      <ImportantNote
+        content={
           <>
             <p>
               Se usa <span>global</span> para hacer la confirguración en todo el
@@ -57,10 +43,8 @@ export default function editorConfigContent() {
               configure y se cierre esa ventana
             </p>
           </>
-        ) : (
-          ''
-        )}
-      </div>
+        }
+      />
     </article>
   );
 }
