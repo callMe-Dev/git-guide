@@ -15,9 +15,9 @@ import GitInit from '../../components/CommandsContainer/commands/gitInit/gitInit
 import InstallWindows from '../../components/InstallWindows/InstallWindows';
 import InstallLinux from '../../components/InstallLinux/InstallLinux';
 import InstallMacOs from '../../components/InstallMacOs/InstallMacos';
+//Create repository
 import Github from '../../components/Repositories/GitHub/Github';
 import Gitlab from '../../components/Repositories/GitLab/GitLab';
-
 /* * * * * * * * * * * * ** * * * * * * * */
 /* * * * * * * * * Layout * * * * * * * * */
 /* * * * * * * * * * * * ** * * * * * * * */
@@ -56,6 +56,9 @@ export default function Layout() {
             </Route>
             <Route path='/macos'>
               <InstallMacOs />
+            </Route>
+            <Route path='/gitlab'>
+              <GitLab />
             </Route>
             {/* * * * * * * * * * * */}
             <Route path='/config'>
