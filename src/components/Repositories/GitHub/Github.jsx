@@ -5,9 +5,9 @@ import repoCommands from '../../../assets/github/github-repo-commands.png';
 import repoCreate from './../../../assets/github/github-repo-new.png';
 import repoName from './../../../assets/github/github-repo-name.png';
 import ButtonShowInfo from '../../ButtonShowInfo/ButtonShowInfo';
+import ImportantNote from '../../ImportantNote/ImportantNote';
 import AnchorTag from '../../AnchorTag/AnchorTag';
 import GitIgnore from '../GitIgnore';
-import ImportantNote from '../../ImportantNote/ImportantNote';
 
 export default function Github() {
   return (

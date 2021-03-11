@@ -1,6 +1,6 @@
 import React from 'react';
-import EditorConfigContent from './editorConfigContent';
 import ButtonShowInfo from '../../ButtonShowInfo/ButtonShowInfo';
+import EditorConfigContent from './editorConfigContent';
 
 export default function editorConfig() {
   return (

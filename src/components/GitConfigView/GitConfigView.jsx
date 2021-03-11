@@ -1,8 +1,8 @@
 import React from 'react';
-import ConfigManual from './configManual/configManual';
 import ConfigTerminal from './configTerminal/configTerminal';
-import KnowConfig from './knowConfig/knowConfig';
+import ConfigManual from './configManual/configManual';
 import EditorConfig from './editorConfig/editorConfig';
+import KnowConfig from './knowConfig/knowConfig';
 
 export default function GitConfigView() {
   return (

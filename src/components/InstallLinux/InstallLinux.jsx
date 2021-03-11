@@ -5,8 +5,8 @@ import Debian from './distros/debian/debian';
 import Fedora from './distros/fedora/fedora';
 import Gentoo from './distros/gentoo/gentoo';
 import CentOs from './distros/centOs/centOs';
-import Arch from './distros/arch/arch';
 import Others from './distros/others/others';
+import Arch from './distros/arch/arch';
 
 export default function InstallLinux() {
   return (

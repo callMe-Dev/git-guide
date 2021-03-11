@@ -1,7 +1,7 @@
 import React from 'react';
 import createProjectGitLab from '../../../assets/gitLabAssets/create-project-gitlab.png';
-import formGitLab from '../../../assets/gitLabAssets/form-gitlab.png';
 import repositoryGitLab from '../../../assets/gitLabAssets/repository-gitlab.png';
+import formGitLab from '../../../assets/gitLabAssets/form-gitlab.png';
 
 export default function GitLab() {
   return (

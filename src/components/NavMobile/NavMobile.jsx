@@ -1,6 +1,6 @@
 import React from 'react';
-import menuImg from '../../assets/menu.svg';
 import cancelLogo from '../../assets/cancel.svg';
+import menuImg from '../../assets/menu.svg';
 import Logo from '../Logo/Logo';
 
 export default function NavMobile({ setShowMenu, showMenu, reference }) {

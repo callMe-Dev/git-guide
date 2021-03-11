@@ -1,6 +1,6 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
 import gitLogoMobile from '../../assets/gitLogoMobile.svg';
+import { Link } from 'react-router-dom';
 
 export default function Logo({ setShowMenu }) {
   const closeClickMenu = () => {

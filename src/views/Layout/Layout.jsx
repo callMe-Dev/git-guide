@@ -1,16 +1,16 @@
 import React, { useState } from 'react';
-import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 import { useInView } from 'react-intersection-observer';
+import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 // Sidebar
 import SideBar from '../SideBar/SideBar';
 // Components
-import ContentComponent from '../../components/ContentComponent/ContentComponent';
-import NavMobile from '../../components/NavMobile/NavMobile';
-import MenuMobile from '../../components/MenuMobile/MenuMobile';
-import BtnToTop from '../../components/BtnToTop/BtnToTop';
-import GitConfigView from '../../components/GitConfigView/GitConfigView';
 import CommandsContainer from '../../components/CommandsContainer/CommandsContainer';
+import ContentComponent from '../../components/ContentComponent/ContentComponent';
 import GitInit from '../../components/CommandsContainer/commands/gitInit/gitInit';
+import GitConfigView from '../../components/GitConfigView/GitConfigView';
+import MenuMobile from '../../components/MenuMobile/MenuMobile';
+import NavMobile from '../../components/NavMobile/NavMobile';
+import BtnToTop from '../../components/BtnToTop/BtnToTop';
 // Install Components
 import InstallWindows from '../../components/InstallWindows/InstallWindows';
 import InstallLinux from '../../components/InstallLinux/InstallLinux';
