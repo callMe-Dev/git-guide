@@ -21,15 +21,17 @@ export default function CommandName({ extCmdName }) {
   };
 
   return (
-    <div className='CommandContainer__command'>
-      <p
-        className='CommandContainer__command__name'
-        // Esto lleva a la ruta dependiendo del nombre unido a un guion
-        onClick={() => handlePushView(`git-${extCmdName}`)}
-      >
-        <i className='fas fa-hashtag'></i>
-        <span>git</span> {extCmdName}
-      </p>
-    </div>
+    <>
+      <div className='CommandContainer__command'>
+        <p
+          className='CommandContainer__command__name'
+          // Esto lleva a la ruta dependiendo del nombre unido a un guion
+          onClick={() => handlePushView(`git-${extCmdName}`)}
+        >
+          <i className='fas fa-hashtag'></i>
+          <span>git</span> {extCmdName}
+        </p>
+      </div>
+    </>
   );
 }
