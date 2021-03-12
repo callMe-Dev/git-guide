@@ -1,13 +1,19 @@
 import React from 'react';
 import { useHistory } from 'react-router-dom';
 
+/*
+ *
+ * Este es solo una funcion la cual enviara a la 'url' que se le pase
+ *
+ *  @extCmdName: string
+ */
 export default function CommandName({ extCmdName }) {
   // @NOTE: extCmdName es el nombre del final de cada comando para ahorrarnos el 'git' del inicio
 
   let history = useHistory();
 
   const handlePushView = (viewText) => {
-    if (viewText === undefined) return;
+    if (viewText === undefined || viewText === null) return;
 
     // Esto enviara al usuario al texto que se coloque dependiendo del comando
     // En este caso es '/commands/${viewText}'

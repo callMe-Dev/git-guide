@@ -5,19 +5,19 @@ import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 import SideBar from '../SideBar/SideBar';
 // Components
 import CommandsContainer from '../../components/CommandsContainer/CommandsContainer';
-import ContentComponent from '../../components/ContentComponent/ContentComponent';
 import GitInit from '../../components/CommandsContainer/commands/gitInit/gitInit';
-import GitConfigView from '../../components/GitConfigView/GitConfigView';
 import MenuMobile from '../../components/MenuMobile/MenuMobile';
 import NavMobile from '../../components/NavMobile/NavMobile';
+import GitConfigView from '../GitConfigView/GitConfigView';
 import BtnToTop from '../../components/BtnToTop/BtnToTop';
 // Install Components
-import InstallWindows from '../../components/InstallWindows/InstallWindows';
-import InstallLinux from '../../components/InstallLinux/InstallLinux';
-import InstallMacOs from '../../components/InstallMacOs/InstallMacos';
+import InstallWindows from '../os_views/InstallWindows/InstallWindows';
+import InstallLinux from '../os_views/InstallLinux/InstallLinux';
+import InstallMacOs from '../os_views/InstallMacOs/InstallMacos';
 //Create repository
 import Github from '../../components/Repositories/GitHub/Github';
 import GitLab from '../../components/Repositories/GitLab/GitLab';
+import ContentHome from '../ContentHome/ContentHome';
 /* * * * * * * * * * * * ** * * * * * * * */
 /* * * * * * * * * Layout * * * * * * * * */
 /* * * * * * * * * * * * ** * * * * * * * */
@@ -45,7 +45,7 @@ export default function Layout() {
           <Switch>
             {/* @TODO: Convert to a simple RoutesFile */}
             <Route exact path='/'>
-              <ContentComponent />
+              <ContentHome />
             </Route>
             {/* Install Routes */}
             <Route path='/windows'>

@@ -1,5 +1,5 @@
 import React from 'react';
-import installGitWizard from '../../assets/winAssests/install-git-windows.png';
+import installGitWizard from '../../../assets/winAssests/install-git-windows.png';
 
 export default function InstallWindows() {
   return (

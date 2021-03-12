@@ -1,5 +1,5 @@
 import React from 'react';
-import AnchorTag from '../../../AnchorTag/AnchorTag';
+import AnchorTag from '../../../../../components/AnchorTag/AnchorTag';
 
 export default function others() {
   return (

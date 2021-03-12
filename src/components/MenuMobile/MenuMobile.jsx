@@ -1,5 +1,5 @@
 import React from 'react';
-import CommandsContainer from './MenuContent/CommandsContainer';
+import CommandsContainer from './Commands/CommandsContainer';
 
 export default function MenuMobile({ setShowMenu }) {
   return (
