@@ -1,5 +1,5 @@
 import React from 'react';
-import CommandsContainer from '../../components/MenuMobile/MenuContent/CommandsContainer';
+import CommandsContainer from '../../components/MenuMobile/Commands/CommandsContainer';
 // Estos son los comandos en lista de git
 import GitCommandsContainer from '../../components/CommandsContainer/CommandsContainer';
 import Logo from '../../components/Logo/Logo';

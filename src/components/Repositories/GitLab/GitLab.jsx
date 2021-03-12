@@ -6,7 +6,7 @@ import formGitLab from '../../../assets/gitLabAssets/form-gitlab.png';
 export default function GitLab() {
   return (
     <section className='Repository'>
-      <h1 classNae='Repository__title'>Crea tu repositorio en GitLab</h1>
+      <h1 className='Repository__title'>Crea tu repositorio en GitLab</h1>
       <article className='Repository__content'>
         <p>
           Una vez que tengas tu cuenta en

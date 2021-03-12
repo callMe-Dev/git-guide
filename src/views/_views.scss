@@ -1,0 +1,11 @@
+/*
+*
+* Aqui se importan los archivos dentro de la carpeta '/views' 
+*
+*
+*/
+@import './os_views/InstallWindows/installWindows.scss';
+@import './os_views/InstallMacOs/InstallMacos.scss';
+@import './os_views/InstallLinux/InstallLinux.scss';
+@import './GitConfigView/GitConfigView.scss';
+@import './ContentHome/ContentHome.scss';

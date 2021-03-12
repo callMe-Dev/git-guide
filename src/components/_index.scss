@@ -1,13 +1,13 @@
-/* Aqui exportamos todos los archivos SCSS de los componentes */
-@import './ContentHome/ContentHome.scss';
-@import './NavMobile/NavMobile.scss';
-@import './MenuMobile/MenuMobile.scss';
-@import './MenuMobile/MenuContent/CommandsContainer.scss';
-@import './InstallWindows/installWindows.scss';
-@import './BtnToTop/BtnToTop.scss';
-@import './GitConfigView/GitConfigView.scss';
+/* 
+*
+* Aqui exportamos todos los archivos SCSS de los componentes
+* Osea todos los archivos '.scss' de la carpeta `/components`
+*
+*/
 @import '../components/CommandsContainer/CommandsContainer.scss';
-@import './InstallLinux/InstallLinux.scss';
-@import './InstallMacOs/InstallMacos.scss';
-@import './Repositories/Repository.scss';
+@import './MenuMobile/Commands/CommandsContainer.scss';
 @import './ButtonShowInfo/ButtonShowInfo.scss';
+@import './Repositories/Repository.scss';
+@import './MenuMobile/MenuMobile.scss';
+@import './NavMobile/NavMobile.scss';
+@import './BtnToTop/BtnToTop.scss';

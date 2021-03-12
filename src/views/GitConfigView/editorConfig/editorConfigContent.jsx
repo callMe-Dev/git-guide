@@ -1,5 +1,5 @@
 import React from 'react';
-import ImportantNote from '../../ImportantNote/ImportantNote';
+import ImportantNote from '../../../components/ImportantNote/ImportantNote';
 
 export default function editorConfigContent() {
   return (

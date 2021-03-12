@@ -1,5 +1,5 @@
 import React from 'react';
-import ButtonShowInfo from '../ButtonShowInfo/ButtonShowInfo';
+import ButtonShowInfo from '../../../components/ButtonShowInfo/ButtonShowInfo';
 // Distros
 import Debian from './distros/debian/debian';
 import Fedora from './distros/fedora/fedora';
