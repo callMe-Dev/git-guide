@@ -1,0 +1,12 @@
+[
+  {
+    "name": "git-init",
+    "gitCmd": "init",
+    "description": "<p>Algun texto descriptivo</p>"
+  },
+  {
+    "name": "git-add",
+    "gitCmd": "add",
+    "description": "<p>Otro texto dentro de un articulo</p>"
+  }
+]
