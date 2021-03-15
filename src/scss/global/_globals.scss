@@ -11,6 +11,11 @@ html {
   margin: 0;
   padding: 0;
   color: var(--black-sec);
+
+  &::selection {
+    background-color: var(--blue-sec);
+    color: var(--white-principal);
+  }
 }
 
 body {

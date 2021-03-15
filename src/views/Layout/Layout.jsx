@@ -4,8 +4,8 @@ import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 // Sidebar
 import SideBar from '../SideBar/SideBar';
 // Components
+import ListCommands from '../../components/CommandsContainer/commands/ListCommands/ListCommands';
 import CommandsContainer from '../../components/CommandsContainer/CommandsContainer';
-import GitInit from '../../components/CommandsContainer/commands/GitInit/GitInit';
 import MenuMobile from '../../components/MenuMobile/MenuMobile';
 import NavMobile from '../../components/NavMobile/NavMobile';
 import GitConfigView from '../GitConfigView/GitConfigView';
@@ -18,6 +18,7 @@ import InstallMacOs from '../os_views/InstallMacOs/InstallMacos';
 import Github from '../../components/Repositories/GitHub/Github';
 import GitLab from '../../components/Repositories/GitLab/GitLab';
 import ContentHome from '../ContentHome/ContentHome';
+
 /* * * * * * * * * * * * ** * * * * * * * */
 /* * * * * * * * * Layout * * * * * * * * */
 /* * * * * * * * * * * * ** * * * * * * * */
@@ -87,9 +88,7 @@ export default function Layout() {
                 <div className='Layout__noView'>
                   <CommandsContainer />
                 </div>
-              </Route>
-              <Route path='/git-init'>
-                <GitInit />
+                <ListCommands />
               </Route>
             </Switch>
           </Fragment>
