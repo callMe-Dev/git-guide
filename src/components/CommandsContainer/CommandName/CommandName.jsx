@@ -2,9 +2,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 
 /*
- *
  * Este es solo una funcion la cual enviara a la 'url' que se le pase
- *
  *  @extCmdName: string
  */
 export default function CommandName({ extCmdName }) {

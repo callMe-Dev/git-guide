@@ -1,6 +1,10 @@
 .CommandContainer {
   @include layout(20px 5px);
 
+  @media (max-width: $ipad) {
+    display: none;
+  }
+
   &__title {
     color: var(--orange-principal);
     opacity: 0.8;

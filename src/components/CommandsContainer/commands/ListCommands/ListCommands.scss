@@ -1,3 +1,11 @@
 .ListCommands {
   @include layout(20px);
+
+  &__subTitle {
+    @include subTitle;
+  }
+
+  &__content {
+    @include contentStyle;
+  }
 }
