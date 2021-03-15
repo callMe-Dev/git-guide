@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import CommandName from './CommandName/CommandName';
 import commandsData from './commands/commands.json';
 
@@ -10,20 +11,25 @@ export default function CommandsContainer() {
    * @gitCmd: string
    * @description: string
    */
-  const gitCommandData = commandsData.map((gitCommand) => {
+  const gitCommandsData = commandsData.map((gitCommand) => {
     return <CommandName extCmdName={gitCommand.gitCmd} key={gitCommand.name} />;
   });
 
   const scrollToTop = () => {
-    // Esto manda hacia la cima del objeto window (browser)
     window.scrollTo(0, 0);
   };
 
   return (
-    <div className='CommandContainer' onClick={scrollToTop}>
-      <h2 className='CommandContainer__title'>Comandos</h2>
+    <div className='CommandContainer'>
+      <Link
+        className='CommandContainer__title'
+        to='/commands'
+        onClick={scrollToTop}
+      >
+        Comandos
+      </Link>
       {/* Botones de para los comandos de git */}
-      {gitCommandData}
+      {gitCommandsData}
     </div>
   );
 }
