@@ -1,5 +1,4 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
 
 /*
  * Este es solo una funcion la cual enviara a la 'url' que se le pase
@@ -10,13 +9,14 @@ export default function CommandName({ extCmdName }) {
 
   return (
     <div className='CommandContainer__command'>
-      <Link
+      <a
         className='CommandContainer__command__name'
-        to={`/commands/#git-${extCmdName}`}
+        // Esto manda a un comando por su id
+        href={`/commands/#git-${extCmdName}`}
       >
         <i className='fas fa-hashtag'></i>
         <span>git</span> {extCmdName}
-      </Link>
+      </a>
     </div>
   );
 }
