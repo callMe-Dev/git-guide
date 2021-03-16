@@ -13,11 +13,16 @@ export default function ListCommands() {
       <div key={gitCommand.name} id={gitCommand.name}>
         <h2 className='ListCommands__subTitle'>{gitCommand.name}</h2>
         <article className='ListCommands__content'>
-          <p>{gitCommand.description}</p>
+          {gitCommand.description}
         </article>
       </div>
     );
   });
 
-  return <section className='ListCommands'>{getData}</section>;
+  return (
+    <section className='ListCommands'>
+      <h1 className='ListCommands__title'>Comandos</h1>
+      {getData}
+    </section>
+  );
 }

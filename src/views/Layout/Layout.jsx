@@ -1,23 +1,13 @@
 import React, { useState, Fragment } from 'react';
 import { useInView } from 'react-intersection-observer';
-import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
-// Sidebar
-import SideBar from '../SideBar/SideBar';
-// Components
-import ListCommands from '../../components/CommandsContainer/commands/ListCommands/ListCommands';
-import CommandsContainer from '../../components/CommandsContainer/CommandsContainer';
+import { BrowserRouter as Router, Switch } from 'react-router-dom';
 import MenuMobile from '../../components/MenuMobile/MenuMobile';
 import NavMobile from '../../components/NavMobile/NavMobile';
-import GitConfigView from '../GitConfigView/GitConfigView';
 import BtnToTop from '../../components/BtnToTop/BtnToTop';
-// Install Components
-import InstallWindows from '../os_views/InstallWindows/InstallWindows';
-import InstallLinux from '../os_views/InstallLinux/InstallLinux';
-import InstallMacOs from '../os_views/InstallMacOs/InstallMacos';
-//Create repository
-import Github from '../../components/Repositories/GitHub/Github';
-import GitLab from '../../components/Repositories/GitLab/GitLab';
-import ContentHome from '../ContentHome/ContentHome';
+// Sidebar
+import SideBar from '../SideBar/SideBar';
+// Routes
+import Routes from './Routes/Routes';
 
 /* * * * * * * * * * * * ** * * * * * * * */
 /* * * * * * * * * Layout * * * * * * * * */
@@ -30,7 +20,6 @@ export default function Layout() {
   });
 
   return (
-    // @TODO: mover los router a archivos separados por vistas, comandos, etc
     <Router>
       <SideBar />
       {/* * * * Layout * * * */}
@@ -45,51 +34,8 @@ export default function Layout() {
         ) : (
           <Fragment>
             <Switch>
-              {/* @TODO: Convert to a simple RoutesFile */}
-              <Route exact path='/'>
-                <ContentHome />
-              </Route>
-              {/* Install Routes */}
-              <Route path='/windows'>
-                <InstallWindows />
-              </Route>
-              <Route path='/linux'>
-                <InstallLinux />
-              </Route>
-              <Route path='/macos'>
-                <InstallMacOs />
-              </Route>
-              <Route path='/gitlab'>
-                <GitLab />
-              </Route>
-              {/* * * * * * * * * * * */}
-              <Route path='/config'>
-                <GitConfigView />
-              </Route>
-              {/*
-               *
-               * Repositories
-               *
-               */}
-              <Route path='/github' component={Github} />
-              <Route path='/gitlab' component={GitLab} />
-
-              {/*
-               *
-               * Debemos cambiar esto por un routes nested
-               * En lo mientras usarlo en el mismo Layout
-               *
-               */}
-              <Route path='/commands'>
-                {/*
-                * El div esta dentro del <Route> ya que Switch lo detecta como
-                + computedMatch lo cual da un error en React 
-                */}
-                <div className='Layout__noView'>
-                  <CommandsContainer />
-                </div>
-                <ListCommands />
-              </Route>
+              {/* Routes */}
+              <Routes />
             </Switch>
           </Fragment>
         )}
