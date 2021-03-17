@@ -1,6 +1,7 @@
 import React from 'react';
 import gitLogoMobile from '../../assets/gitLogoMobile.svg';
 import { Link } from 'react-router-dom';
+import LazyImg from '../LazyImg/LazyImg';
 
 export default function Logo({ setShowMenu }) {
   const closeClickMenu = () => {
@@ -8,7 +9,7 @@ export default function Logo({ setShowMenu }) {
   };
   return (
     <Link to='/' onClick={closeClickMenu} className='NavMobile__link'>
-      <img src={gitLogoMobile} alt='git logo' />
+      <LazyImg source={gitLogoMobile} imgAlt='git logo' />
     </Link>
   );
 }

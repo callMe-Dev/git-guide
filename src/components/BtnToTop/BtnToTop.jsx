@@ -1,4 +1,5 @@
 import arrowTop from '../../assets/arrowTop.svg';
+import LazyImg from '../LazyImg/LazyImg';
 
 // El inView viene del layout que especifica si esta en la vista el elemento
 // en caso de que no, el boton no aparecera
@@ -13,7 +14,11 @@ export default function BtnToTop({ inView }) {
       className={'BtnToTop ' + `${!inView ? 'view' : 'noView'}`}
       onClick={scrollToTop}
     >
-      <img src={arrowTop} alt='arrow to top' className='BtnToTop__arrow' />
+      <LazyImg
+        source={arrowTop}
+        imgAlt='arrow to top'
+        imgClass='BtnToTop__arrow'
+      />
     </div>
   );
 }

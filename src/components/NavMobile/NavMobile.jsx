@@ -2,6 +2,7 @@ import React from 'react';
 import cancelLogo from '../../assets/cancel.svg';
 import menuImg from '../../assets/menu.svg';
 import Logo from '../Logo/Logo';
+import LazyImg from '../LazyImg/LazyImg';
 
 export default function NavMobile({ setShowMenu, showMenu, reference }) {
   const handleClickMenu = () => {
@@ -12,9 +13,13 @@ export default function NavMobile({ setShowMenu, showMenu, reference }) {
     <header className='NavMobile' ref={reference}>
       <Logo setShowMenu={setShowMenu} />
       {showMenu ? (
-        <img src={cancelLogo} alt='menu active' onClick={handleClickMenu} />
+        <LazyImg
+          source={cancelLogo}
+          imgAlt='menu active'
+          func={handleClickMenu}
+        />
       ) : (
-        <img src={menuImg} alt='menu' onClick={handleClickMenu} />
+        <LazyImg source={menuImg} imgAlt='menu' func={handleClickMenu} />
       )}
     </header>
   );
