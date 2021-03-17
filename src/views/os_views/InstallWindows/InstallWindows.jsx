@@ -1,5 +1,6 @@
 import React from 'react';
 import installGitWizard from '../../../assets/winAssests/install-git-windows.png';
+import LazyImg from '../../../components/LazyImg/LazyImg';
 
 export default function InstallWindows() {
   return (
@@ -29,7 +30,10 @@ export default function InstallWindows() {
 
         <p>Solamente lo descargamos y lo instalamos como cualquier programa</p>
 
-        <img src={installGitWizard} alt='git windows wizard manager' />
+        <LazyImg
+          source={installGitWizard}
+          imgAlt='git windows wizard manager'
+        />
 
         <p>
           En esa pestaña solamente le daras en next hasta que se instale

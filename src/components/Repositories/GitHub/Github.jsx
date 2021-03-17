@@ -7,6 +7,7 @@ import repoName from './../../../assets/github/github-repo-name.png';
 import ButtonShowInfo from '../../ButtonShowInfo/ButtonShowInfo';
 import ImportantNote from '../../ImportantNote/ImportantNote';
 import AnchorTag from '../../AnchorTag/AnchorTag';
+import LazyImg from '../../LazyImg/LazyImg';
 import GitIgnore from '../GitIgnore';
 
 export default function Github() {
@@ -37,15 +38,15 @@ export default function Github() {
         <p>
           Justo despues dale al boton de <span>New</span>
         </p>
-        <img src={repoCreate} alt='boton de nuevo en github' />
+        <LazyImg source={repoCreate} imgAlt='boton de nuevo en github' />
         <p>
           Ahora solo coloca el nombre de tu <span>proyecto</span> o{' '}
           <span>repositorio</span>
         </p>
         <p>Recuerda que debe ser corto y conciso</p>
-        <img
-          src={repoName}
-          alt='input donde debemos poner el nombre de nuestro proyecto'
+        <LazyImg
+          source={repoName}
+          imgAlt='input donde debemos poner el nombre de nuestro proyecto'
         />
         <p>
           Ahi mismo puedes agregar una pequeña <span>descripcion</span>
@@ -54,17 +55,17 @@ export default function Github() {
           Ahora solo selecciona si quieres que sea un repositorio{' '}
           <span>publico</span> o <span>privado</span>
         </p>
-        <img
-          src={repoPublicPrivate}
-          alt='estado de visualizacion de github en privado o publico'
+        <LazyImg
+          source={repoPublicPrivate}
+          imgAlt='estado de visualizacion de github en privado o publico'
         />
         <p>
           Con todo esto solo queda crear el <span>repositorio</span> del
           proyecto
         </p>
-        <img
-          src={repoButton}
-          alt='boton de creacion de un repositorio en github'
+        <LazyImg
+          source={repoButton}
+          imgAlt='boton de creacion de un repositorio en github'
         />
       </article>
       <h2 className='Repository__subTitle'>
@@ -97,7 +98,10 @@ export default function Github() {
           Para poder sincronizar tu proyecto ya creado a <span>Github</span>{' '}
           sigue estos comandos que da la misma pagina oficial
         </p>
-        <img src={repoCommands} alt='comandos del repositorio de github' />
+        <LazyImg
+          source={repoCommands}
+          imgAlt='comandos del repositorio de github'
+        />
         <ImportantNote
           content={
             <>

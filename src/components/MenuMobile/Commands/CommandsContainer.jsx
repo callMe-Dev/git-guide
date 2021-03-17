@@ -4,6 +4,7 @@ import { useHistory } from 'react-router-dom';
 export default function CommandsContainer({ setShowMenu }) {
   let history = useHistory();
 
+  // @viewText: string
   const handlePushView = (viewText) => {
     if (viewText === undefined) return;
 
