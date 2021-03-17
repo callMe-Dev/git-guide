@@ -6,8 +6,10 @@ export default function CommandsContainer({ setShowMenu }) {
 
   const handlePushView = (viewText) => {
     if (viewText === undefined) return;
+
     history.push(`/${viewText}`);
     setShowMenu(false);
+    window.scrollTo(0, 0);
   };
 
   return (

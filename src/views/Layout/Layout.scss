@@ -1,5 +1,6 @@
 .Layout {
   display: block;
+  content-visibility: auto;
 
   @media (min-width: $ipad) {
     padding-top: 4rem;

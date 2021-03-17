@@ -4,6 +4,7 @@
 * Osea todos los archivos '.scss' de la carpeta `/components`
 *
 */
+@import './CommandsContainer/commands/ListCommands/ListCommands.scss';
 @import '../components/CommandsContainer/CommandsContainer.scss';
 @import './MenuMobile/Commands/CommandsContainer.scss';
 @import './ButtonShowInfo/ButtonShowInfo.scss';
