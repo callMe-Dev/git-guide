@@ -1,9 +1,14 @@
 import React from 'react';
 import AnchorTag from '../../components/AnchorTag/AnchorTag';
+import MetaHelmet from '../../components/MetaHelmet/MetaHelmet';
 
 export default function ContentHome() {
   return (
     <section className='ContentHome'>
+      <MetaHelmet
+        titleText='Basic Guide'
+        description='Guía de comandos básicos de Git para desarrolladores'
+      />
       <h1 className='ContentHome__title'>
         Bienvenido a la guía básica de los comandos de <span>Git</span>
       </h1>

@@ -1,10 +1,15 @@
 import React from 'react';
 import installGitWizard from '../../../assets/winAssests/install-git-windows.png';
+import MetaHelmet from '../../../components/MetaHelmet/MetaHelmet';
 import LazyImg from '../../../components/LazyImg/LazyImg';
 
 export default function InstallWindows() {
   return (
     <section className='InstallWindows'>
+      <MetaHelmet
+        titleText='Instalar en Windows'
+        description='Instalar Git en Windows'
+      />
       <h1 className='InstallWindows__title'>
         Como instalar <span>Git</span> en Windows
       </h1>

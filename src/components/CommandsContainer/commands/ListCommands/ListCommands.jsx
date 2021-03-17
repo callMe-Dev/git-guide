@@ -1,4 +1,5 @@
 import React from 'react';
+import MetaHelmet from '../../../MetaHelmet/MetaHelmet';
 import data from '../commands.json';
 
 export default function ListCommands() {
@@ -21,6 +22,10 @@ export default function ListCommands() {
 
   return (
     <section className='ListCommands'>
+      <MetaHelmet
+        titleText='Comandos'
+        description='Comandos completos de git'
+      />
       <h1 className='ListCommands__title'>Comandos</h1>
       {getData}
     </section>

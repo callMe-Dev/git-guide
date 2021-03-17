@@ -1,18 +1,23 @@
 import React from 'react';
 import repoPublicPrivate from './../../../assets/github/create-repository-public-private.png';
+import ButtonShowInfo from '../../../components/ButtonShowInfo/ButtonShowInfo';
+import ImportantNote from '../../../components/ImportantNote/ImportantNote';
 import repoButton from '../../../assets/github/create-repository-button.png';
 import repoCommands from '../../../assets/github/github-repo-commands.png';
 import repoCreate from './../../../assets/github/github-repo-new.png';
 import repoName from './../../../assets/github/github-repo-name.png';
-import ButtonShowInfo from '../../ButtonShowInfo/ButtonShowInfo';
-import ImportantNote from '../../ImportantNote/ImportantNote';
-import AnchorTag from '../../AnchorTag/AnchorTag';
-import LazyImg from '../../LazyImg/LazyImg';
+import MetaHelmet from '../../../components/MetaHelmet/MetaHelmet';
+import AnchorTag from '../../../components/AnchorTag/AnchorTag';
+import LazyImg from '../../../components/LazyImg/LazyImg';
 import GitIgnore from '../GitIgnore';
 
 export default function Github() {
   return (
     <section className='Repository'>
+      <MetaHelmet
+        titleText='Configurar Github'
+        description='Crear y configurar un repositorio en Github con Git'
+      />
       <h1 className='Repository__title'>
         Como crear un repositorio en <span>Github</span>
       </h1>

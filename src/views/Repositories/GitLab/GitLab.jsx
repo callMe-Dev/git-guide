@@ -2,11 +2,16 @@ import React from 'react';
 import createProjectGitLab from '../../../assets/gitLabAssets/create-project-gitlab.png';
 import repositoryGitLab from '../../../assets/gitLabAssets/repository-gitlab.png';
 import formGitLab from '../../../assets/gitLabAssets/form-gitlab.png';
-import LazyImg from '../../LazyImg/LazyImg';
+import MetaHelmet from '../../../components/MetaHelmet/MetaHelmet';
+import LazyImg from '../../../components/LazyImg/LazyImg';
 
 export default function GitLab() {
   return (
     <section className='Repository'>
+      <MetaHelmet
+        titleText='Configurar GitLab'
+        description='Crear y configurar un repositorio en GitLab con Git'
+      />
       <h1 className='Repository__title'>Crea tu repositorio en GitLab</h1>
       <article className='Repository__content'>
         <p>

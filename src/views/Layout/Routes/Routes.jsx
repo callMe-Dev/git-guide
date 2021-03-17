@@ -5,8 +5,8 @@ import CommandsContainer from '../../../components/CommandsContainer/CommandsCon
 import InstallWindows from '../../os_views/InstallWindows/InstallWindows';
 import InstallLinux from '../../os_views/InstallLinux/InstallLinux';
 import InstallMacOs from '../../os_views/InstallMacOs/InstallMacos';
-import Github from '../../../components/Repositories/GitHub/Github';
-import GitLab from '../../../components/Repositories/GitLab/GitLab';
+import GitHub from '../../Repositories/GitHub/Github';
+import GitLab from '../../Repositories/GitLab/GitLab';
 import GitConfigView from '../../GitConfigView/GitConfigView';
 import ContentHome from '../../ContentHome/ContentHome';
 
@@ -32,7 +32,7 @@ export default function Routes() {
       {/*
        * Repositories
        */}
-      <Route path='/github' component={Github} />
+      <Route path='/github' component={GitHub} />
       <Route path='/gitlab' component={GitLab} />
 
       <Route path='/commands'>
