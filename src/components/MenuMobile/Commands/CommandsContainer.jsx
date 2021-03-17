@@ -1,6 +1,9 @@
 import React from 'react';
 import { useHistory } from 'react-router-dom';
 
+/**
+ * @param setShowMenu: Function
+ */
 export default function CommandsContainer({ setShowMenu }) {
   let history = useHistory();
 

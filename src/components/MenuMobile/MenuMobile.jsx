@@ -1,6 +1,9 @@
 import React from 'react';
 import CommandsContainer from './Commands/CommandsContainer';
 
+/**
+ * @param setShowMenu: Function
+ */
 export default function MenuMobile({ setShowMenu }) {
   return (
     <section className='MenuMobile'>

@@ -4,6 +4,9 @@ import CommandsContainer from '../../components/MenuMobile/Commands/CommandsCont
 import GitCommandsContainer from '../../components/CommandsContainer/CommandsContainer';
 import Logo from '../../components/Logo/Logo';
 
+/**
+ * @param reference: React.ref
+ */
 export default function SideBar({ reference }) {
   // Esta funcion solamente simula un estado que necesita como prop
   const setShowMenu = () => false;

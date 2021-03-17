@@ -6,11 +6,11 @@ import commandsData from './commands/commands.json';
 export default function CommandsContainer() {
   console.log(commandsData);
 
-  /*
-   * @gitCommand {
-   *  @name: string
-   *  @gitCmd: string
-   *  @description: string
+  /**
+   * @file gitCommand {
+   *  @param name: string
+   *  @param gitCmd: string
+   *  @param description: string
    * }
    */
   const gitCommandsData = commandsData.map((gitCommand) => {
