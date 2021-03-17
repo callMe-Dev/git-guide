@@ -1,5 +1,8 @@
 import React, { useState } from 'react';
 
+/*
+ * @content: string
+ */
 export default function ImportantNote({ content }) {
   const [showImportantNote, setShowImportantNote] = useState(false);
 

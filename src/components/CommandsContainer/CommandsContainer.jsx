@@ -7,9 +7,11 @@ export default function CommandsContainer() {
   console.log(commandsData);
 
   /*
-   * @name: string
-   * @gitCmd: string
-   * @description: string
+   * @gitCommand {
+   *  @name: string
+   *  @gitCmd: string
+   *  @description: string
+   * }
    */
   const gitCommandsData = commandsData.map((gitCommand) => {
     return <CommandName extCmdName={gitCommand.gitCmd} key={gitCommand.name} />;

@@ -37,8 +37,8 @@ export default function InstallLinux() {
       {/* 
         Este boton mostrara la informacion del componente 
         
-        @distName: string = nombre en el boton
-        @component: React.Component = un componente que se renderizara al dar click
+        @textInBtn: string
+        @component: React.Component
        */}
       <ButtonShowInfo textInBtn='Debian/Ubuntu' component={<Debian />} />
       <ButtonShowInfo textInBtn='Fedora' component={<Fedora />} />
