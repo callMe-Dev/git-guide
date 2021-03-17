@@ -2,7 +2,7 @@ import React from 'react';
 
 /*
  * @source: string
- * qimgAlt?: string
+ * @imgAlt?: string
  * @imgClass?: string
  * @func?: Function
  */
