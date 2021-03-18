@@ -1,10 +1,10 @@
 import React from 'react';
 
-/*
- * AnchorTag es solo un componente de etiqueta <a> pero con mas funcionalidades
- * @anchorText: string
- * @url: string
- * @anchorKey?: string
+/**
+ * @param anchorText: string
+ * @param url: string
+ * @param anchorKey?: string
+ * @returns <a>{...}</a>
  */
 export default function AnchorTag({ anchorText, url, anchorKey = '' }) {
   return (

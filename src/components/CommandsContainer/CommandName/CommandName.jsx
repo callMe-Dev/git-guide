@@ -1,8 +1,8 @@
 import React from 'react';
 
-/*
+/**
  * Este es solo una funcion la cual enviara a la 'url' que se le pase
- *  @extCmdName: string
+ * @param extCmdName: string
  */
 export default function CommandName({ extCmdName }) {
   // @NOTE: extCmdName es el nombre del final de cada comando para ahorrarnos el 'git' del inicio

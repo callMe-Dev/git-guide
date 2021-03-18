@@ -4,6 +4,11 @@ import menuImg from '../../assets/menu.svg';
 import Logo from '../Logo/Logo';
 import LazyImg from '../LazyImg/LazyImg';
 
+/**
+ * @param setShowMenu: Function
+ * @param showMenu: Boolean
+ * @param reference: React.ref
+ */
 export default function NavMobile({ setShowMenu, showMenu, reference }) {
   const handleClickMenu = () => {
     setShowMenu(!showMenu);

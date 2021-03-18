@@ -1,9 +1,14 @@
 import React from 'react';
+import MetaHelmet from '../../../components/MetaHelmet/MetaHelmet';
 import AnchorTag from '../../../components/AnchorTag/AnchorTag';
 
 export default function MacOs() {
   return (
     <section className='InstallMacos'>
+      <MetaHelmet
+        titleText='Instalar en MacOs'
+        description='Instalar Git en MacOs'
+      />
       <h1 className='InstallMacos__title'>
         Como instalar <span>Git</span> en MacOs
       </h1>

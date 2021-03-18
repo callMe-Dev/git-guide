@@ -1,5 +1,6 @@
 import React from 'react';
 import ButtonShowInfo from '../../../components/ButtonShowInfo/ButtonShowInfo';
+import MetaHelmet from '../../../components/MetaHelmet/MetaHelmet';
 // Distros
 import Debian from './distros/debian/debian';
 import Fedora from './distros/fedora/fedora';
@@ -11,6 +12,10 @@ import Arch from './distros/arch/arch';
 export default function InstallLinux() {
   return (
     <section className='InstallLinux'>
+      <MetaHelmet
+        titleText='Instalar en Linux'
+        description='Instalar Git en Linux'
+      />
       <h1 className='InstallWindows__title'>
         Como instalar <span>Git</span> en Linux
       </h1>

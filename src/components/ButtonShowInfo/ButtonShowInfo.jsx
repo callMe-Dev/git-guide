@@ -1,12 +1,12 @@
 import React, { useState } from 'react';
 
-/*
+/**
   Este componente lo podemos reutilizar al momento de querer mostrar
   informacion de manera dinamica cambiando el estado
-  
-  @textInBtn: string
-  @component: react.Component
-  @textWithState: string
+  @param textInBtn: string
+  @param component: react.Component
+  @param textWithState: string
+  @returns <button>{...}</button>
 */
 export default function ButtonShowInfo({
   textInBtn = '',

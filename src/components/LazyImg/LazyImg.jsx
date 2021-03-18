@@ -1,10 +1,10 @@
 import React from 'react';
 
-/*
- * @source: string
- * @imgAlt?: string
- * @imgClass?: string
- * @func?: Function
+/**
+ * @param source: string
+ * @param imgAlt?: string
+ * @param imgClass?: string
+ * @param func?: Function
  */
 export default function LazyImg({
   source = '',
