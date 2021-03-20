@@ -12,4 +12,13 @@
   &__content {
     @include contentStyle;
   }
+
+  &__container {
+    opacity: 0.8;
+    transition: var(--transition);
+
+    &:hover {
+      opacity: 1;
+    }
+  }
 }

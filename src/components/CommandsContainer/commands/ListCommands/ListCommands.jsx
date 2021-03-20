@@ -11,7 +11,11 @@ export default function ListCommands() {
    */
   const getData = data.map((gitCommand) => {
     return (
-      <div key={gitCommand.name} id={gitCommand.name}>
+      <div
+        key={gitCommand.name}
+        id={gitCommand.name}
+        className='ListCommands__container'
+      >
         <h2 className='ListCommands__subTitle'>{gitCommand.name}</h2>
         <article className='ListCommands__content'>
           {gitCommand.description}
