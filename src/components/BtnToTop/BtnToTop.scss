@@ -37,6 +37,8 @@
     transition-delay: 0;
     transition: var(--transition);
 
+    @include scaleHover;
+
     &:hover {
       opacity: 1;
     }

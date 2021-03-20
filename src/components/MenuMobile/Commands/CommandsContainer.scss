@@ -29,6 +29,8 @@
       &:nth-child(1) {
         width: 100px;
       }
+
+      @include shadowHover;
     }
 
     &-btnConfig {
@@ -40,6 +42,8 @@
       @media (min-width: $ipad) {
         margin-top: 0;
       }
+
+      @include shadowHover;
     }
 
     &-btnRepo {
@@ -47,6 +51,8 @@
       color: var(--white-principal);
       background: var(--blue-principal);
       border: 3px solid var(--blue-sec);
+
+      @include shadowHover;
     }
 
     &-btnKnowMore {
@@ -64,6 +70,8 @@
       @media (min-width: $ipad) {
         display: none;
       }
+
+      @include shadowHover;
     }
   }
 }

@@ -10,6 +10,8 @@
   padding-right: 0.7rem;
   transition: var(--transition);
 
+  @include shadowHover;
+
   i {
     margin-right: 0.5rem;
     color: var(--black-third);

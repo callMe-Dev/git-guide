@@ -15,6 +15,7 @@
     // Esto da un scroll al Sidebar
     overflow: auto;
     overflow-y: hidden;
+
     &:hover {
       overflow-y: visible;
     }

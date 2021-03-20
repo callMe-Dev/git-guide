@@ -1,0 +1,9 @@
+// Al agregarlo dentro de un elemento
+// con el & hara referencia al elmento para agregarle el hover
+@mixin shadowHover {
+  &:hover {
+    transition: var(--transition);
+    // box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.6);
+    box-shadow: 0.5px 1.5px 5px var(--shadow);
+  }
+}

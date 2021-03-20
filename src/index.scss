@@ -11,6 +11,8 @@
 @import './scss/mixins/titleStyle';
 @import './scss/mixins/codeStyle';
 @import './scss/mixins/contentStyle';
+@import './scss/mixins/_shadowHover.scss';
+@import './scss/mixins/scaleHover';
 
 /* Globals */
 @import './scss/global/globals.scss';

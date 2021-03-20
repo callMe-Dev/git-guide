@@ -29,4 +29,18 @@ body {
   width: 100%;
   -moz-osx-font-smoothing: grayscale;
   -webkit-font-smoothing: antialiased;
+
+  // Scroll Bar
+  &::-webkit-scrollbar {
+    width: 10px;
+  }
+
+  &::-webkit-scrollbar-thumb {
+    border-radius: var(--radius);
+    background: var(--orange-principal);
+  }
+
+  &::-webkit-scrollbar-track {
+    background: var(--blue-principal);
+  }
 }
