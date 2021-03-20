@@ -5,9 +5,14 @@ import data from '../commands.json';
 export default function ListCommands() {
   console.log(data);
 
-  /*
+  /**
    * Iteramos la data fuera del return del Html del componente
    * ya que si no lo renderizara correctamente
+   * @file data {
+   *  @param name: string
+   *  @param description: string
+   *  @param gitCmd?: string
+   * }
    */
   const getData = data.map((gitCommand) => {
     return (
@@ -30,7 +35,9 @@ export default function ListCommands() {
         titleText='Comandos'
         description='Comandos completos de git'
       />
-      <h1 className='ListCommands__title'>Comandos</h1>
+      <h1 className='ListCommands__title'>
+        Comandos de <span>Git</span>
+      </h1>
       {getData}
     </section>
   );
