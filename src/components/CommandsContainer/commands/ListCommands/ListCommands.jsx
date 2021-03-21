@@ -3,8 +3,6 @@ import MetaHelmet from '../../../MetaHelmet/MetaHelmet';
 import data from '../commands.json';
 
 export default function ListCommands() {
-  console.log(data);
-
   /**
    * Iteramos la data fuera del return del Html del componente
    * ya que si no lo renderizara correctamente

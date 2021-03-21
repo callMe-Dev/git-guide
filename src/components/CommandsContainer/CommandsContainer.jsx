@@ -3,14 +3,12 @@ import { Link } from 'react-router-dom';
 import CommandName from './CommandName/CommandName';
 import commandsData from './commands/commands.json';
 
-export default function CommandsContainer() {
-  console.log(commandsData);
-
+function CommandsContainer() {
   /**
    * @file gitCommand {
-   *  @param name: string
-   *  @param gitCmd: string
-   *  @param description: string
+   *   @param name: string
+   *   @param gitCmd: string
+   *   @param description: string
    * }
    */
   const gitCommandsData = commandsData.map((gitCommand) => {
@@ -35,3 +33,5 @@ export default function CommandsContainer() {
     </div>
   );
 }
+
+export default CommandsContainer;

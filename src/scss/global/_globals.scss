@@ -33,14 +33,11 @@ body {
   // Scroll Bar
   &::-webkit-scrollbar {
     width: 10px;
+    height: 40px;
   }
 
   &::-webkit-scrollbar-thumb {
     border-radius: var(--radius);
     background: var(--orange-principal);
-  }
-
-  &::-webkit-scrollbar-track {
-    background: var(--blue-principal);
   }
 }

@@ -4,6 +4,8 @@ import repositoryGitLab from '../../../assets/gitLabAssets/repository-gitlab.png
 import formGitLab from '../../../assets/gitLabAssets/form-gitlab.png';
 import MetaHelmet from '../../../components/MetaHelmet/MetaHelmet';
 import LazyImg from '../../../components/LazyImg/LazyImg';
+import ButtonShowInfo from '../../../components/ButtonShowInfo/ButtonShowInfo';
+import GitIgnore from '../GitIgnore';
 
 export default function GitLab() {
   return (
@@ -12,7 +14,9 @@ export default function GitLab() {
         titleText='Configurar GitLab'
         description='Crear y configurar un repositorio en GitLab con Git'
       />
-      <h1 className='Repository__title'>Crea tu repositorio en GitLab</h1>
+      <h1 className='Repository__title'>
+        Crea tu repositorio en <span>GitLab</span>
+      </h1>
       <article className='Repository__content'>
         <p>
           Una vez que tengas tu cuenta en
@@ -38,6 +42,10 @@ export default function GitLab() {
           proyecto :)
         </p>
         <LazyImg source={repositoryGitLab} imgAlt='repository GitLab' />
+        <ButtonShowInfo
+          textInBtn='Crear gitIgnore?'
+          component={<GitIgnore />}
+        />
       </article>
     </section>
   );
