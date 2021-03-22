@@ -11,15 +11,18 @@
 
   &__content {
     @include contentStyle;
+
+    p {
+      opacity: 0.9;
+
+      &:hover {
+        opacity: 1;
+      }
+    }
   }
 
   &__container {
-    opacity: 0.8;
     transition: var(--transition);
     margin-bottom: 5rem;
-
-    &:hover {
-      opacity: 1;
-    }
   }
 }
