@@ -20,9 +20,11 @@ export default function ListCommands() {
         className='ListCommands__container'
       >
         <h2 className='ListCommands__subTitle'>{gitCommand.name}</h2>
-        <article className='ListCommands__content'>
-          {gitCommand.description}
-        </article>
+        <article
+          className='ListCommands__content'
+          // Esto agrega el contenido parseado en forma de Html
+          dangerouslySetInnerHTML={{ __html: gitCommand.description }}
+        ></article>
       </div>
     );
   });
