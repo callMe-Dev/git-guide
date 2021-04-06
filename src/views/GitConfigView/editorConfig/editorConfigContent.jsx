@@ -32,15 +32,15 @@ export default function editorConfigContent() {
         content={
           <>
             <p>
-              Se usa <span>global</span> para hacer la confirguración en todo el
-              bash
+              Se usa <span>global</span> para hacer la configuración en todo el
+              bash.
             </p>
             <p>
-              <span>code</span> es la abreviatura de Visual Studio Code
+              <span>code</span> es la abreviatura de Visual Studio Code.
             </p>
             <p>
               El <span>wait</span> significa que el bash debe esperar a que se
-              configure y se cierre esa ventana
+              configure y se cierre esa ventana.
             </p>
           </>
         }

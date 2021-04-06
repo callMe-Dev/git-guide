@@ -41,8 +41,8 @@ export default function InstallWindows() {
         />
 
         <p>
-          En esa pestaña solamente le daras en next hasta que se instale
-          automaticamente
+          En esa pestaña solamente le darás en next hasta que se instale
+          automaticamente.
         </p>
 
         <p>
@@ -61,8 +61,8 @@ export default function InstallWindows() {
         </code>
 
         <p>
-          Si te muestra algunos numeros entonces tendras ya Git instalado, si te
-          muestra que no es reconocido entonces repite el procedimiento
+          Si te muestra algunos numeros entonces tendrás ya Git instalado, si te
+          muestra que no es reconocido, entonces repite el procedimiento.
         </p>
       </article>
     </section>
