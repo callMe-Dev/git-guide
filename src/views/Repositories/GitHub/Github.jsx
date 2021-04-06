@@ -112,7 +112,7 @@ export default function Github() {
             <>
               <p>
                 Recuerda que debes colocar en <span>git remote</span> el url de
-                tu proyecto que salga al crear tu repositorio
+                tu proyecto que salga al crear tu repositorio.
               </p>
               <p>
                 De lo contrario tendras un error o simplemente no funcionara

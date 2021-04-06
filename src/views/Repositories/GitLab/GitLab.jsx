@@ -19,7 +19,7 @@ export default function GitLab() {
       </h1>
       <article className='Repository__content'>
         <p>
-          Una vez que tengas tu cuenta en
+          Una vez que tengas tu cuenta en &nbsp;
           <a
             target='_blank'
             rel='noreferrer'
@@ -27,8 +27,8 @@ export default function GitLab() {
             href='https://gitlab.com/'
           >
             GitLab
-          </a>
-          debes dirigirte a la vista de Projects elegir la opción{' '}
+          </a>&nbsp;
+          debes dirigirte a la vista de Projects y elegir la opción{' '}
           <b>Create Blank Project</b>:
         </p>
         <LazyImg source={createProjectGitLab} imgAlt='Create Project GitLab' />

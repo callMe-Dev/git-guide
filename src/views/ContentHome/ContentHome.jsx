@@ -18,7 +18,7 @@ export default function ContentHome() {
           aprender a utilizar Git
         </p>
         <p>
-          Hache te mostraremos los comandos básicos y esenciales para que puedas
+          Aquí te mostraremos los comandos básicos y esenciales para que puedas
           tener un buen control sobre las versiones de tus aplicaciones o
           proyectos Frontend, Backend, etc.
         </p>
