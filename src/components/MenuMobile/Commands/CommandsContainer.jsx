@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import { useHistory } from 'react-router-dom';
 
 /**
@@ -78,4 +79,8 @@ export default function CommandsContainer({ setShowMenu }) {
       </article>
     </div>
   );
+}
+
+CommandsContainer.propTypes = {
+ setShowMenu: PropTypes.func.isRequired 
 }

@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 
 /**
  * Este es solo una funcion la cual enviara a la 'url' que se le pase
@@ -19,4 +20,8 @@ export default function CommandName({ extCmdName }) {
       </a>
     </div>
   );
+}
+
+CommandName.propTypes = {
+  extCmdName: PropTypes.string.isRequired
 }

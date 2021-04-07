@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 
 /**
  * @param anchorText: string
@@ -13,4 +14,10 @@ export default function AnchorTag({ anchorText, url, anchorKey = '' }) {
       {anchorText}
     </a>
   );
+}
+
+AnchorTag.propTypes = {
+  anchorText: PropTypes.string.isRequired,
+  url: PropTypes.string.isRequired,
+  anchorKey: PropTypes.string
 }
