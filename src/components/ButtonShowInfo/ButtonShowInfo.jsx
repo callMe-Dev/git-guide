@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import PropTypes from 'prop-types';
 
 /**
   Este componente lo podemos reutilizar al momento de querer mostrar
@@ -38,4 +39,10 @@ export default function ButtonShowInfo({
       {showInfo ? component : ''}
     </>
   );
+}
+
+ButtonShowInfo.propTypes = {
+  textInBtn: PropTypes.string,
+  component: PropTypes.element,
+  textWithState: PropTypes.string
 }

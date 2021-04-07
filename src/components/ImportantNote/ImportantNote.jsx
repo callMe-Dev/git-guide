@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import PropTypes from 'prop-types';
 
 /**
  * @param content: string
@@ -34,4 +35,8 @@ export default function ImportantNote({ content }) {
       )}
     </div>
   );
+}
+
+ImportantNote.propTypes = {
+  content: PropTypes.string
 }

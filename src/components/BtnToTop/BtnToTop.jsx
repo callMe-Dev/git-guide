@@ -1,3 +1,4 @@
+import PropTypes from 'prop-types';
 import arrowTop from '../../assets/arrowTop.svg';
 import LazyImg from '../LazyImg/LazyImg';
 
@@ -21,4 +22,8 @@ export default function BtnToTop({ inView }) {
       />
     </div>
   );
+}
+
+BtnToTop.propTypes = {
+  inView: PropTypes.bool.isRequired
 }

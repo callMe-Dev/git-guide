@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 
 /**
  * @param source: string
@@ -22,4 +23,11 @@ export default function LazyImg({
       loading='lazy'
     />
   );
+}
+
+LazyImg.propTypes = {
+  source: PropTypes.string,
+  imgAlt: PropTypes.string,
+  imgClass: PropTypes.string,
+  func: PropTypes.func
 }

@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import CommandsContainer from './Commands/CommandsContainer';
 
 /**
@@ -11,4 +12,8 @@ export default function MenuMobile({ setShowMenu }) {
       <CommandsContainer setShowMenu={setShowMenu} />
     </section>
   );
+}
+
+MenuMobile.propTypes = {
+  setShowMenu: PropTypes.func.isRequired
 }
