@@ -1,6 +1,7 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 import { useHistory } from 'react-router-dom'
+import CommandsBtnOs from './BtnOs/CommandsBtnOs'
 
 /**
  * @param setShowMenu: Function
@@ -24,21 +25,9 @@ export default function CommandsContainer({ setShowMenu }) {
           Como instalar Git:
         </h1>
         <div className='CommandsContainer__content__flex'>
-          <button
-            className='CommandsContainer__content-btnOs'
-            onClick={() => handlePushView('windows')}>
-            Windows
-          </button>
-          <button
-            className='CommandsContainer__content-btnOs'
-            onClick={() => handlePushView('linux')}>
-            Linux
-          </button>
-          <button
-            className='CommandsContainer__content-btnOs'
-            onClick={() => handlePushView('macos')}>
-            Mac Os
-          </button>
+          <CommandsBtnOs osName='Windows' handlePushView={handlePushView} />
+          <CommandsBtnOs osName='Linux' handlePushView={handlePushView} />
+          <CommandsBtnOs osName='MacOs' handlePushView={handlePushView} />
           <button
             className='CommandsContainer__content-btnConfig'
             onClick={() => handlePushView('config')}>
