@@ -5,45 +5,54 @@ import CommandsContainer from '../../../components/CommandsContainer/CommandsCon
 import InstallWindows from '../../os_views/InstallWindows/InstallWindows'
 import InstallLinux from '../../os_views/InstallLinux/InstallLinux'
 import InstallMacOs from '../../os_views/InstallMacOs/InstallMacos'
-import GitHub from '../../Repositories/GitHub/Github'
-import GitLab from '../../Repositories/GitLab/GitLab'
 import GitConfigView from '../../GitConfigView/GitConfigView'
 import ContentHome from '../../ContentHome/ContentHome'
+import GitHub from '../../Repositories/GitHub/Github'
+import GitLab from '../../Repositories/GitLab/GitLab'
+import { routes } from './routes'
+
+/************ ROUTES ***************/
 export default function Routes() {
   return (
     <>
-      <Route exact path='/'>
+      {/* * * * * * * * * * * */}
+      <Route exact path={routes.root}>
         <ContentHome />
       </Route>
-      <Route path='/windows'>
+      {/* * * * * * * * * * * */}
+      <Route path={routes.os.windows}>
         <InstallWindows />
       </Route>
-      <Route path='/linux'>
+      {/* * * * * * * * * * * */}
+      <Route path={routes.os.linux}>
         <InstallLinux />
       </Route>
-      <Route path='/macos'>
+      {/* * * * * * * * * * * */}
+      <Route path={routes.os.macos}>
         <InstallMacOs />
       </Route>
       {/* * * * * * * * * * * */}
-      <Route path='/config'>
+      <Route path={routes.config}>
         <GitConfigView />
       </Route>
       {/*
        * Repositories
        */}
-      <Route path='/github' component={GitHub} />
-      <Route path='/gitlab' component={GitLab} />
-
-      <Route path='/commands'>
+      <Route path={routes.repositories.github} component={GitHub} />
+      <Route path={routes.repositories.gitlab} component={GitLab} />
+      {/* * * * * * * * * * * */}
+      <Route path={routes.tutorials} />
+      {/* * * * * * * * * * * */}
+      <Route path={routes.commands}>
         {/*
-         * El div esta dentro del <Route> ya que Switch lo detecta como
-         * computedMatch lo cual da un error en React
+          The div is inside the <Route> since Switch detects it as
+          computedMatch which gives an error in React
          */}
         <div className='Layout__noView'>
           <CommandsContainer />
         </div>
 
-        {/* Estos son todos los comandos renderizados */}
+        {/* These are all the rendered commands */}
         <ListCommands />
       </Route>
     </>
