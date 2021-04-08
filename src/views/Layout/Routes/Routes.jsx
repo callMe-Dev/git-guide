@@ -9,6 +9,7 @@ import GitConfigView from '../../GitConfigView/GitConfigView'
 import ContentHome from '../../ContentHome/ContentHome'
 import GitHub from '../../Repositories/GitHub/Github'
 import GitLab from '../../Repositories/GitLab/GitLab'
+import Tutorials from '../../Tutorials/Tutorials'
 import { routes } from './routes'
 
 /************ ROUTES ***************/
@@ -41,7 +42,7 @@ export default function Routes() {
       <Route path={routes.repositories.github} component={GitHub} />
       <Route path={routes.repositories.gitlab} component={GitLab} />
       {/* * * * * * * * * * * */}
-      <Route path={routes.tutorials} />
+      <Route path={routes.tutorials} component={Tutorials} />
       {/* * * * * * * * * * * */}
       <Route path={routes.commands}>
         {/*

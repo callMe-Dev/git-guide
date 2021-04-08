@@ -10,6 +10,6 @@ export const routes = {
     github: '/github',
     gitlab: '/gitlab'
   },
-  tutorials: '/tutorials',
+  tutorials: '/tutoriales',
   commands: '/commands'
 }

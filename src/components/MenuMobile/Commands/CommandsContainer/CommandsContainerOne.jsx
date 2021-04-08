@@ -1,6 +1,6 @@
 import React from 'react'
 import PropTypes from 'prop-types'
-import CommandsBtnOs from '../BtnOs/CommandsBtnOs'
+import CommandsBtnOs from '../Btns/CommandsBtnOs'
 
 export default function CommandsContainerOne({ handlePushView }) {
   return (
