@@ -16,7 +16,7 @@
     "react/jsx-filename-extension": [1, { "extensions": [".js", ".jsx"] }],
     "react/react-in-jsx-scope": "off",
     "react/prop-types": "off",
-    "eqeqeq": "warn",
+    "eqeqeq": "error",
     "semi": ["off", "never"],
     "indent": ["warn", 2],
     "quotes": ["warn", "single"]
