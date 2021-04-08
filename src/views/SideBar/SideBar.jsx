@@ -25,5 +25,5 @@ export default function SideBar({ reference }) {
 }
 
 SideBar.propTypes = {
-  reference: PropTypes.func.isRequired
+  reference: PropTypes.func
 }

@@ -36,5 +36,5 @@ export default function ImportantNote({ content }) {
 }
 
 ImportantNote.propTypes = {
-  content: PropTypes.string.isRequired
+  content: PropTypes.object.isRequired
 }
