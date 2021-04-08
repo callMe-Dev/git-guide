@@ -2,11 +2,11 @@ import PropTypes from 'prop-types'
 import arrowTop from '../../assets/arrowTop.svg'
 import LazyImg from '../LazyImg/LazyImg'
 
-// El inView viene del layout que especifica si esta en la vista el elemento
-// en caso de que no, el boton no aparecera
+// The inView comes from the layout that specifies if the element is in the view
+// if not, the button will not appear
 export default function BtnToTop({ inView }) {
   const scrollToTop = () => {
-    // Esto manda hacia la cima del objeto window (browser)
+    // This sends to the top of the window object
     window.scrollTo(0, 0)
   }
 

@@ -4,8 +4,8 @@ import data from '../commands.json'
 
 export default function ListCommands() {
   /**
-   * Iteramos la data fuera del return del Html del componente
-   * ya que si no lo renderizara correctamente
+   * We iterate the data out of the return of the component's Html
+   * since if it did not render it correctly
    * @file data {
    *  @param name: string
    *  @param description: string
@@ -21,7 +21,7 @@ export default function ListCommands() {
         <h2 className='ListCommands__subTitle'>{gitCommand.name}</h2>
         <article
           className='ListCommands__content'
-          // Esto agrega el contenido parseado en forma de Html
+          // This adds the parsed content in the form of Html
           dangerouslySetInnerHTML={{
             __html: gitCommand.description
           }}></article>

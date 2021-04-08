@@ -23,9 +23,8 @@ export default function ImportantNote({ content }) {
       {showImportantNote ? (
         <>
           {/* 
-          Aqui implementaras un componente que sera el contenido de la nota importante 
-          
-          Puede ser un componente o entre <> pasar html puro
+             Here implement a component that will be the content of the important note 
+             It can be a component or between <> pass pure html
           */}
           {content}
         </>
@@ -37,5 +36,5 @@ export default function ImportantNote({ content }) {
 }
 
 ImportantNote.propTypes = {
-  content: PropTypes.string
+  content: PropTypes.object.isRequired
 }

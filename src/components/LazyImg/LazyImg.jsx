@@ -8,12 +8,12 @@ import PropTypes from 'prop-types'
  * @param func?: Function
  */
 export default function LazyImg({
-  source = '',
+  source,
   imgAlt = '',
   imgClass = '',
   func = null
 }) {
-  // Este es un componente para renderizar images con lazy loading
+  // This is a component to render images with lazy loading
   return (
     <img
       src={source}
@@ -26,7 +26,7 @@ export default function LazyImg({
 }
 
 LazyImg.propTypes = {
-  source: PropTypes.string,
+  source: PropTypes.string.isRequired,
   imgAlt: PropTypes.string,
   imgClass: PropTypes.string,
   func: PropTypes.func

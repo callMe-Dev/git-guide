@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { StrictMode } from 'react'
 import { render } from 'react-dom'
 // @App
 import App from './App'
@@ -8,9 +8,9 @@ import reportWebVitals from './reportWebVitals'
 const root = document.getElementById('root')
 
 render(
-  <React.StrictMode>
+  <StrictMode>
     <App />
-  </React.StrictMode>,
+  </StrictMode>,
   root
 )
 

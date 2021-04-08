@@ -9,7 +9,6 @@ import GitHub from '../../Repositories/GitHub/Github'
 import GitLab from '../../Repositories/GitLab/GitLab'
 import GitConfigView from '../../GitConfigView/GitConfigView'
 import ContentHome from '../../ContentHome/ContentHome'
-
 export default function Routes() {
   return (
     <>

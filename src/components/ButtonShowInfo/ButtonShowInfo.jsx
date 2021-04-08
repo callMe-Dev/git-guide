@@ -2,10 +2,10 @@ import React, { useState } from 'react'
 import PropTypes from 'prop-types'
 
 /**
-  Este componente lo podemos reutilizar al momento de querer mostrar
-  informacion de manera dinamica cambiando el estado
+  We can reuse this component when we want to show
+  information dynamically changing the state
   @param textInBtn: string
-  @param component: react.Component
+  @param component: react.Component | JSX.Element
   @param textWithState: string
   @returns <button>{...}</button>
 */
@@ -28,14 +28,14 @@ export default function ButtonShowInfo({
           className={
             'far fa-caret-square-right' + (showInfo ? ' rotate' : ' ')
           }></i>
-        {/* Valida si hay texto en el estado, y asi cambiara, sino se mantendra el inicial */}
+        {/* Validate if there is text in the state, and so it will change, otherwise the initial one will be kept */}
         {showInfo
           ? textWithState.length > 0
             ? textWithState
             : textInBtn
           : textInBtn}
       </button>
-      {/* El componente se renderizara que le pasemos por props */}
+      {/* The component is rendered that we pass through props*/}
       {showInfo ? component : ''}
     </>
   )
