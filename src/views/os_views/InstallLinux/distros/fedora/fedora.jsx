@@ -1,4 +1,4 @@
-import React from 'react';
+import React from 'react'
 
 export default function fedora() {
   return (
@@ -26,5 +26,5 @@ export default function fedora() {
         $ git <span>--version</span>
       </code>
     </article>
-  );
+  )
 }

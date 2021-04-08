@@ -1,6 +1,6 @@
-import React from 'react';
-import ButtonShowInfo from '../../../components/ButtonShowInfo/ButtonShowInfo';
-import EditorConfigContent from './editorConfigContent';
+import React from 'react'
+import ButtonShowInfo from '../../../components/ButtonShowInfo/ButtonShowInfo'
+import EditorConfigContent from './editorConfigContent'
 
 export default function editorConfig() {
   return (
@@ -13,5 +13,5 @@ export default function editorConfig() {
         component={<EditorConfigContent />}
       />
     </>
-  );
+  )
 }

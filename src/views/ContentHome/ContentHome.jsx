@@ -1,6 +1,6 @@
-import React from 'react';
-import AnchorTag from '../../components/AnchorTag/AnchorTag';
-import MetaHelmet from '../../components/MetaHelmet/MetaHelmet';
+import React from 'react'
+import AnchorTag from '../../components/AnchorTag/AnchorTag'
+import MetaHelmet from '../../components/MetaHelmet/MetaHelmet'
 
 export default function ContentHome() {
   return (
@@ -71,5 +71,5 @@ export default function ContentHome() {
         </p>
       </article>
     </section>
-  );
+  )
 }

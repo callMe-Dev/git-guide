@@ -1,4 +1,4 @@
-import React from 'react';
+import React from 'react'
 
 export default function arch() {
   return (
@@ -11,5 +11,5 @@ export default function arch() {
         $ sudo <span>pacman -Sy git</span>
       </code>
     </article>
-  );
+  )
 }

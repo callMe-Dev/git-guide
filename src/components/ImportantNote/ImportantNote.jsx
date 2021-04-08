@@ -1,15 +1,15 @@
-import React, { useState } from 'react';
-import PropTypes from 'prop-types';
+import React, { useState } from 'react'
+import PropTypes from 'prop-types'
 
 /**
  * @param content: string
  */
 export default function ImportantNote({ content }) {
-  const [showImportantNote, setShowImportantNote] = useState(false);
+  const [showImportantNote, setShowImportantNote] = useState(false)
 
   const handleShowImportantNote = () => {
-    setShowImportantNote(!showImportantNote);
-  };
+    setShowImportantNote(!showImportantNote)
+  }
 
   return (
     <div className='importantNote'>
@@ -17,8 +17,7 @@ export default function ImportantNote({ content }) {
         <i
           className={
             'fas fa-caret-right ' + `${showImportantNote ? ' rotate' : ''}`
-          }
-        ></i>
+          }></i>
         <h3 className='importantNote__title'>Important...</h3>
       </div>
       {showImportantNote ? (
@@ -34,7 +33,7 @@ export default function ImportantNote({ content }) {
         ''
       )}
     </div>
-  );
+  )
 }
 
 ImportantNote.propTypes = {

@@ -1,13 +1,13 @@
-import React from 'react';
-import ButtonShowInfo from '../../../components/ButtonShowInfo/ButtonShowInfo';
-import MetaHelmet from '../../../components/MetaHelmet/MetaHelmet';
+import React from 'react'
+import ButtonShowInfo from '../../../components/ButtonShowInfo/ButtonShowInfo'
+import MetaHelmet from '../../../components/MetaHelmet/MetaHelmet'
 // Distros
-import Debian from './distros/debian/debian';
-import Fedora from './distros/fedora/fedora';
-import Gentoo from './distros/gentoo/gentoo';
-import CentOs from './distros/centOs/centOs';
-import Others from './distros/others/others';
-import Arch from './distros/arch/arch';
+import Debian from './distros/debian/debian'
+import Fedora from './distros/fedora/fedora'
+import Gentoo from './distros/gentoo/gentoo'
+import CentOs from './distros/centOs/centOs'
+import Others from './distros/others/others'
+import Arch from './distros/arch/arch'
 
 export default function InstallLinux() {
   return (
@@ -52,5 +52,5 @@ export default function InstallLinux() {
       <ButtonShowInfo textInBtn='Arch Linux' component={<Arch />} />
       <ButtonShowInfo textInBtn='Others' component={<Others />} />
     </section>
-  );
+  )
 }

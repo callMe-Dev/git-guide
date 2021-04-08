@@ -1,5 +1,5 @@
-import React from 'react';
-import PropTypes from 'prop-types';
+import React from 'react'
+import PropTypes from 'prop-types'
 
 /**
  * @param source: string
@@ -11,7 +11,7 @@ export default function LazyImg({
   source = '',
   imgAlt = '',
   imgClass = '',
-  func = null,
+  func = null
 }) {
   // Este es un componente para renderizar images con lazy loading
   return (
@@ -22,7 +22,7 @@ export default function LazyImg({
       onClick={func}
       loading='lazy'
     />
-  );
+  )
 }
 
 LazyImg.propTypes = {

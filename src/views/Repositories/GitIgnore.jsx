@@ -1,5 +1,5 @@
-import React from 'react';
-import AnchorTag from '../../components/AnchorTag/AnchorTag';
+import React from 'react'
+import AnchorTag from '../../components/AnchorTag/AnchorTag'
 
 export default function GitIgnore() {
   return (
@@ -49,5 +49,5 @@ export default function GitIgnore() {
       <p>Con todo listo podemos continuar :D</p>
       <br />
     </article>
-  );
+  )
 }

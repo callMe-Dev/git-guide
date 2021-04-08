@@ -1,4 +1,4 @@
-import React from 'react';
+import React from 'react'
 
 export default function centOs() {
   return (
@@ -11,5 +11,5 @@ export default function centOs() {
         $ sudo <span>yum install gityum install git</span>
       </code>
     </article>
-  );
+  )
 }

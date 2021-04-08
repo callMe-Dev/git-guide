@@ -1,9 +1,9 @@
-import React from 'react';
-import ConfigTerminal from './configTerminal/configTerminal';
-import ConfigManual from './configManual/configManual';
-import EditorConfig from './editorConfig/editorConfig';
-import KnowConfig from './knowConfig/knowConfig';
-import MetaHelmet from '../../components/MetaHelmet/MetaHelmet';
+import React from 'react'
+import ConfigTerminal from './configTerminal/configTerminal'
+import ConfigManual from './configManual/configManual'
+import EditorConfig from './editorConfig/editorConfig'
+import KnowConfig from './knowConfig/knowConfig'
+import MetaHelmet from '../../components/MetaHelmet/MetaHelmet'
 
 export default function GitConfigView() {
   return (
@@ -21,5 +21,5 @@ export default function GitConfigView() {
       <KnowConfig />
       <EditorConfig />
     </section>
-  );
+  )
 }

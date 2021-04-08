@@ -1,6 +1,6 @@
-import React from 'react';
-import MetaHelmet from '../../../components/MetaHelmet/MetaHelmet';
-import AnchorTag from '../../../components/AnchorTag/AnchorTag';
+import React from 'react'
+import MetaHelmet from '../../../components/MetaHelmet/MetaHelmet'
+import AnchorTag from '../../../components/AnchorTag/AnchorTag'
 
 export default function MacOs() {
   return (
@@ -55,5 +55,5 @@ export default function MacOs() {
         </p>
       </article>
     </section>
-  );
+  )
 }

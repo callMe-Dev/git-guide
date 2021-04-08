@@ -1,5 +1,5 @@
-import React from 'react';
-import PropTypes from 'prop-types';
+import React from 'react'
+import PropTypes from 'prop-types'
 
 /**
  * Este es solo una funcion la cual enviara a la 'url' que se le pase
@@ -13,13 +13,12 @@ export default function CommandName({ extCmdName }) {
       <a
         className='CommandContainer__command__name'
         // Esto manda a un comando por su id
-        href={`/commands/#git-${extCmdName}`}
-      >
+        href={`/commands/#git-${extCmdName}`}>
         <i className='fas fa-hashtag'></i>
         <span>git</span> {extCmdName}
       </a>
     </div>
-  );
+  )
 }
 
 CommandName.propTypes = {

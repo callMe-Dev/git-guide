@@ -1,5 +1,5 @@
 // Views
-import Layout from './views/Layout/Layout';
+import Layout from './views/Layout/Layout'
 
 function App() {
   return (
@@ -8,7 +8,7 @@ function App() {
         <Layout />
       </div>
     </div>
-  );
+  )
 }
 
-export default App;
+export default App

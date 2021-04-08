@@ -1,6 +1,6 @@
-import React from 'react';
-import MetaHelmet from '../../../MetaHelmet/MetaHelmet';
-import data from '../commands.json';
+import React from 'react'
+import MetaHelmet from '../../../MetaHelmet/MetaHelmet'
+import data from '../commands.json'
 
 export default function ListCommands() {
   /**
@@ -17,17 +17,17 @@ export default function ListCommands() {
       <div
         key={gitCommand.name}
         id={gitCommand.name}
-        className='ListCommands__container'
-      >
+        className='ListCommands__container'>
         <h2 className='ListCommands__subTitle'>{gitCommand.name}</h2>
         <article
           className='ListCommands__content'
           // Esto agrega el contenido parseado en forma de Html
-          dangerouslySetInnerHTML={{ __html: gitCommand.description }}
-        ></article>
+          dangerouslySetInnerHTML={{
+            __html: gitCommand.description
+          }}></article>
       </div>
-    );
-  });
+    )
+  })
 
   return (
     <section className='ListCommands'>
@@ -40,5 +40,5 @@ export default function ListCommands() {
       </h1>
       {getData}
     </section>
-  );
+  )
 }

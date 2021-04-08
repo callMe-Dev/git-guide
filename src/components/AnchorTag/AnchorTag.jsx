@@ -1,5 +1,5 @@
-import React from 'react';
-import PropTypes from 'prop-types';
+import React from 'react'
+import PropTypes from 'prop-types'
 
 /**
  * @param anchorText: string
@@ -13,7 +13,7 @@ export default function AnchorTag({ anchorText, url, anchorKey = '' }) {
       <i className='fas fa-paperclip'></i>
       {anchorText}
     </a>
-  );
+  )
 }
 
 AnchorTag.propTypes = {

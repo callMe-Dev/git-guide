@@ -1,15 +1,15 @@
-import React from 'react';
-import CommandsContainer from '../../components/MenuMobile/Commands/CommandsContainer';
+import React from 'react'
+import CommandsContainer from '../../components/MenuMobile/Commands/CommandsContainer'
 // Estos son los comandos en lista de git
-import GitCommandsContainer from '../../components/CommandsContainer/CommandsContainer';
-import Logo from '../../components/Logo/Logo';
+import GitCommandsContainer from '../../components/CommandsContainer/CommandsContainer'
+import Logo from '../../components/Logo/Logo'
 
 /**
  * @param reference: React.ref
  */
 export default function SideBar({ reference }) {
   // Esta funcion solamente simula un estado que necesita como prop
-  const setShowMenu = () => false;
+  const setShowMenu = () => false
 
   return (
     <aside className='SideBar'>
@@ -20,5 +20,5 @@ export default function SideBar({ reference }) {
         <GitCommandsContainer />
       </div>
     </aside>
-  );
+  )
 }

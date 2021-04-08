@@ -1,7 +1,7 @@
-import React from 'react';
-import { Link } from 'react-router-dom';
-import CommandName from './CommandName/CommandName';
-import commandsData from './commands/commands.json';
+import React from 'react'
+import { Link } from 'react-router-dom'
+import CommandName from './CommandName/CommandName'
+import commandsData from './commands/commands.json'
 
 function CommandsContainer() {
   /**
@@ -12,26 +12,25 @@ function CommandsContainer() {
    * }
    */
   const gitCommandsData = commandsData.map((gitCommand) => {
-    return <CommandName extCmdName={gitCommand.gitCmd} key={gitCommand.name} />;
-  });
+    return <CommandName extCmdName={gitCommand.gitCmd} key={gitCommand.name} />
+  })
 
   const scrollToTop = () => {
-    window.scrollTo(0, 0);
-  };
+    window.scrollTo(0, 0)
+  }
 
   return (
     <div className='CommandContainer'>
       <Link
         className='CommandContainer__title'
         to='/commands'
-        onClick={scrollToTop}
-      >
+        onClick={scrollToTop}>
         Comandos
       </Link>
       {/* Botones de para los comandos de git */}
       {gitCommandsData}
     </div>
-  );
+  )
 }
 
-export default CommandsContainer;
+export default CommandsContainer

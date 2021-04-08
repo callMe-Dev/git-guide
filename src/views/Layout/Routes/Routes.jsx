@@ -1,14 +1,14 @@
-import React from 'react';
-import { Route } from 'react-router';
-import ListCommands from '../../../components/CommandsContainer/commands/ListCommands/ListCommands';
-import CommandsContainer from '../../../components/CommandsContainer/CommandsContainer';
-import InstallWindows from '../../os_views/InstallWindows/InstallWindows';
-import InstallLinux from '../../os_views/InstallLinux/InstallLinux';
-import InstallMacOs from '../../os_views/InstallMacOs/InstallMacos';
-import GitHub from '../../Repositories/GitHub/Github';
-import GitLab from '../../Repositories/GitLab/GitLab';
-import GitConfigView from '../../GitConfigView/GitConfigView';
-import ContentHome from '../../ContentHome/ContentHome';
+import React from 'react'
+import { Route } from 'react-router'
+import ListCommands from '../../../components/CommandsContainer/commands/ListCommands/ListCommands'
+import CommandsContainer from '../../../components/CommandsContainer/CommandsContainer'
+import InstallWindows from '../../os_views/InstallWindows/InstallWindows'
+import InstallLinux from '../../os_views/InstallLinux/InstallLinux'
+import InstallMacOs from '../../os_views/InstallMacOs/InstallMacos'
+import GitHub from '../../Repositories/GitHub/Github'
+import GitLab from '../../Repositories/GitLab/GitLab'
+import GitConfigView from '../../GitConfigView/GitConfigView'
+import ContentHome from '../../ContentHome/ContentHome'
 
 export default function Routes() {
   return (
@@ -48,5 +48,5 @@ export default function Routes() {
         <ListCommands />
       </Route>
     </>
-  );
+  )
 }

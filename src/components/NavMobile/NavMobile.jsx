@@ -1,9 +1,9 @@
-import React from 'react';
-import PropTypes from 'prop-types';
-import cancelLogo from '../../assets/cancel.svg';
-import menuImg from '../../assets/menu.svg';
-import Logo from '../Logo/Logo';
-import LazyImg from '../LazyImg/LazyImg';
+import React from 'react'
+import PropTypes from 'prop-types'
+import cancelLogo from '../../assets/cancel.svg'
+import menuImg from '../../assets/menu.svg'
+import Logo from '../Logo/Logo'
+import LazyImg from '../LazyImg/LazyImg'
 
 /**
  * @param setShowMenu: Function
@@ -12,8 +12,8 @@ import LazyImg from '../LazyImg/LazyImg';
  */
 export default function NavMobile({ setShowMenu, showMenu, reference }) {
   const handleClickMenu = () => {
-    setShowMenu(!showMenu);
-  };
+    setShowMenu(!showMenu)
+  }
 
   return (
     <header className='NavMobile' ref={reference}>
@@ -28,11 +28,11 @@ export default function NavMobile({ setShowMenu, showMenu, reference }) {
         <LazyImg source={menuImg} imgAlt='menu' func={handleClickMenu} />
       )}
     </header>
-  );
+  )
 }
 
 NavMobile.propTypes = {
   setShowMenu: PropTypes.func.isRequired,
   showMenu: PropTypes.bool.isRequired,
-  // falta agregar un tipo de dato correcto para reference
+  reference: PropTypes.func
 }

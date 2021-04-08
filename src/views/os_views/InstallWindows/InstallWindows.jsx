@@ -1,7 +1,7 @@
-import React from 'react';
-import installGitWizard from '../../../assets/winAssests/install-git-windows.png';
-import MetaHelmet from '../../../components/MetaHelmet/MetaHelmet';
-import LazyImg from '../../../components/LazyImg/LazyImg';
+import React from 'react'
+import installGitWizard from '../../../assets/winAssests/install-git-windows.png'
+import MetaHelmet from '../../../components/MetaHelmet/MetaHelmet'
+import LazyImg from '../../../components/LazyImg/LazyImg'
 
 export default function InstallWindows() {
   return (
@@ -27,8 +27,7 @@ export default function InstallWindows() {
           href='https://git-scm.com/'
           target='_blank'
           rel='noreferrer'
-          accessKey='git install windows'
-        >
+          accessKey='git install windows'>
           <i className='fas fa-paperclip'></i>Pagina de Git para descargar el
           .exe
         </a>
@@ -66,5 +65,5 @@ export default function InstallWindows() {
         </p>
       </article>
     </section>
-  );
+  )
 }

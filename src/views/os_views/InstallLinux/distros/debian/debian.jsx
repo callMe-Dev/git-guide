@@ -1,4 +1,4 @@
-import React from 'react';
+import React from 'react'
 
 export default function debian() {
   return (
@@ -27,5 +27,5 @@ export default function debian() {
         $ git <span>--version</span>
       </code>
     </article>
-  );
+  )
 }

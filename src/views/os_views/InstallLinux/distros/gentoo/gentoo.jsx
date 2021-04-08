@@ -1,5 +1,5 @@
-import React from 'react';
-import AnchorTag from '../../../../../components/AnchorTag/AnchorTag';
+import React from 'react'
+import AnchorTag from '../../../../../components/AnchorTag/AnchorTag'
 
 export default function gentoo() {
   return (
@@ -21,5 +21,5 @@ export default function gentoo() {
         $ sudo <span>emerge --ask --verbose dev-vcs/git</span>
       </code>
     </article>
-  );
+  )
 }

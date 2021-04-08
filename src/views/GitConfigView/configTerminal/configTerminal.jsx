@@ -1,5 +1,5 @@
-import React from 'react';
-import ImportantNote from '../../../components/ImportantNote/ImportantNote';
+import React from 'react'
+import ImportantNote from '../../../components/ImportantNote/ImportantNote'
 
 export default function configTerminal() {
   return (
@@ -41,5 +41,5 @@ export default function configTerminal() {
         />
       </article>
     </>
-  );
+  )
 }

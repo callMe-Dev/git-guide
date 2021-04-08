@@ -1,5 +1,5 @@
-import React from 'react';
-import ImportantNote from '../../../components/ImportantNote/ImportantNote';
+import React from 'react'
+import ImportantNote from '../../../components/ImportantNote/ImportantNote'
 
 export default function editorConfigContent() {
   return (
@@ -46,5 +46,5 @@ export default function editorConfigContent() {
         }
       />
     </article>
-  );
+  )
 }
