@@ -2,17 +2,17 @@ import React from 'react'
 import PropTypes from 'prop-types'
 
 /**
- * Este es solo una funcion la cual enviara a la 'url' que se le pase
+ * This is just a function which will send to the 'url' that is passed to it
  * @param extCmdName: string
  */
 export default function CommandName({ extCmdName }) {
-  // @NOTE: extCmdName es el nombre del final de cada comando para ahorrarnos el 'git' del inicio
+  // @NOTE: extCmdName is the name of the end of each command to save us the 'git' of the beginning
 
   return (
     <div className='CommandContainer__command'>
       <a
         className='CommandContainer__command__name'
-        // Esto manda a un comando por su id
+        // This sends a command for its id
         href={`/commands/#git-${extCmdName}`}>
         <i className='fas fa-hashtag'></i>
         <span>git</span> {extCmdName}

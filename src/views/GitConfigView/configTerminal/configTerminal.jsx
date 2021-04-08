@@ -23,8 +23,9 @@ export default function configTerminal() {
         <code>
           $ git <span> config --global user.email johndoe@example.com</span>
         </code>
-        {/* Debemos convertir en un solo componente para que sea mucho mas facil de utilizar
-            en otros files o contenido
+        {/*
+        We must convert it into a single component to make 
+        it much easier to use in other files or content
         */}
         <ImportantNote
           content={

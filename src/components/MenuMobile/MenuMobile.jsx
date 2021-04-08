@@ -8,7 +8,7 @@ import CommandsContainer from './Commands/CommandsContainer'
 export default function MenuMobile({ setShowMenu }) {
   return (
     <section className='MenuMobile'>
-      {/* Aqui pasamos las props para que al hacer click en el menu se quite el menu */}
+      {/* Here we pass the props so that when clicking on the menu the menu is removed */}
       <CommandsContainer setShowMenu={setShowMenu} />
     </section>
   )

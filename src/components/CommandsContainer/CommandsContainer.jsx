@@ -27,7 +27,7 @@ function CommandsContainer() {
         onClick={scrollToTop}>
         Comandos
       </Link>
-      {/* Botones de para los comandos de git */}
+      {/* Buttons for git commands */}
       {gitCommandsData}
     </div>
   )

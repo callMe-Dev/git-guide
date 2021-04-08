@@ -1,4 +1,5 @@
 import React from 'react'
+import PropTypes from 'prop-types'
 import CommandsContainer from '../../components/MenuMobile/Commands/CommandsContainer'
 // Estos son los comandos en lista de git
 import GitCommandsContainer from '../../components/CommandsContainer/CommandsContainer'
@@ -21,4 +22,8 @@ export default function SideBar({ reference }) {
       </div>
     </aside>
   )
+}
+
+SideBar.propTypes = {
+  reference: PropTypes.func.isRequired
 }

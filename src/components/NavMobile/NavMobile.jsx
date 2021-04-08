@@ -34,5 +34,5 @@ export default function NavMobile({ setShowMenu, showMenu, reference }) {
 NavMobile.propTypes = {
   setShowMenu: PropTypes.func.isRequired,
   showMenu: PropTypes.bool.isRequired,
-  reference: PropTypes.func
+  reference: PropTypes.func.isRequired
 }
