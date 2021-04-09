@@ -1,9 +1,9 @@
 // Esta es una clase de una nota importante
 .importantNote {
-  background: var(--orange-sec);
+  background: var(--orange-background-sec);
   border-radius: var(--radius);
   padding: 0.5rem 1rem;
-  color: var(--white-principal);
+  color: var(--white-text);
   text-shadow: 0.3px 0.3px 0.8px var(--shadow);
   // width: 315px;
   margin: 1.5rem 0;
@@ -13,33 +13,33 @@
 
   &__flex {
     @include userNoSelect;
-    color: var(--white-principal);
+    color: var(--white-text);
     display: flex;
     align-items: center;
     cursor: pointer;
   }
 
   i {
-    color: var(--white-principal);
+    color: var(--white-text);
     margin-right: 0.5rem;
     transition: var(--transition);
   }
 
   &__title {
-    color: var(--white-principal);
+    color: var(--white-text);
     font-family: var(--roboto-mono-font);
     font-size: 1rem;
   }
 
   p {
-    color: var(--white-principal);
+    color: var(--white-text);
     line-height: 1.5;
     font-weight: 700;
     margin: 0.3rem 0;
     transition: all var(--radius);
 
     span {
-      color: var(--blue-principal);
+      color: var(--blue-text-principal);
     }
   }
 }

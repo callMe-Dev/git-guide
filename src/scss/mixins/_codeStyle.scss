@@ -1,9 +1,9 @@
 @mixin codeStyle {
   code {
-    background: var(--blue-principal);
+    background: var(--blue-background-principal);
     border-radius: var(--radius);
-    border: 4px solid var(--blue-sec);
-    color: var(--white-sec);
+    border: 4px solid var(--blue-border-sec);
+    color: var(--white-text-sec);
     display: block;
     font-family: var(--roboto-mono-font);
     font-weight: 500;
@@ -18,7 +18,7 @@
     }
 
     i {
-      color: var(--blue-sec);
+      color: var(--blue-text-sec);
       margin-right: 1rem;
     }
   }

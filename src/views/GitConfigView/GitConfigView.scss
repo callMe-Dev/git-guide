@@ -21,9 +21,9 @@
   &__btn {
     @include btnStyle;
     margin-top: 1rem;
-    background: var(--blue-sec);
-    color: var(--white-sec);
-    border: 3px solid var(--blue-principal);
+    background: var(--blue-background-sec);
+    color: var(--white-text-sec);
+    border: 3px solid var(--blue-border-principal);
     width: auto;
     padding-left: 1rem;
     padding-right: 1rem;

@@ -2,9 +2,9 @@
   @include btnStyle;
   display: block;
   margin-top: 1rem;
-  background: var(--blue-sec);
-  color: var(--white-sec);
-  border: 3px solid var(--blue-principal);
+  background: var(--blue-background-sec);
+  color: var(--white-text-sec);
+  border: 3px solid var(--blue-border-principal);
   width: auto;
   padding-left: 0.7rem;
   padding-right: 0.7rem;
@@ -14,7 +14,7 @@
 
   i {
     margin-right: 0.5rem;
-    color: var(--black-third);
+    color: var(--black-text-third);
     transition: var(--transition);
   }
 }
@@ -22,5 +22,5 @@
 #btnActive {
   transition: var(--transition);
   background-color: var(--orange-third);
-  color: var(--black-third);
+  color: var(--black-text-third);
 }
