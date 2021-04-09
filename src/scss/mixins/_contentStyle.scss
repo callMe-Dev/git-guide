@@ -1,5 +1,5 @@
 @mixin contentStyle {
-  color: var(--black-third);
+  color: var(black-text-third);
   line-height: 1.4;
 
   @media (min-width: $ipad) {
@@ -13,7 +13,7 @@
       margin: 0 0.1rem;
       font-weight: 700;
       letter-spacing: 0.1px;
-      color: var(--blue-sec);
+      color: var(--blue-text);
     }
 
     a {
@@ -27,7 +27,7 @@
 
     i {
       margin-right: 0.3rem;
-      color: var(--blue-sec);
+      color: var(--blue-link-style);
     }
   }
 

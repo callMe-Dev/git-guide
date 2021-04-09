@@ -10,17 +10,22 @@ html {
   box-sizing: inherit;
   margin: 0;
   padding: 0;
-  color: var(--black-sec);
+  color: var(--black-text);
 
   &::selection {
-    background-color: var(--blue-sec);
-    color: var(--white-principal);
+    background-color: var(--blue-background-sec);
+    color: var(--white-text);
+  }
+
+  &::before,
+  &::after {
+    outline: none;
   }
 }
 
 body {
   box-sizing: inherit;
-  color: var(--black-sec);
+  color: var(--black-text);
   font-family: var(--lato-font);
   line-height: 1.4;
   margin: 0;
@@ -38,6 +43,6 @@ body {
 
   &::-webkit-scrollbar-thumb {
     border-radius: var(--radius);
-    background: var(--orange-principal);
+    background: var(--orange-background);
   }
 }

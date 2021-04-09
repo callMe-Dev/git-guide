@@ -4,6 +4,7 @@ import { useHistory } from 'react-router-dom'
 import CommandsContainerContent from './CommandsContainerContent/CommandsContainerContent'
 import CommandsContainerOne from './CommandsContainer/CommandsContainerOne'
 import CommandsContainerTwo from './CommandsContainer/CommandsContainerTwo'
+import CommandsBtnBlue from './Btns/CommandsBtnBlue'
 
 /**
  * @param setShowMenu: Function
@@ -28,6 +29,11 @@ export default function CommandsContainer({ setShowMenu }) {
       <CommandsContainerContent>
         <CommandsContainerTwo handlePushView={handlePushView} />
       </CommandsContainerContent>
+      <CommandsBtnBlue
+        btnText='Tutoriales'
+        route='tutoriales'
+        handlePushView={handlePushView}
+      />
       <CommandsContainerContent>
         <button
           className='CommandsContainer__content-btnKnowMore'

@@ -1,5 +1,6 @@
 import React from 'react'
 import PropTypes from 'prop-types'
+import CommandsBtnBlue from '../Btns/CommandsBtnBlue'
 
 export default function CommandsContainerTwo({ handlePushView }) {
   return (
@@ -8,16 +9,17 @@ export default function CommandsContainerTwo({ handlePushView }) {
         Como crear un repositorio:
       </h1>
       <div className='CommandsContainer__content__flex'>
-        <button
-          className='CommandsContainer__content-btnRepo'
-          onClick={() => handlePushView('github')}>
-          Github
-        </button>
-        <button
-          className='CommandsContainer__content-btnRepo'
-          onClick={() => handlePushView('gitlab')}>
-          Gitlab
-        </button>
+        <CommandsBtnBlue
+          btnText='Github'
+          route='github'
+          handlePushView={handlePushView}
+        />
+
+        <CommandsBtnBlue
+          handlePushView={handlePushView}
+          route='gitlab'
+          btnText='Gitlab'
+        />
       </div>
     </>
   )

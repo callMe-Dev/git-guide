@@ -3,7 +3,7 @@
 
   @media (min-width: $ipad) {
     display: block;
-    background: var(--gray-third);
+    background: var(--gray-background-third);
     border-radius: 0 var(--radius) var(--radius) 0;
     padding: 1rem;
     padding-top: 2rem;
@@ -28,7 +28,7 @@
   &__line {
     width: 200px;
     height: 5px;
-    background: var(--orange-sec);
+    background: var(--orange-background);
     border-radius: var(--radius);
     margin-top: 0.5rem;
     margin-bottom: 1rem;
