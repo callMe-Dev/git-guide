@@ -1,0 +1,24 @@
+.Tutorials {
+  @include layout(20px);
+
+  &__title {
+    @include titleStyle;
+  }
+
+  &__subTitle {
+    @include subTitle;
+  }
+
+  &__content {
+    @include contentStyle;
+  }
+
+  &__iframes {
+    width: 100%;
+    height: 300px;
+
+    @media screen and (min-width: $ipad) {
+      height: 400px;
+    }
+  }
+}
