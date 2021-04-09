@@ -1,6 +1,6 @@
 // Esta es una clase de una nota importante
 .importantNote {
-  background: var(--orange-background-sec);
+  background: var(--orange-background);
   border-radius: var(--radius);
   padding: 0.5rem 1rem;
   color: var(--white-text);
@@ -39,7 +39,7 @@
     transition: all var(--radius);
 
     span {
-      color: var(--blue-text-principal);
+      color: var(--blue-text);
     }
   }
 }

@@ -3,8 +3,8 @@
   display: block;
   margin-top: 1rem;
   background: var(--blue-background-sec);
-  color: var(--white-text-sec);
-  border: 3px solid var(--blue-border-principal);
+  color: var(--white-text);
+  border: 3px solid var(--blue-border);
   width: auto;
   padding-left: 0.7rem;
   padding-right: 0.7rem;
@@ -14,13 +14,13 @@
 
   i {
     margin-right: 0.5rem;
-    color: var(--black-text-third);
+    color: var(--black-text);
     transition: var(--transition);
   }
 }
 
 #btnActive {
   transition: var(--transition);
-  background-color: var(--orange-third);
-  color: var(--black-text-third);
+  background-color: var(--orange-background-light);
+  color: var(--black-text);
 }

@@ -14,16 +14,16 @@
   }
 
   /*
-    Este estilo se puede repetir para varios fuentes en esta vista 
-    en alguna otra en caso sea necesario
-    solamente seria hacerlo mas dinamico en un mixin o componente
+    This style can be repeated for multiple fonts in this view
+    in some other if necessary
+    it would only be to make it more dynamic in a mixin or component
   */
   &__btn {
     @include btnStyle;
     margin-top: 1rem;
     background: var(--blue-background-sec);
-    color: var(--white-text-sec);
-    border: 3px solid var(--blue-border-principal);
+    color: var(--white-text);
+    border: 3px solid var(--blue-border);
     width: auto;
     padding-left: 1rem;
     padding-right: 1rem;

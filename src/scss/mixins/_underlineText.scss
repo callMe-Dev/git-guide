@@ -2,7 +2,7 @@
 * Este mixin es para poner una linea debajo de un texto
 * Se puede para resaltar algo o con un :hover
 */
-@mixin underlineText($line-color: var(--orange-text-sec)) {
+@mixin underlineText($line-color: var(--orange-text)) {
   text-decoration: underline;
   text-decoration-thickness: 2.5px;
   text-decoration-style: solid;

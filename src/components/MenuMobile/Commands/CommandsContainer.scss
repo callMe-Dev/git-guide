@@ -23,7 +23,7 @@
     &-btnOs {
       @include btnStyle;
       color: var(--black-text);
-      background: var(--orange-background-sec);
+      background: var(--orange-background);
       border: 2px solid var(--black-border);
 
       &:nth-child(1) {
@@ -36,7 +36,7 @@
     &-btnConfig {
       @include btnStyle(110px);
       border: 3px solid var(--blue-border-sec);
-      background: var(--blue-background-principal);
+      background: var(--blue-background);
       color: var(--white-text);
 
       @media (min-width: $ipad) {
@@ -49,7 +49,7 @@
     &-btnBlue {
       @include btnStyle;
       color: var(--white-text);
-      background: var(--blue-background-principal);
+      background: var(--blue-background);
       border: 3px solid var(--blue-border-sec);
 
       @include shadowHover;
@@ -57,9 +57,9 @@
 
     &-btnKnowMore {
       @include btnStyle(auto);
-      border: 2px solid var(--border-orange);
-      background: var(--white-text);
-      color: var(--orange-title);
+      border: 2px solid var(--blue-border);
+      background: var(--orange-background);
+      color: var(--black-text);
       margin: 1rem 0;
       padding: 0.75rem 1rem;
 
