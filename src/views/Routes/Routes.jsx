@@ -1,15 +1,16 @@
 import React from 'react'
 import { Route } from 'react-router'
-import ListCommands from '../../../components/CommandsContainer/commands/ListCommands/ListCommands'
-import CommandsContainer from '../../../components/CommandsContainer/CommandsContainer'
-import InstallWindows from '../../os_views/InstallWindows/InstallWindows'
-import InstallLinux from '../../os_views/InstallLinux/InstallLinux'
-import InstallMacOs from '../../os_views/InstallMacOs/InstallMacos'
-import GitConfigView from '../../GitConfigView/GitConfigView'
-import ContentHome from '../../ContentHome/ContentHome'
-import GitHub from '../../Repositories/GitHub/Github'
-import GitLab from '../../Repositories/GitLab/GitLab'
-import Tutorials from '../../Tutorials/Tutorials'
+import ListCommands from '../../components/CommandsContainer/commands/ListCommands/ListCommands'
+import CommandsContainer from '../../components/CommandsContainer/CommandsContainer'
+import InstallWindows from '../os_views/InstallWindows/InstallWindows'
+import InstallLinux from '../os_views/InstallLinux/InstallLinux'
+import InstallMacOs from '../os_views/InstallMacOs/InstallMacos'
+import GitConfigView from '../GitConfigView/GitConfigView'
+import ContentHome from '../ContentHome/ContentHome'
+import GitHub from '../Repositories/GitHub/Github'
+import GitLab from '../Repositories/GitLab/GitLab'
+import BitBucket from '../Repositories/Bitbucket/Bitbucket'
+import Tutorials from '../Tutorials/Tutorials'
 import { routes } from './routes'
 
 /************ ROUTES ***************/
@@ -41,6 +42,7 @@ export default function Routes() {
        */}
       <Route path={routes.repositories.github} component={GitHub} />
       <Route path={routes.repositories.gitlab} component={GitLab} />
+      <Route path={routes.repositories.bitbucket} component={BitBucket} />
       {/* * * * * * * * * * * */}
       <Route path={routes.tutorials} component={Tutorials} />
       {/* * * * * * * * * * * */}
