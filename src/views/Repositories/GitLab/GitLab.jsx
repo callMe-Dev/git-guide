@@ -42,7 +42,7 @@ export default function GitLab() {
         </p>
         <LazyImg source={repositoryGitLab} imgAlt='repository GitLab' />
         <ButtonShowInfo
-          textInBtn='Crear gitIgnore?'
+          textInBtn='Crear .gitignore?'
           component={<GitIgnore />}
         />
       </article>

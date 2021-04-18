@@ -4,6 +4,8 @@ import MetaHelmet from '../../../components/MetaHelmet/MetaHelmet'
 
 import createRepoBitbucket from '../../../assets/bitbucket/create-repo.png'
 import createProjectBitbucket from '../../../assets/bitbucket/create-project.png'
+import ButtonShowInfo from '../../../components/ButtonShowInfo/ButtonShowInfo'
+import GitIgnore from '../GitIgnore'
 
 export default function Bitbucket() {
   return (
@@ -40,14 +42,18 @@ export default function Bitbucket() {
         />
 
         <p>
-          Despues de eso podras clonar el repositorio en tu{' '}
-          <span>maquina local</span> y poder agregar nuevas features o iniciar
-          el proyecto de tus sueños
+          Después de eso, puede clonar el repositorio en su{' '}
+          <span>máquina local</span> y poder agregar nuevas funciones o comenzar
+          el proyecto de sus sueños.
         </p>
         <code>
           $ git <span>clone</span> <br /> https://usuario@bitbucket.org/user/
           repositorio/carpeta_destino
         </code>
+        <ButtonShowInfo
+          textInBtn='Crear .gitignore?'
+          component={<GitIgnore />}
+        />
       </article>
     </section>
   )
