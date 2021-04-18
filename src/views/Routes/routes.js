@@ -8,7 +8,8 @@ export const routes = {
   config: '/config',
   repositories: {
     github: '/github',
-    gitlab: '/gitlab'
+    gitlab: '/gitlab',
+    bitbucket: '/bitbucket'
   },
   tutorials: '/tutoriales',
   commands: '/commands'

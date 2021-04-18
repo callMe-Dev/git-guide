@@ -96,7 +96,7 @@ export default function Github() {
           <span>.gitignore</span>
         </p>
         <ButtonShowInfo
-          textInBtn='Crear gitIgnore?'
+          textInBtn='Crear .gitignore?'
           component={<GitIgnore />}
         />
         <p>

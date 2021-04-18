@@ -7,7 +7,7 @@ import BtnToTop from '../../components/BtnToTop/BtnToTop'
 // Sidebar
 import SideBar from '../SideBar/SideBar'
 // Routes
-import Routes from './Routes/Routes'
+import Routes from '../Routes/Routes'
 
 /* * * * * * * * * * * * ** * * * * * * * */
 /* * * * * * * * * Layout * * * * * * * * */

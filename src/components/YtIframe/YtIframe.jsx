@@ -13,6 +13,7 @@ export default function YtIframe({ classText, iframeSrc }) {
       src={iframeSrc}
       title='YouTube video player'
       frameBorder='0'
+      loading='lazy'
       allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture'
       allowFullScreen></iframe>
   )
