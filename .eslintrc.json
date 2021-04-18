@@ -20,5 +20,10 @@
     "semi": ["error", "never"],
     "indent": ["warn", 2],
     "quotes": ["warn", "single"]
+  },
+  "settings": {
+    "react": {
+      "version": "17.0.1"
+    }
   }
 }
