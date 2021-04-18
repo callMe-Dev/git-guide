@@ -13,3 +13,11 @@
     @include contentStyle;
   }
 }
+
+.Bitbucket-img {
+  height: 405px;
+
+  @media (min-width: $laptop) {
+    height: 600px;
+  }
+}
