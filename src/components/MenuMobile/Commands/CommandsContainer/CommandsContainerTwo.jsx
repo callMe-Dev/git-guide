@@ -20,6 +20,12 @@ export default function CommandsContainerTwo({ handlePushView }) {
           route='gitlab'
           btnText='Gitlab'
         />
+
+        <CommandsBtnBlue
+          handlePushView={handlePushView}
+          route='bitbucket'
+          btnText='Bitbucket'
+        />
       </div>
     </>
   )
