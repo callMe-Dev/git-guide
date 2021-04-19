@@ -18,5 +18,10 @@
     "name": "git-commit",
     "gitCmd": "commit",
     "description": "<p>El comando <span>git commit</span> captura una instantánea de los cambios  realizados actualmente en el proyecto.</p><p>  Las instantáneas confirmadas pueden considerarse versiones 'seguras' de un  proyecto,  <span    >Git nunca las cambiará a menos que usted lo solicite explícitamente</span  >.</p><p>  Antes de la ejecución de <span>git commit</span>, el comando git add se  usa para promover o 'preparar' cambios en el proyecto que se almacenarán  en una confirmación.</p><code>$ git <span>commit -m 'tu mensaje'</span></code><p>O con un acceso directo, para al confirmacion de los cambios</p><code>$ git <span>commit --ammend</span></code>"
+  },
+  {
+    "name": "git-status",
+    "gitCmd": "status",
+    "description": "<p>El comando <span>git status</span> es utlizado para mostrar, como su nombre lo indica, el estado de tu repositorio</p> <p>Este comando se encarga de mostrar si existen archivos los cuales no han sido agregados mediante el comando <span> git add</span>, ademas de mostrar si los archivos que ya fueron agregados aún no han sido capturados mediante el comando <span>git commit</span>.</p> <p>Para utilizar este comando basta con escribir en tu consola</p> <code>$ git <span>status</span></code>"
   }
 ]
