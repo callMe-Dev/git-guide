@@ -33,6 +33,15 @@ export default function Tutorials() {
         />
 
         <p>
+          Curso Git Introducción Video 1{' '}
+          <span> Lista de Reproducción - Píldoras Informáticas</span>
+        </p>
+        <YtIframe
+          classText='Tutorials__iframes'
+          iframeSrc='https://www.youtube.com/embed/ANF1X42_ae4'
+        />
+
+        <p>
           Tutorial de GIT para principantes! - Usando la linea de comandos en
           Git <span>- Pelardo Nerd</span>
         </p>
