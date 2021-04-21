@@ -40,6 +40,12 @@
   --shadow: rgba(53, 53, 53, 0.6);
 }
 
+.Dark{
+  background-color: #252525;
+  --gray-background-third: #353535;
+  --black-text: #fafafa;
+}
+
 // Media queries
 $mobile: 350px;
 $ipad: 700px;
