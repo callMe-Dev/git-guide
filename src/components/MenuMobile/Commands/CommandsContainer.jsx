@@ -4,6 +4,7 @@ import { useHistory } from 'react-router-dom'
 import CommandsContainerContent from './CommandsContainerContent/CommandsContainerContent'
 import CommandsContainerOne from './CommandsContainer/CommandsContainerOne'
 import CommandsContainerTwo from './CommandsContainer/CommandsContainerTwo'
+import DarkModeComponent from './DarkMode/DarkMode'
 import CommandsBtnBlue from './Btns/CommandsBtnBlue'
 
 /**
@@ -23,6 +24,9 @@ export default function CommandsContainer({ setShowMenu }) {
 
   return (
     <div className='CommandsContainer'>
+      <CommandsContainerContent>
+        <DarkModeComponent />
+      </CommandsContainerContent>
       <CommandsContainerContent>
         <CommandsContainerOne handlePushView={handlePushView} />
       </CommandsContainerContent>
