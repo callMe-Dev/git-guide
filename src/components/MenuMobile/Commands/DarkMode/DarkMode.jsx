@@ -1,6 +1,6 @@
 import React, { useState, useRef, useEffect } from 'react'
 
-export default function DarkMode() {
+export default function DarkMode({ setImgTheme }) {
   const toggleRef = useRef()
   const [theme, setTheme] = useState(localStorage.getItem('theme') || 'light')
   const body = document.body
@@ -16,11 +16,13 @@ export default function DarkMode() {
   const changeTheme = () => {
     if(toggleRef.current.checked){
       setTheme('Dark') 
+      setImgTheme('dark')
       localStorage.setItem('theme', 'dark')
       body.classList.remove('light')
       body.classList.add('Dark')
     }else{
       setTheme('light')
+      setImgTheme('light')
       localStorage.setItem('theme', 'light')
       body.classList.remove('Dark')
       body.classList.add('light')

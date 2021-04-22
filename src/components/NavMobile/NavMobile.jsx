@@ -10,14 +10,14 @@ import LazyImg from '../LazyImg/LazyImg'
  * @param showMenu: Boolean
  * @param reference: React.ref
  */
-export default function NavMobile({ setShowMenu, showMenu, reference }) {
+export default function NavMobile({ darkTheme, setShowMenu, showMenu, reference }) {
   const handleClickMenu = () => {
     setShowMenu(!showMenu)
   }
 
   return (
     <header className='NavMobile' ref={reference}>
-      <Logo setShowMenu={setShowMenu} />
+      <Logo isDark={darkTheme} setShowMenu={setShowMenu} />
       {showMenu ? (
         <LazyImg
           source={cancelLogo}

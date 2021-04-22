@@ -10,7 +10,7 @@ import CommandsBtnBlue from './Btns/CommandsBtnBlue'
 /**
  * @param setShowMenu: Function
  */
-export default function CommandsContainer({ setShowMenu }) {
+export default function CommandsContainer({ setTheme, setShowMenu }) {
   let history = useHistory()
 
   // @viewText: string
@@ -25,7 +25,7 @@ export default function CommandsContainer({ setShowMenu }) {
   return (
     <div className='CommandsContainer'>
       <CommandsContainerContent>
-        <DarkModeComponent />
+        <DarkModeComponent setImgTheme={setTheme} />
       </CommandsContainerContent>
       <CommandsContainerContent>
         <CommandsContainerOne handlePushView={handlePushView} />
