@@ -21,5 +21,6 @@ export default function Logo({ isDark, setShowMenu }) {
 }
 
 Logo.propTypes = {
-  setShowMenu: PropTypes.func.isRequired
+  setShowMenu: PropTypes.func.isRequired,
+  isDark: PropTypes.string.isRequired
 }

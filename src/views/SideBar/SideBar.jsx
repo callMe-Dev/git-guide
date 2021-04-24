@@ -25,5 +25,7 @@ export default function SideBar({ darkTheme, setDarkTheme, reference }) {
 }
 
 SideBar.propTypes = {
-  reference: PropTypes.func
+  reference: PropTypes.func,
+  darkTheme: PropTypes.string.isRequired,
+  setDarkTheme: PropTypes.func.isRequired
 }

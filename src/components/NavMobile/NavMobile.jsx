@@ -34,5 +34,6 @@ export default function NavMobile({ darkTheme, setShowMenu, showMenu, reference 
 NavMobile.propTypes = {
   setShowMenu: PropTypes.func.isRequired,
   showMenu: PropTypes.bool.isRequired,
-  reference: PropTypes.func.isRequired
+  reference: PropTypes.func.isRequired,
+  darkTheme: PropTypes.string.isRequired
 }

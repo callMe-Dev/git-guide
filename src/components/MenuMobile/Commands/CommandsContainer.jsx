@@ -50,5 +50,6 @@ export default function CommandsContainer({ setTheme, setShowMenu }) {
 }
 
 CommandsContainer.propTypes = {
-  setShowMenu: PropTypes.func.isRequired
+  setShowMenu: PropTypes.func.isRequired,
+  setTheme: PropTypes.func.isRequired
 }
