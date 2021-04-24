@@ -15,5 +15,6 @@ export default function MenuMobile({ setTheme, setShowMenu }) {
 }
 
 MenuMobile.propTypes = {
-  setShowMenu: PropTypes.func.isRequired
+  setShowMenu: PropTypes.func.isRequired,
+  setTheme: PropTypes.func.isRequired
 }
