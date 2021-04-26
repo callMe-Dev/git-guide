@@ -1,10 +1,12 @@
 .DarkMode {
   display: grid;
   grid-template-columns: 1fr 1fr;
+  direction: rtl;
   align-items: center;
 
   &__Icon{
-    padding-right: .4rem;
+    padding-left: .4rem;
+    padding-right: .2rem;
   }
 
   &__Title {

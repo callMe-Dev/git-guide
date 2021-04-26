@@ -42,7 +42,6 @@ export default function DarkMode({ setImgTheme }) {
 
   return (
     <div className='DarkMode'>
-      <span></span>
       <div>
         <span className='text-2xl self-center'>
           <i className={`fas DarkMode__Icon ${icon}`}></i>
