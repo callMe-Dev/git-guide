@@ -8,16 +8,16 @@ import Logo from '../../components/Logo/Logo'
 /**
  * @param reference: React.ref
  */
-export default function SideBar({ reference }) {
+export default function SideBar({ darkTheme, setDarkTheme, reference }) {
   // Esta funcion solamente simula un estado que necesita como prop
   const setShowMenu = () => false
 
   return (
     <aside className='SideBar'>
       <div className='SideBar__scroll'>
-        <Logo setShowMenu={setShowMenu} reference={reference} />
+        <Logo setShowMenu={setShowMenu} isDark={darkTheme} reference={reference} />
         <div className='SideBar__line'></div>
-        <CommandsContainer setShowMenu={setShowMenu} />
+        <CommandsContainer setTheme={setDarkTheme} setShowMenu={setShowMenu} />
         <GitCommandsContainer />
       </div>
     </aside>
@@ -25,5 +25,7 @@ export default function SideBar({ reference }) {
 }
 
 SideBar.propTypes = {
-  reference: PropTypes.func
+  reference: PropTypes.func,
+  darkTheme: PropTypes.string.isRequired,
+  setDarkTheme: PropTypes.func.isRequired
 }

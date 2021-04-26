@@ -4,12 +4,13 @@ import { useHistory } from 'react-router-dom'
 import CommandsContainerContent from './CommandsContainerContent/CommandsContainerContent'
 import CommandsContainerOne from './CommandsContainer/CommandsContainerOne'
 import CommandsContainerTwo from './CommandsContainer/CommandsContainerTwo'
+import DarkModeComponent from './DarkMode/DarkMode'
 import CommandsBtnBlue from './Btns/CommandsBtnBlue'
 
 /**
  * @param setShowMenu: Function
  */
-export default function CommandsContainer({ setShowMenu }) {
+export default function CommandsContainer({ setTheme, setShowMenu }) {
   let history = useHistory()
 
   // @viewText: string
@@ -23,6 +24,9 @@ export default function CommandsContainer({ setShowMenu }) {
 
   return (
     <div className='CommandsContainer'>
+      <CommandsContainerContent>
+        <DarkModeComponent setImgTheme={setTheme} />
+      </CommandsContainerContent>
       <CommandsContainerContent>
         <CommandsContainerOne handlePushView={handlePushView} />
       </CommandsContainerContent>
@@ -46,5 +50,6 @@ export default function CommandsContainer({ setShowMenu }) {
 }
 
 CommandsContainer.propTypes = {
-  setShowMenu: PropTypes.func.isRequired
+  setShowMenu: PropTypes.func.isRequired,
+  setTheme: PropTypes.func.isRequired
 }

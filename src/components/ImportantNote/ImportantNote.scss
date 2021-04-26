@@ -34,7 +34,7 @@
 
   i {
     // color: var(--white-text);
-    color: var(--black-text);
+    color: var(--general-text);
 
     margin-right: 0.5rem;
     transition: var(--transition);
@@ -42,7 +42,7 @@
 
   &__title {
     // color: var(--white-text);
-    color: var(--black-text);
+    color: var(--general-text);
 
     font-family: var(--roboto-mono-font);
     font-size: 1rem;
@@ -50,7 +50,7 @@
 
   p {
     // color: var(--white-text);
-    color: var(--black-text);
+    color: var(--general-text);
 
     line-height: 1.5;
     font-weight: 700;

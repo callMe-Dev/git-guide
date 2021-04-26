@@ -14,6 +14,7 @@ import Routes from '../Routes/Routes'
 /* * * * * * * * * * * * ** * * * * * * * */
 export default function Layout() {
   const [showMenu, setShowMenu] = useState(false)
+  const [darkTheme, setDarkTheme] = useState(localStorage.getItem('theme') || 'light')
 
   const [ref, inView] = useInView({
     threshold: 0
@@ -21,16 +22,17 @@ export default function Layout() {
 
   return (
     <Router>
-      <SideBar />
+      <SideBar setDarkTheme={setDarkTheme} darkTheme={darkTheme} />
       {/* * * * Layout * * * */}
       <div className='Layout'>
         <NavMobile
           setShowMenu={setShowMenu}
           showMenu={showMenu}
+          darkTheme={darkTheme}
           reference={ref}
         />
         {showMenu ? (
-          <MenuMobile setShowMenu={setShowMenu} />
+          <MenuMobile setTheme={setDarkTheme} setShowMenu={setShowMenu} />
         ) : (
           <Fragment>
             <Switch>
