@@ -10,7 +10,7 @@ html {
   box-sizing: inherit;
   margin: 0;
   padding: 0;
-  color: var(--black-text);
+  color: var(--general-text);
 
   &::selection {
     background-color: var(--blue-background-sec);
@@ -25,7 +25,7 @@ html {
 
 body {
   box-sizing: inherit;
-  color: var(--black-text);
+  color: var(--general-text);
   font-family: var(--lato-font);
   line-height: 1.4;
   margin: 0;

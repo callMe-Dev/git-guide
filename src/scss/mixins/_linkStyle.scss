@@ -5,7 +5,7 @@
 */
 @mixin linkStyle {
   display: inline-block;
-  color: var(--blue-link-style);
+  color: var(--link-color);
   font-size: 1rem;
   font-weight: 700;
   letter-spacing: 0.1px;

@@ -18,11 +18,17 @@
   
   --gray: #7b919e;
   --gray-background-third: #e0e0e0;
+
   
   --white-text: #fafafa;
   
   --black-border: #353535;
   --black-text: #32353c;
+
+  // Nuevas variables
+  --link-color: var(--blue-link-style);
+  --sidebar-background: var(--gray-background-third);
+  --general-text: var(--black-text);
   
   // Fonts
   // Titulos y referencia a comandos
@@ -32,23 +38,23 @@
   // Contenido
   --lato-font: 'Lato', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto',
   'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-    
-    // Properties
-    --radius: 10px;
-    --transition: 0.15s ease;
-    --shadow: rgba(53, 53, 53, 0.6);
-  }
+  sans-serif;
+  
+  // Properties
+  --radius: 10px;
+  --transition: 0.15s ease;
+  --shadow: rgba(53, 53, 53, 0.6);
+}
 
-  body{
-    transition: 0.5s ease;
+body{
+  transition: 0.5s ease;
 }
 
 .Dark{
   background-color: #252525;
-  --gray-background-third: #353535;
-  --black-text: #fafafa;
-  --blue-link-style: #4BBFFF;
+  --sidebar-background: #353535;
+  --general-text: #fafafa;
+  --link-color: #4BBFFF;
   --blue-text: #4BBFFF;
   --orange-background-light: #fea756e4;
 }
