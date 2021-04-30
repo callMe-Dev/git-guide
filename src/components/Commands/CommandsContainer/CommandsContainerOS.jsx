@@ -2,7 +2,7 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import CommandsBtnOs from '../Btns/CommandsBtnOs'
 
-export default function CommandsContainerOne({ handlePushView }) {
+export default function CommandsContainerOS({ handlePushView }) {
   return (
     <>
       <h1 className='CommandsContainer__content__title'>Como instalar Git:</h1>
@@ -20,6 +20,6 @@ export default function CommandsContainerOne({ handlePushView }) {
   )
 }
 
-CommandsContainerOne.propTypes = {
+CommandsContainerOS.propTypes = {
   handlePushView: PropTypes.func.isRequired
 }

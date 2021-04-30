@@ -1,6 +1,10 @@
 import React, { useState, useRef, useEffect } from 'react'
-import PropTypes from "prop-types"
+import PropTypes from 'prop-types'
 
+/**
+ *
+ * @param setImgTheme: Function
+ * */
 export default function DarkMode({ setImgTheme }) {
   const toggleRef = useRef()
   const [theme, setTheme] = useState(localStorage.getItem('theme') || 'light')
@@ -63,5 +67,5 @@ export default function DarkMode({ setImgTheme }) {
 }
 
 DarkMode.propTypes = {
-  setImgTheme: PropTypes.func.isRequired  
+  setImgTheme: PropTypes.func.isRequired
 }

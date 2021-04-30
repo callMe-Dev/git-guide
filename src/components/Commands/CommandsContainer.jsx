@@ -2,8 +2,8 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import { useHistory } from 'react-router-dom'
 import CommandsContainerContent from './CommandsContainerContent/CommandsContainerContent'
-import CommandsContainerOne from './CommandsContainer/CommandsContainerOne'
-import CommandsContainerTwo from './CommandsContainer/CommandsContainerTwo'
+import CommandsContainerOS from './CommandsContainer/CommandsContainerOS'
+import CommandsContainerRepositories from './CommandsContainer/CommandsContainerRepositories'
 import DarkModeComponent from './DarkMode/DarkMode'
 import CommandsBtnBlue from './Btns/CommandsBtnBlue'
 
@@ -13,7 +13,9 @@ import CommandsBtnBlue from './Btns/CommandsBtnBlue'
 export default function CommandsContainer({ setTheme, setShowMenu }) {
   let history = useHistory()
 
-  // @viewText: string
+  /**
+   *  @param viewText: string
+   */
   const handlePushView = (viewText) => {
     if (viewText === undefined) return
 
@@ -28,10 +30,10 @@ export default function CommandsContainer({ setTheme, setShowMenu }) {
         <DarkModeComponent setImgTheme={setTheme} />
       </CommandsContainerContent>
       <CommandsContainerContent>
-        <CommandsContainerOne handlePushView={handlePushView} />
+        <CommandsContainerOS handlePushView={handlePushView} />
       </CommandsContainerContent>
       <CommandsContainerContent>
-        <CommandsContainerTwo handlePushView={handlePushView} />
+        <CommandsContainerRepositories handlePushView={handlePushView} />
       </CommandsContainerContent>
       <CommandsBtnBlue
         btnText='Tutoriales'
