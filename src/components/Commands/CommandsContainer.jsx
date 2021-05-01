@@ -9,6 +9,7 @@ import CommandsBtnBlue from './Btns/CommandsBtnBlue'
 
 /**
  * @param setShowMenu: Function
+ * @param setShowTheme: Function
  */
 export default function CommandsContainer({ setTheme, setShowMenu }) {
   let history = useHistory()

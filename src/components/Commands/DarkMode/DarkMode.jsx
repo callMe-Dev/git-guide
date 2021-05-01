@@ -4,6 +4,8 @@ import PropTypes from 'prop-types'
 /**
  *
  * @param setImgTheme: Function
+ *
+ * @returns JSX.Element
  * */
 export default function DarkMode({ setImgTheme }) {
   const toggleRef = useRef()
