@@ -10,7 +10,10 @@ import PropTypes from 'prop-types'
 export default function DarkMode({ setImgTheme }) {
   const toggleRef = useRef()
   const [theme, setTheme] = useState(localStorage.getItem('theme') || 'light')
-  const [icon, setIcon] = useState('fa-sun')
+
+  const lightIcon = 'fa-lightbulb'
+  const darkIcon = 'fa-moon'
+  const [icon, setIcon] = useState(lightIcon)
   const body = document.body
 
   useEffect(() => {
@@ -23,10 +26,10 @@ export default function DarkMode({ setImgTheme }) {
     }
     if (theme === 'dark') {
       body.classList.add('Dark')
-      setIcon('fa-moon')
+      setIcon(darkIcon)
     } else {
       body.classList.add('Light')
-      setIcon('fa-sun')
+      setIcon(lightIcon)
     }
   }
 
@@ -34,13 +37,13 @@ export default function DarkMode({ setImgTheme }) {
     if (toggleRef.current.checked) {
       setTheme('Dark')
       setImgTheme('dark')
-      setIcon('fa-moon')
+      setIcon(darkIcon)
       localStorage.setItem('theme', 'dark')
       body.classList.replace('Light', 'Dark')
     } else {
       setTheme('light')
       setImgTheme('light')
-      setIcon('fa-sun')
+      setIcon(lightIcon)
       localStorage.setItem('theme', 'light')
       body.classList.replace('Dark', 'Light')
     }
