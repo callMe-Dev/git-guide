@@ -1,0 +1,26 @@
+@mixin afterBtn($text, $top, $left) {
+  &:hover {
+    position: relative;
+    cursor: pointer;
+    transition: var(--transition);
+
+    &::after {
+      background: var(--blue-background);
+      border: 1.5px solid var(--blue-border-sec);
+      position: absolute;
+      display: inline-block;
+      content: $text;
+      top: $top;
+      left: $left;
+      border-radius: var(--radius);
+      font-size: 0.8rem;
+      padding: 0.5rem;
+      width: 90px;
+      color: var(--white-text);
+      font-family: var(--lato-font);
+      font-weight: normal;
+      opacity: 1;
+      transition: var(--transition);
+    }
+  }
+}

@@ -1,12 +1,19 @@
 .DarkMode {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  direction: rtl;
   align-items: center;
+  margin-bottom: 1rem;
 
-  &__Icon{
-    padding-left: .4rem;
-    padding-right: .2rem;
+  @media (min-width: $ipad) {
+    margin-top: 1.5rem;
+  }
+
+  &__Icon {
+    padding-left: 0.6rem;
+    padding-right: 0.6rem;
+    font-size: 18px;
+
+    @include afterBtn('Cambiar Tema', 2rem, 0rem);
   }
 
   &__Title {
@@ -17,8 +24,7 @@
   &__Switch {
     position: relative;
     display: inline-block;
-    width: 25%;
-    height: 100%;
+    width: 45px;
 
     input {
       opacity: 0;

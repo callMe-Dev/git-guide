@@ -1,6 +1,6 @@
 import React from 'react'
 import PropTypes from 'prop-types'
-import CommandsContainer from '../../components/MenuMobile/Commands/CommandsContainer'
+import CommandsContainer from '../../components/Commands/CommandsContainer'
 // Estos son los comandos en lista de git
 import GitCommandsContainer from '../../components/CommandsContainer/CommandsContainer'
 import Logo from '../../components/Logo/Logo'
@@ -15,7 +15,11 @@ export default function SideBar({ darkTheme, setDarkTheme, reference }) {
   return (
     <aside className='SideBar'>
       <div className='SideBar__scroll'>
-        <Logo setShowMenu={setShowMenu} isDark={darkTheme} reference={reference} />
+        <Logo
+          setShowMenu={setShowMenu}
+          isDark={darkTheme}
+          reference={reference}
+        />
         <div className='SideBar__line'></div>
         <CommandsContainer setTheme={setDarkTheme} setShowMenu={setShowMenu} />
         <GitCommandsContainer />

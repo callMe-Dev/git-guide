@@ -2,7 +2,7 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import CommandsBtnBlue from '../Btns/CommandsBtnBlue'
 
-export default function CommandsContainerTwo({ handlePushView }) {
+export default function CommandsContainerRepositories({ handlePushView }) {
   return (
     <>
       <h1 className='CommandsContainer__content__title'>
@@ -31,6 +31,6 @@ export default function CommandsContainerTwo({ handlePushView }) {
   )
 }
 
-CommandsContainerTwo.propTypes = {
+CommandsContainerRepositories.propTypes = {
   handlePushView: PropTypes.func.isRequired
 }
