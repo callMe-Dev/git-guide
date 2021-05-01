@@ -2,16 +2,18 @@
   display: grid;
   grid-template-columns: 1fr 1fr;
   align-items: center;
+  margin-bottom: 1rem;
 
   @media (min-width: $ipad) {
     margin-top: 1.5rem;
-    margin-bottom: 1rem;
   }
 
   &__Icon {
     padding-left: 0.6rem;
     padding-right: 0.6rem;
     font-size: 18px;
+
+    @include afterBtn('Cambiar Tema', 2rem, 0rem);
   }
 
   &__Title {
