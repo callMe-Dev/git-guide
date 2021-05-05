@@ -2,10 +2,12 @@ import React from 'react'
 import PropTypes from 'prop-types'
 
 /**
- * @param source: string
- * @param imgAlt?: string
- * @param imgClass?: string
- * @param func?: Function
+ * @param {string} source
+ * @param {string} imgAlt
+ * @param {string} imgClass
+ * @param {Function} func
+ *
+ * @returns JSX.Element
  */
 export default function LazyImg({
   source,

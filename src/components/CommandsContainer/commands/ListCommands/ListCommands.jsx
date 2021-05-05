@@ -7,9 +7,9 @@ export default function ListCommands() {
    * We iterate the data out of the return of the component's Html
    * since if it did not render it correctly
    * @file data {
-   *  @param name: string
-   *  @param description: string
-   *  @param gitCmd?: string
+   *  @param {string} name
+   *  @param {string} description
+   *  @param {string} gitCmd
    * }
    */
   const getData = data.map((gitCommand) => {

@@ -2,11 +2,11 @@ import React from 'react'
 import PropTypes from 'prop-types'
 
 /**
- * @param btnTxt: string
- * @param route: string
- * @param handlePushView: Function
+ * @param {string} btnTxt
+ * @param {string} route
+ * @param {Function} handlePushView
  *
- * @returns <button>{...}</button>
+ * @returns JSX.Element
  */
 export default function CommandsBtnBlue({
   btnText = '',

@@ -3,7 +3,7 @@ import PropTypes from 'prop-types'
 
 /**
  * This is just a function which will send to the 'url' that is passed to it
- * @param extCmdName: string
+ * @param {string} extCmdName
  */
 export default function CommandName({ extCmdName }) {
   // @NOTE: extCmdName is the name of the end of each command to save us the 'git' of the beginning

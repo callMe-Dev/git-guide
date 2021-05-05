@@ -3,8 +3,8 @@ import PropTypes from 'prop-types'
 
 /**
  *
- * @param classText: string
- * @param iframeSrc: string
+ * @param {string} classText
+ * @param {string} iframeSrc
  */
 export default function YtIframe({ classText, iframeSrc }) {
   return (

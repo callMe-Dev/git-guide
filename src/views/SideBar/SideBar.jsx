@@ -8,7 +8,7 @@ import Logo from '../../components/Logo/Logo'
  * @param {React.reference} reference
  * @param {string} darkTheme
  * @param {Function} setDarkTheme
- *
+ * @param {React.Ref} reference
  * @returns JSX.Element
  */
 export default function SideBar({ darkTheme = '', setDarkTheme, reference }) {

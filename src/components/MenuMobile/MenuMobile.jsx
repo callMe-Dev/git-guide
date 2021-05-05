@@ -3,7 +3,7 @@ import PropTypes from 'prop-types'
 import CommandsContainer from '../Commands/CommandsContainer'
 
 /**
- * @param setShowMenu: Function
+ * @param {Function} setShowMenu
  */
 export default function MenuMobile({ setTheme, setShowMenu }) {
   return (

@@ -2,10 +2,10 @@ import React from 'react'
 import PropTypes from 'prop-types'
 
 /**
- * @param anchorText: string
- * @param url: string
- * @param anchorKey?: string
- * @returns <a>{...}</a>
+ * @param {string} anchorText
+ * @param {string} url
+ * @param {string} anchorKey
+ * @returns JSX.Element
  */
 export default function AnchorTag({ anchorText, url, anchorKey = '' }) {
   return (

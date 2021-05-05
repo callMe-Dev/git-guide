@@ -3,8 +3,9 @@ import PropTypes from 'prop-types'
 
 /**
  *
- * @param osName: string
- * @param handlePushView: Function
+ * @param {string} osName
+ * @param {Function} handlePushView
+ * @returns JSX.Element
  */
 export default function CommandsBtnOs({ osName, handlePushView }) {
   const funcText = osName.toLowerCase()

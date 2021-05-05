@@ -8,7 +8,6 @@ import LazyImg from '../LazyImg/LazyImg'
 /**
  * @param {Function} setShowMenu
  * @param {string} isDark
- *
  * @returns JSX.Element
  */
 export default function Logo({ isDark, setShowMenu }) {
