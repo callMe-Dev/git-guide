@@ -6,7 +6,7 @@ import { Link } from 'react-router-dom'
 import LazyImg from '../LazyImg/LazyImg'
 
 /**
- * @param setShowMenu: Function
+ * @param {Function} setShowMenu
  */
 export default function Logo({ isDark, setShowMenu }) {
   const closeClickMenu = () => {
@@ -14,8 +14,12 @@ export default function Logo({ isDark, setShowMenu }) {
   }
   return (
     <Link to='/' onClick={closeClickMenu} className='NavMobile__link'>
-      { isDark === 'light' && <LazyImg source={gitLogoMobile} imgAlt='git logo' />}
-      { isDark === 'dark' && <LazyImg source={gitDarkLogoMobile} imgAlt='git logo' />}
+      {isDark === 'light' && (
+        <LazyImg source={gitLogoMobile} imgAlt='git logo' />
+      )}
+      {isDark === 'dark' && (
+        <LazyImg source={gitDarkLogoMobile} imgAlt='git logo' />
+      )}
     </Link>
   )
 }

@@ -1,21 +1,22 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 import { useHistory } from 'react-router-dom'
+import CommandsContainerRepositories from './CommandsContainer/CommandsContainerRepositories'
 import CommandsContainerContent from './CommandsContainerContent/CommandsContainerContent'
 import CommandsContainerOS from './CommandsContainer/CommandsContainerOS'
-import CommandsContainerRepositories from './CommandsContainer/CommandsContainerRepositories'
 import DarkModeComponent from './DarkMode/DarkMode'
 import CommandsBtnBlue from './Btns/CommandsBtnBlue'
 
 /**
- * @param setShowMenu: Function
- * @param setShowTheme: Function
+ * @param {Function} setShowMenu
+ * @param {Function} setShowTheme
+ * @returns JSX.Element
  */
 export default function CommandsContainer({ setTheme, setShowMenu }) {
   let history = useHistory()
 
   /**
-   *  @param viewText: string
+   *  @param {string} viewText
    */
   const handlePushView = (viewText) => {
     if (viewText === undefined) return

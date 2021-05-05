@@ -6,11 +6,17 @@ import Logo from '../Logo/Logo'
 import LazyImg from '../LazyImg/LazyImg'
 
 /**
- * @param setShowMenu: Function
- * @param showMenu: Boolean
- * @param reference: React.ref
+ * @param {Function} setShowMenu
+ * @param {Boolean} showMenu
+ * @param {React.Ref} reference
+ * @param {string} darkTheme
  */
-export default function NavMobile({ darkTheme, setShowMenu, showMenu, reference }) {
+export default function NavMobile({
+  darkTheme,
+  setShowMenu,
+  showMenu,
+  reference
+}) {
   const handleClickMenu = () => {
     setShowMenu(!showMenu)
   }

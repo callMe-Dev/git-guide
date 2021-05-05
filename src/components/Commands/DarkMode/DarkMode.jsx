@@ -3,7 +3,7 @@ import PropTypes from 'prop-types'
 
 /**
  *
- * @param setImgTheme: Function
+ * @param {Function} setImgTheme
  *
  * @returns JSX.Element
  * */

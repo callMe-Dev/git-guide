@@ -4,10 +4,10 @@ import PropTypes from 'prop-types'
 /**
   We can reuse this component when we want to show
   information dynamically changing the state
-  @param textInBtn: string
-  @param component: react.Component | JSX.Element
-  @param textWithState: string
-  @returns <button>{...}</button>
+  @param {string} textInBtn
+  @param {React.FC | JSX.Element} component
+  @param {string} textWithState
+  @returns JSX.Element
 */
 export default function ButtonShowInfo({
   textInBtn = '',

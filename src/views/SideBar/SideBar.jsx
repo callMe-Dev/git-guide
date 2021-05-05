@@ -6,7 +6,7 @@ import GitCommandsContainer from '../../components/CommandsContainer/CommandsCon
 import Logo from '../../components/Logo/Logo'
 
 /**
- * @param reference: React.ref
+ * @param {React.Ref} reference
  */
 export default function SideBar({ darkTheme, setDarkTheme, reference }) {
   // Esta funcion solamente simula un estado que necesita como prop

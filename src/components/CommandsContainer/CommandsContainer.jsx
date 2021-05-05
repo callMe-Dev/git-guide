@@ -6,9 +6,9 @@ import commandsData from './commands/commands.json'
 function CommandsContainer() {
   /**
    * @file gitCommand {
-   *   @param name: string
-   *   @param gitCmd: string
-   *   @param description: string
+   *   @param {string} name
+   *   @param {string} gitCmd
+   *   @param {string} description
    * }
    */
   const gitCommandsData = commandsData.map((gitCommand) => {

@@ -2,7 +2,7 @@ import React, { useState } from 'react'
 import PropTypes from 'prop-types'
 
 /**
- * @param content: string
+ * @param {string} content
  */
 export default function ImportantNote({ content }) {
   const [showImportantNote, setShowImportantNote] = useState(false)

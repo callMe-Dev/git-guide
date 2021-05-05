@@ -3,9 +3,9 @@ import { Helmet } from 'react-helmet'
 import PropTypes from 'prop-types'
 
 /**
- * @param titleText: string
- * @param description?: string
- * @returns <head>{...}</head>
+ * @param {string} titleText
+ * @param {string} description
+ * @returns JSX.Element
  */
 export default function MetaHelmet({ titleText, description = '' }) {
   return (
