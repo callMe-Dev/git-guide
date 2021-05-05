@@ -14,7 +14,7 @@
     position: sticky;
     top: 0;
     left: 0;
-    // Esto da un scroll al Sidebar
+    // This scrolls the Sidebar
     overflow: auto;
     overflow-y: hidden;
 
@@ -34,5 +34,28 @@
     border-radius: var(--radius);
     margin-top: 0.5rem;
     margin-bottom: 1rem;
+  }
+}
+
+// Scroll of the SideBar
+.lightScroll {
+  &::-webkit-scrollbar {
+    width: 5px;
+  }
+
+  &::-webkit-scrollbar-thumb {
+    border-radius: var(--radius);
+    background: var(--gray);
+  }
+}
+
+.darkScroll {
+  &::-webkit-scrollbar {
+    width: 5px;
+  }
+
+  &::-webkit-scrollbar-thumb {
+    border-radius: var(--radius);
+    background: var(--gray-background-third);
   }
 }

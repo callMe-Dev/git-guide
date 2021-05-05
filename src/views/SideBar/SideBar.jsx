@@ -1,19 +1,27 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 import CommandsContainer from '../../components/Commands/CommandsContainer'
-// Estos son los comandos en lista de git
 import GitCommandsContainer from '../../components/CommandsContainer/CommandsContainer'
 import Logo from '../../components/Logo/Logo'
 
 /**
+ * @param {React.reference} reference
+ * @param {string} darkTheme
+ * @param {Function} setDarkTheme
  * @param {React.Ref} reference
+ * @returns JSX.Element
  */
-export default function SideBar({ darkTheme, setDarkTheme, reference }) {
-  // Esta funcion solamente simula un estado que necesita como prop
+export default function SideBar({ darkTheme = '', setDarkTheme, reference }) {
+  // This function only simulates a state that you need as a prop
   const setShowMenu = () => false
 
+  const containsLight = document.body.classList.contains('Light')
+
+  const classLight = 'SideBar lightScroll'
+  const classDark = 'SideBar  darkScroll'
+
   return (
-    <aside className='SideBar'>
+    <aside className={containsLight ? classLight : classDark}>
       <div className='SideBar__scroll'>
         <Logo
           setShowMenu={setShowMenu}
