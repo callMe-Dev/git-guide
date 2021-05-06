@@ -1,6 +1,6 @@
 import React, { useState, Fragment } from 'react'
 import { useInView } from 'react-intersection-observer'
-import { BrowserRouter as Router, Switch } from 'react-router-dom'
+import { BrowserRouter as Router, Route, Switch } from 'react-router-dom'
 import MenuMobile from '../../components/MenuMobile/MenuMobile'
 import NavMobile from '../../components/NavMobile/NavMobile'
 import BtnToTop from '../../components/BtnToTop/BtnToTop'
@@ -8,13 +8,16 @@ import BtnToTop from '../../components/BtnToTop/BtnToTop'
 import SideBar from '../SideBar/SideBar'
 // Routes
 import Routes from '../Routes/Routes'
+import ErrorPage from '../404/ErrorPage'
 
 /* * * * * * * * * * * * ** * * * * * * * */
 /* * * * * * * * * Layout * * * * * * * * */
 /* * * * * * * * * * * * ** * * * * * * * */
 export default function Layout() {
   const [showMenu, setShowMenu] = useState(false)
-  const [darkTheme, setDarkTheme] = useState(localStorage.getItem('theme') || 'light')
+  const [darkTheme, setDarkTheme] = useState(
+    localStorage.getItem('theme') || 'light'
+  )
 
   const [ref, inView] = useInView({
     threshold: 0
@@ -37,6 +40,9 @@ export default function Layout() {
           <Fragment>
             <Switch>
               <Routes />
+
+              {/* 404 Page */}
+              <Route component={ErrorPage} />
             </Switch>
           </Fragment>
         )}
