@@ -18,22 +18,31 @@ export default function Routes() {
   return (
     <>
       {/* * * * * * * * * * * */}
+
       <Route exact path={routes.root}>
         <ContentHome />
       </Route>
+
       {/* * * * * * * * * * * */}
+
       <Route path={routes.os.windows}>
         <InstallWindows />
       </Route>
+
       {/* * * * * * * * * * * */}
+
       <Route path={routes.os.linux}>
         <InstallLinux />
       </Route>
+
       {/* * * * * * * * * * * */}
+
       <Route path={routes.os.macos}>
         <InstallMacOs />
       </Route>
+
       {/* * * * * * * * * * * */}
+
       <Route path={routes.config}>
         <GitConfigView />
       </Route>
@@ -44,8 +53,10 @@ export default function Routes() {
       <Route path={routes.repositories.gitlab} component={GitLab} />
       <Route path={routes.repositories.bitbucket} component={BitBucket} />
       {/* * * * * * * * * * * */}
+
       <Route path={routes.tutorials} component={Tutorials} />
       {/* * * * * * * * * * * */}
+
       <Route path={routes.commands}>
         {/*
           The div is inside the <Route> since Switch detects it as
@@ -57,6 +68,13 @@ export default function Routes() {
 
         {/* These are all the rendered commands */}
         <ListCommands />
+      </Route>
+
+      {/* Not match route */}
+      <Route path='*'>
+        <div>
+          <p>Error</p>
+        </div>
       </Route>
     </>
   )

@@ -4,7 +4,7 @@ import cancelLogo from '../../assets/cancel.svg'
 import menuImg from '../../assets/menu.svg'
 import LazyImg from '../LazyImg/LazyImg'
 import Logo from '../Logo/Logo'
-import darkModeLogo from '../../assets/navMobile/navMobile-darkmode.svg'
+import darkModeMenu from '../../assets/navMobile/navMobile-darkmode.svg'
 
 /**
  * @param {Function} setShowMenu
@@ -35,7 +35,7 @@ export default function NavMobile({
         />
       ) : (
         <LazyImg
-          source={containsLight ? menuImg : darkModeLogo}
+          source={containsLight ? menuImg : darkModeMenu}
           imgAlt='menu'
           func={handleClickMenu}
         />
