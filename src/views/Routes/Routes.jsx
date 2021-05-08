@@ -1,15 +1,16 @@
 import React from 'react'
-import { Route } from 'react-router'
+import { Route, Switch } from 'react-router'
 
 import ListCommands from '../../components/CommandsContainer/commands/ListCommands/ListCommands'
 import CommandsContainer from '../../components/CommandsContainer/CommandsContainer'
+import ErrorPage from '../404/ErrorPage'
 
 import { routes } from './routes'
 
 /************ ROUTES ***************/
 export default function Routes() {
   return (
-    <>
+    <Switch>
       {routes.map((route, index) => (
         <Route key={index} path={route.path} exact={route.exact}>
           {route.component}
@@ -26,6 +27,9 @@ export default function Routes() {
         </div>
         <ListCommands />
       </Route>
-    </>
+
+      {/* 404 Page */}
+      <Route component={ErrorPage} />
+    </Switch>
   )
 }

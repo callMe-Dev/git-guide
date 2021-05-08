@@ -8,6 +8,8 @@ export default function ErrorPage() {
   const location = useLocation()
   const history = useHistory()
 
+  console.log(location.pathname, window.location.pathname)
+
   const handleClickToHome = () => {
     history.push('/')
     window.scrollTo(0, 0)
