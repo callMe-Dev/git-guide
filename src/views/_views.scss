@@ -1,5 +1,5 @@
 /*
-* Here the files are imported into the folder '/ views' 
+* Here the files are imported into the folder '/views' 
 */
 @import './os_views/InstallWindows/installWindows.scss';
 @import './os_views/InstallMacOs/InstallMacos.scss';
@@ -8,3 +8,4 @@
 @import './ContentHome/ContentHome.scss';
 @import './Repositories/Repository.scss';
 @import './Tutorials/Tutorials.scss';
+@import './404/ErrorPage.scss';

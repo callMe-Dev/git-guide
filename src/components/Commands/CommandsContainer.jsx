@@ -9,7 +9,7 @@ import CommandsBtnBlue from './Btns/CommandsBtnBlue'
 
 /**
  * @param {Function} setShowMenu
- * @param {Function} setShowTheme
+ * @param {Function} setTheme
  * @returns JSX.Element
  */
 export default function CommandsContainer({ setTheme, setShowMenu }) {
@@ -18,7 +18,7 @@ export default function CommandsContainer({ setTheme, setShowMenu }) {
   /**
    *  @param {string} viewText
    */
-  const handlePushView = (viewText) => {
+  const handlePushView = (viewText = '') => {
     if (viewText === undefined) return
 
     history.push(`/${viewText}`)

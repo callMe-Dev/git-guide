@@ -1,0 +1,50 @@
+.ErrorPage {
+  @include layout(0 20px);
+
+  &__img {
+    display: block;
+    margin: 0 auto;
+    max-width: 300px;
+    transition: var(--transition);
+
+    @media (min-width: $laptop) {
+      max-width: 410px;
+    }
+
+    &:hover {
+      transform: scale(1.05);
+    }
+  }
+
+  &__content {
+    text-align: center;
+    width: 100%;
+    margin-top: 1rem;
+
+    &-text {
+      font-family: var(--lato-font);
+      font-weight: 600;
+    }
+
+    &-btn {
+      @include btnStyle;
+      padding: 1rem;
+      width: 250px;
+      background: var(--blue-background);
+      color: var(--white-text);
+      margin-top: 2rem;
+
+      // Hover animation
+      position: relative;
+      top: 0;
+      left: 0;
+      transition: var(--transition);
+
+      &:hover {
+        box-shadow: 10px 10px 0 var(--orange-background-light);
+        top: -5px;
+        left: -5px;
+      }
+    }
+  }
+}
