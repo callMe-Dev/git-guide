@@ -1,4 +1,4 @@
-@mixin btnStyle($width: 95px) {
+@mixin btnStyle($hoverBg: var(--orange-background-light)) {
   align-self: center;
   border: none;
   border-radius: var(--radius);
@@ -8,10 +8,22 @@
   outline: none;
   padding: 0.6rem 0.2rem;
   text-align: center;
-  width: $width;
+  width: 95px;
+
   @include userNoSelect;
+
+  position: relative;
+  top: 0;
+  left: 0;
+  transition: var(--transition);
 
   &:active {
     transform: scale(0.96, 0.96);
+  }
+
+  &:hover {
+    box-shadow: 5px 5px 0 $hoverBg;
+    top: -3px;
+    left: -3px;
   }
 }

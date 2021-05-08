@@ -35,16 +35,6 @@
       margin-top: 2rem;
 
       // Hover animation
-      position: relative;
-      top: 0;
-      left: 0;
-      transition: var(--transition);
-
-      &:hover {
-        box-shadow: 10px 10px 0 var(--orange-background-light);
-        top: -5px;
-        left: -5px;
-      }
     }
   }
 }

@@ -29,21 +29,18 @@
       &:nth-child(1) {
         width: 100px;
       }
-
-      @include shadowHover;
     }
 
     &-btnConfig {
-      @include btnStyle(110px);
+      @include btnStyle(var(--blue-background-sec));
       border: 3px solid var(--blue-border-sec);
       background: var(--blue-background);
       color: var(--white-text);
+      width: 110px;
 
       @media (min-width: $ipad) {
         margin-top: 0;
       }
-
-      @include shadowHover;
     }
 
     &-btnBlue {
@@ -51,21 +48,16 @@
       color: var(--white-text);
       background: var(--blue-background);
       border: 3px solid var(--blue-border-sec);
-
-      @include shadowHover;
     }
 
     &-btnKnowMore {
-      @include btnStyle(auto);
+      @include btnStyle;
+      width: auto;
       border: 2px solid var(--blue-border);
       background: var(--orange-background);
       color: var(--general-text);
       margin: 1rem 0;
       padding: 0.75rem 1rem;
-
-      &:hover {
-        box-shadow: 1.1px 1.3px 3px var(--shadow);
-      }
 
       @media (min-width: $ipad) {
         display: none;
