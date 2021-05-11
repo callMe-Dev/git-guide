@@ -12,8 +12,7 @@ export default function MdCommand() {
           <Markdown
             components={{
               code: 'code',
-              h3: 'h2',
-              span: 'span'
+              h3: 'h2'
             }}>
             {content}
           </Markdown>

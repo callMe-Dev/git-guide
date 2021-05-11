@@ -1,6 +1,4 @@
 .MdCommands {
-  @include layout(20px);
-
   &__content {
     @include contentStyle;
     margin: 3rem 0;
