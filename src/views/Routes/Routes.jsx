@@ -4,6 +4,7 @@ import { Route, Switch } from 'react-router'
 import ListCommands from '../../components/CommandsContainer/commands/ListCommands/ListCommands'
 import CommandsContainer from '../../components/CommandsContainer/CommandsContainer'
 import ErrorPage from '../404/ErrorPage'
+import Test from '../Test/Test'
 
 import { routes } from './routes'
 
@@ -27,6 +28,8 @@ export default function Routes() {
         </div>
         <ListCommands />
       </Route>
+
+      <Route path='/test' component={Test} />
 
       {/* 404 Page */}
       <Route component={ErrorPage} />
