@@ -1,7 +1,7 @@
 import React from 'react'
 import { Route, Switch } from 'react-router'
 
-import ListCommands from '../../components/CommandsContainer/commands/ListCommands/ListCommands'
+import ListCommands from '../../components/CommandsContainer/ListCommands/ListCommands'
 import CommandsContainer from '../../components/CommandsContainer/CommandsContainer'
 import ErrorPage from '../404/ErrorPage'
 import Test from '../Test/Test'

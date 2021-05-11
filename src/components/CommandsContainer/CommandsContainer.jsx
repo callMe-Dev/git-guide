@@ -12,7 +12,13 @@ function CommandsContainer() {
    * }
    */
   const gitCommandsData = commands.map((gitCommand) => {
-    return <CommandName extCmdName={gitCommand.gitCmd} key={gitCommand.name} />
+    return (
+      <CommandName
+        extCmdName={gitCommand.gitCmd}
+        url={gitCommand.id}
+        key={gitCommand.name}
+      />
+    )
   })
 
   const scrollToTop = () => {
