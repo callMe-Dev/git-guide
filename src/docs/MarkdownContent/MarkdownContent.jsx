@@ -10,6 +10,12 @@ import { commands } from '../command'
 export default function MarkdownContent() {
   return (
     <div className='MarkdownContent'>
+      {/** 
+      @param {string} name
+      @param {string} content
+      @param {string} id
+      @readonly {number} i
+    */}
       {commands.map(({ name, content, id }, i) => (
         <div className='MarkdownContent__content' key={i}>
           <h1 id={id}>{name}</h1>
