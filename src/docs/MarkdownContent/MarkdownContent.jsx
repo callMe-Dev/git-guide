@@ -7,11 +7,11 @@ import rehypeHighlight from 'rehype-highlight'
 
 import { commands } from '../command'
 
-export default function MdCommand() {
+export default function MarkdownContent() {
   return (
-    <div className='MdCommands'>
+    <div className='MarkdownContent'>
       {commands.map(({ name, content, id }, i) => (
-        <div className='MdCommands__content' key={i}>
+        <div className='MarkdownContent__content' key={i}>
           <h1 id={id}>{name}</h1>
           <Markdown
             components={{

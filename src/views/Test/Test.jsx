@@ -1,5 +1,4 @@
 import React from 'react'
-import MdCommand from '../../docs/MdCommand/MdCommand'
 
 export default function Test() {
   return (
@@ -13,7 +12,6 @@ export default function Test() {
         <button type='button'>Volver a Inicio</button>
       </div>
       <br />
-      <MdCommand />
     </section>
   )
 }

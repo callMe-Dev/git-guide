@@ -1,6 +1,6 @@
 import React from 'react'
 import MetaHelmet from '../../MetaHelmet/MetaHelmet'
-import MdCommand from '../../../docs/MdCommand/MdCommand'
+import MarkdownContent from '../../../docs/MarkdownContent/MarkdownContent'
 
 export default function ListCommands() {
   return (
@@ -13,7 +13,7 @@ export default function ListCommands() {
         Comandos de <span>Git</span>
       </h1>
       {/* This is the git commands in markdown */}
-      <MdCommand />
+      <MarkdownContent />
     </section>
   )
 }
