@@ -10,9 +10,9 @@ import PropTypes from 'prop-types'
   @returns JSX.Element
 */
 export default function ButtonShowInfo({
-  textInBtn = '',
+  textInBtn = 'Mostrar mas',
   component = null,
-  textWithState = ''
+  textWithState = 'Mostrar menos'
 }) {
   const [showInfo, setShowInfo] = useState(false)
 
