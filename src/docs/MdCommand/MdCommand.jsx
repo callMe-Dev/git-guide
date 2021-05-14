@@ -1,5 +1,9 @@
 import React from 'react'
 import Markdown from 'react-markdown'
+// Plugins
+import rehypeRaw from 'rehype-raw'
+import rehypeSanitize from 'rehype-sanitize'
+import rehypeHighlight from 'rehype-highlight'
 
 import { commands } from '../command'
 
@@ -14,7 +18,8 @@ export default function MdCommand() {
               code: 'code',
               h3: 'h2',
               strong: 'strong'
-            }}>
+            }}
+            rehypePlugins={[rehypeRaw, rehypeSanitize, rehypeHighlight]}>
             {content}
           </Markdown>
         </div>

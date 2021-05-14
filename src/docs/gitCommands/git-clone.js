@@ -6,12 +6,12 @@ El repositorio original se puede ubicar en el sistema de archivos local o en pro
 Esto es algo así como la verificación de SVN, excepto que 'la copia de trabajo' es un repositorio Git completo: tiene su propio historial, administra sus propios archivos y es un entorno completamente aislado del repositorio original.
 
 ~~~js
-$ git <span>clone</span>
+$ git clone
 ~~~
 
 Clonando con un <span>tag especifico</span>
 
 ~~~js
-$ git <span>clone --branch 'tag' 'repo'</span>
+$ git clone --branch 'tag' 'repo'
 ~~~
 `

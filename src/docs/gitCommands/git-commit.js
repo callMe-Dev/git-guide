@@ -6,12 +6,12 @@ Las instantáneas confirmadas pueden considerarse versiones 'seguras' de un proy
 Antes de la ejecución de <span>git commit</span>, el comando git add se usa para promover o 'preparar' cambios en el proyecto que se almacenarán en una confirmación.
 
 ~~~bash
-$ git <span>commit -m 'tu mensaje'</span>
+$ git commit -m 'tu mensaje'
 ~~~
 
 O con un acceso directo, para al confirmacion de los cambios
 
 ~~~bash
-$ git <span>commit --ammend</span>
+$ git commit --ammend
 ~~~
 `

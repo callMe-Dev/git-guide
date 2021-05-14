@@ -10,7 +10,7 @@ De forma predeterminada, git init inicializará la configuración de Git en la r
 Puede configurar la variable de entorno <span>$GIT_DIR</span> en una ruta personalizada y git init inicializará los archivos de configuración de Git allí
 
 ~~~js
-$ git <span>init</span>
+$ git init
 ~~~
 
 La flag <span>--bare</span> crea un repositorio que no tiene un directorio de trabajo, lo que hace que sea imposible editar archivos y confirmar cambios en ese repositorio
