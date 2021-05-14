@@ -4,11 +4,11 @@
 * Osea todos los archivos '.scss' de la carpeta `/components`
 *
 */
-@import './CommandsContainer/commands/ListCommands/ListCommands.scss';
+@import './CommandsContainer/ListCommands/ListCommands.scss';
 @import '../components/CommandsContainer/CommandsContainer.scss';
 @import './ButtonShowInfo/ButtonShowInfo.scss';
-@import './Commands/DarkMode/DarkMode.scss';
-@import './Commands/CommandsContainer.scss';
+@import './SidebarCommands/DarkMode/DarkMode.scss';
+@import './SidebarCommands/CommandsContainer.scss';
 @import './MenuMobile/MenuMobile.scss';
 @import './NavMobile/NavMobile.scss';
 @import './BtnToTop/BtnToTop.scss';

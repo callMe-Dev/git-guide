@@ -1,0 +1,22 @@
+.MarkdownContent {
+  &__content {
+    @include contentStyle;
+    margin: 3rem 0;
+
+    h1 {
+      @include subTitle;
+    }
+
+    h2,
+    h3 {
+      font-size: 1.2rem;
+      opacity: 0.9;
+
+      &:hover {
+        opacity: 1;
+      }
+    }
+
+    @include codeStyle;
+  }
+}

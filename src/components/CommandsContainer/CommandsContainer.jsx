@@ -1,7 +1,7 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
 import CommandName from './CommandName/CommandName'
-import commandsData from './commands/commands.json'
+import { commands } from '../../docs/command'
 
 function CommandsContainer() {
   /**
@@ -11,8 +11,14 @@ function CommandsContainer() {
    *   @param {string} description
    * }
    */
-  const gitCommandsData = commandsData.map((gitCommand) => {
-    return <CommandName extCmdName={gitCommand.gitCmd} key={gitCommand.name} />
+  const gitCommandsData = commands.map((gitCommand) => {
+    return (
+      <CommandName
+        extCmdName={gitCommand.gitCmd}
+        url={gitCommand.id}
+        key={gitCommand.name}
+      />
+    )
   })
 
   const scrollToTop = () => {

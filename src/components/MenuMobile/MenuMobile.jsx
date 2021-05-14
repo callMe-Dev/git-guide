@@ -1,6 +1,6 @@
 import React from 'react'
 import PropTypes from 'prop-types'
-import CommandsContainer from '../Commands/CommandsContainer'
+import CommandsContainer from '../SidebarCommands/CommandsContainer'
 
 /**
  * @param {Function} setShowMenu
