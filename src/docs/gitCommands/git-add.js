@@ -1,5 +1,5 @@
 export const git_add = `
-  La función principal del comando <span>git add</span> es promover los <span>cambios pendientes</span> en el directorio de trabajo en el área de preparación de git.
+  La función principal del comando <strong>git add</strong> es promover los <span>cambios pendientes</span> en el directorio de trabajo en el área de preparación de git.
 
 Es útil pensar en él como un búfer entre el directorio de trabajo y el <span>historial del proyecto</span>.
 
