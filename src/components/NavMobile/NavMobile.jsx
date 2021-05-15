@@ -1,10 +1,10 @@
 import React from 'react'
 import PropTypes from 'prop-types'
-import cancelLogo from '../../assets/cancel.svg'
-import menuImg from '../../assets/menu.svg'
+import cancelLogo from 'assets/cancel.svg'
+import menuImg from 'assets/menu.svg'
 import LazyImg from '../LazyImg/LazyImg'
 import Logo from '../Logo/Logo'
-import darkModeMenu from '../../assets/navMobile/navMobile-darkmode.svg'
+import darkModeMenu from 'assets/navMobile/navMobile-darkmode.svg'
 
 /**
  * @param {Function} setShowMenu

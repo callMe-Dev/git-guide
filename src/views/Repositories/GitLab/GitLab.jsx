@@ -1,10 +1,10 @@
 import React from 'react'
-import createProjectGitLab from '../../../assets/gitLabAssets/create-project-gitlab.png'
-import repositoryGitLab from '../../../assets/gitLabAssets/repository-gitlab.png'
-import formGitLab from '../../../assets/gitLabAssets/form-gitlab.png'
-import MetaHelmet from '../../../components/MetaHelmet/MetaHelmet'
-import LazyImg from '../../../components/LazyImg/LazyImg'
-import ButtonShowInfo from '../../../components/ButtonShowInfo/ButtonShowInfo'
+import createProjectGitLab from 'assets/gitLabAssets/create-project-gitlab.png'
+import repositoryGitLab from 'assets/gitLabAssets/repository-gitlab.png'
+import formGitLab from 'assets/gitLabAssets/form-gitlab.png'
+import MetaHelmet from 'components/MetaHelmet/MetaHelmet'
+import LazyImg from 'components/LazyImg/LazyImg'
+import ButtonShowInfo from 'components/ButtonShowInfo/ButtonShowInfo'
 import GitIgnore from '../GitIgnore'
 
 export default function GitLab() {

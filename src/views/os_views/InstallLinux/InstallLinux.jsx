@@ -1,6 +1,6 @@
 import React from 'react'
-import ButtonShowInfo from '../../../components/ButtonShowInfo/ButtonShowInfo'
-import MetaHelmet from '../../../components/MetaHelmet/MetaHelmet'
+import ButtonShowInfo from 'components/ButtonShowInfo/ButtonShowInfo'
+import MetaHelmet from 'components/MetaHelmet/MetaHelmet'
 // Distros
 import Debian from './distros/debian/debian'
 import Fedora from './distros/fedora/fedora'
@@ -39,11 +39,11 @@ export default function InstallLinux() {
         </p>
       </article>
       <h2 className='InstallLinux__subTitle'>Distribuciones:</h2>
-      {/* 
-        Este boton mostrara la informacion del componente 
-        
-        @textInBtn: string
-        @component: React.Component
+      {/**
+        Este boton mostrara la informacion del componente
+
+        @param {string} textInBtn
+        @param {React.FC} component
        */}
       <ButtonShowInfo textInBtn='Debian/Ubuntu' component={<Debian />} />
       <ButtonShowInfo textInBtn='Fedora' component={<Fedora />} />

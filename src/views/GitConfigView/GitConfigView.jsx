@@ -3,7 +3,7 @@ import ConfigTerminal from './configTerminal/configTerminal'
 import ConfigManual from './configManual/configManual'
 import EditorConfig from './editorConfig/editorConfig'
 import KnowConfig from './knowConfig/knowConfig'
-import MetaHelmet from '../../components/MetaHelmet/MetaHelmet'
+import MetaHelmet from 'components/MetaHelmet/MetaHelmet'
 
 export default function GitConfigView() {
   return (

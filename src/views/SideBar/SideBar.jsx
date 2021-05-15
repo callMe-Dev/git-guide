@@ -1,8 +1,8 @@
 import React from 'react'
 import PropTypes from 'prop-types'
-import CommandsContainer from '../../components/SidebarCommands/CommandsContainer'
-import GitCommandsContainer from '../../components/CommandsContainer/CommandsContainer'
-import Logo from '../../components/Logo/Logo'
+import CommandsContainer from 'components/SidebarCommands/CommandsContainer'
+import GitCommandsContainer from 'components/CommandsContainer/CommandsContainer'
+import Logo from 'components/Logo/Logo'
 
 /**
  * @param {React.reference} reference
