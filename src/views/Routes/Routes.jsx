@@ -31,7 +31,6 @@ export default function Routes() {
 
       <Route path='/test' component={Test} />
 
-      {/* 404 Page */}
       <Route component={ErrorPage} />
     </Switch>
   )

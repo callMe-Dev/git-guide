@@ -33,7 +33,6 @@ function CommandsContainer() {
         onClick={scrollToTop}>
         Comandos
       </Link>
-      {/* Buttons for git commands */}
       {gitCommandsData}
     </div>
   )

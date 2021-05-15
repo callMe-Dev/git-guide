@@ -12,7 +12,6 @@ export default function ListCommands() {
       <h1 className='ListCommands__title'>
         Comandos de <span>Git</span>
       </h1>
-      {/* This is the git commands in markdown */}
       <MarkdownContent />
     </section>
   )

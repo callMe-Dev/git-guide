@@ -40,8 +40,6 @@ export default function InstallLinux() {
       </article>
       <h2 className='InstallLinux__subTitle'>Distribuciones:</h2>
       {/**
-        Este boton mostrara la informacion del componente
-
         @param {string} textInBtn
         @param {React.FC} component
        */}

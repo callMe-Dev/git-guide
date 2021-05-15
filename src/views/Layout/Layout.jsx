@@ -10,8 +10,6 @@ import SideBar from '../SideBar/SideBar'
 import Routes from '../Routes/Routes'
 
 /* * * * * * * * * * * * ** * * * * * * * */
-/* * * * * * * * * Layout * * * * * * * * */
-/* * * * * * * * * * * * ** * * * * * * * */
 export default function Layout() {
   const [showMenu, setShowMenu] = useState(false)
   const [darkTheme, setDarkTheme] = useState(
@@ -25,7 +23,6 @@ export default function Layout() {
   return (
     <Router>
       <SideBar setDarkTheme={setDarkTheme} darkTheme={darkTheme} />
-      {/* * * * Layout * * * */}
       <div className='Layout'>
         <NavMobile
           setShowMenu={setShowMenu}
@@ -45,3 +42,4 @@ export default function Layout() {
     </Router>
   )
 }
+/* * * * * * * * * * * * ** * * * * * * * */

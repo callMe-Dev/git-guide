@@ -20,17 +20,7 @@ export default function ImportantNote({ content }) {
           }></i>
         <h3 className='importantNote__title'>Important...</h3>
       </div>
-      {showImportantNote ? (
-        <>
-          {/* 
-             Here implement a component that will be the content of the important note 
-             It can be a component or between <> pass pure html
-          */}
-          {content}
-        </>
-      ) : (
-        ''
-      )}
+      {showImportantNote ? <>{content}</> : ''}
     </div>
   )
 }

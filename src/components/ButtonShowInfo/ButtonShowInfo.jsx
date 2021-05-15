@@ -28,14 +28,13 @@ export default function ButtonShowInfo({
           className={
             'far fa-caret-square-right' + (showInfo ? ' rotate' : ' ')
           }></i>
-        {/* Validate if there is text in the state, and so it will change, otherwise the initial one will be kept */}
+
         {showInfo
           ? textWithState.length > 0
             ? textWithState
             : textInBtn
           : textInBtn}
       </button>
-      {/* The component is rendered that we pass through props*/}
       {showInfo ? component : ''}
     </>
   )
