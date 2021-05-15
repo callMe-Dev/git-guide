@@ -33,9 +33,17 @@
 
   img {
     display: block;
-    max-width: 330px;
+    width: 300px;
     margin: 2rem auto;
     border-radius: var(--radius);
+
+    @media (max-width: 320px) {
+      width: 290px;
+    }
+
+    @media (min-width: $mobile) {
+      max-width: 330px;
+    }
 
     @media (min-width: $ipad) {
       width: 100%;

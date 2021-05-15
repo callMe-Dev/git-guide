@@ -2,11 +2,14 @@ import React from 'react'
 import AnchorTag from '../../components/AnchorTag/AnchorTag'
 import MetaHelmet from '../../components/MetaHelmet/MetaHelmet'
 
+import ButtonShowInfo from '../../components/ButtonShowInfo/ButtonShowInfo'
+import ComunidadContent from '../../components/ComunidadContent/ComunidadContent'
+
 export default function ContentHome() {
   return (
     <section className='ContentHome'>
       <MetaHelmet
-        titleText='Basic Guide'
+        titleText='Guía Básica'
         description='Guía de comandos básicos de Git para desarrolladores'
       />
       <h1 className='ContentHome__title'>
@@ -70,6 +73,10 @@ export default function ContentHome() {
           para tener diferentes versiones y probar nuevas características.
         </p>
       </article>
+      <ButtonShowInfo
+        textInBtn='Nuestra Comunidad'
+        component={<ComunidadContent />}
+      />
     </section>
   )
 }
