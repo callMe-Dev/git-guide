@@ -1,8 +1,8 @@
 import React from 'react'
 import { useLocation, useHistory } from 'react-router'
 
-import MetaHelmet from '../../components/MetaHelmet/MetaHelmet'
-import errorAnimalIllustration from '../../assets/page-404/error-animal.svg'
+import MetaHelmet from 'components/MetaHelmet/MetaHelmet'
+import errorAnimalIllustration from 'assets/page-404/error-animal.svg'
 
 export default function ErrorPage() {
   const location = useLocation()

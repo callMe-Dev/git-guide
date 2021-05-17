@@ -1,5 +1,5 @@
 import PropTypes from 'prop-types'
-import arrowTop from '../../assets/arrowTop.svg'
+import arrowTop from 'assets/arrowTop.svg'
 import LazyImg from '../LazyImg/LazyImg'
 
 // The inView comes from the layout that specifies if the element is in the view

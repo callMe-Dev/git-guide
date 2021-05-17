@@ -1,5 +1,5 @@
 import React from 'react'
-import ImportantNote from '../../../components/ImportantNote/ImportantNote'
+import ImportantNote from 'components/ImportantNote/ImportantNote'
 
 export default function configTerminal() {
   return (
@@ -23,10 +23,7 @@ export default function configTerminal() {
         <code>
           $ git <span> config --global user.email johndoe@example.com</span>
         </code>
-        {/*
-        We must convert it into a single component to make 
-        it much easier to use in other files or content
-        */}
+
         <ImportantNote
           content={
             <>

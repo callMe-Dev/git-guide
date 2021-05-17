@@ -1,7 +1,7 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
 import CommandName from './CommandName/CommandName'
-import { commands } from '../../docs/command'
+import { commands } from 'docs/command'
 
 function CommandsContainer() {
   /**
@@ -33,7 +33,6 @@ function CommandsContainer() {
         onClick={scrollToTop}>
         Comandos
       </Link>
-      {/* Buttons for git commands */}
       {gitCommandsData}
     </div>
   )

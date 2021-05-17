@@ -1,7 +1,7 @@
 import React from 'react'
 import PropTypes from 'prop-types'
-import gitLogoMobile from '../../assets/gitLogoMobile.svg'
-import gitDarkLogoMobile from '../../assets/gitLogoDarkMobile.svg'
+import gitLogoMobile from 'assets/gitLogoMobile.svg'
+import gitDarkLogoMobile from 'assets/gitLogoDarkMobile.svg'
 import { Link } from 'react-router-dom'
 import LazyImg from '../LazyImg/LazyImg'
 

@@ -1,10 +1,10 @@
 import React from 'react'
-import LazyImg from '../../../components/LazyImg/LazyImg'
-import MetaHelmet from '../../../components/MetaHelmet/MetaHelmet'
+import LazyImg from 'components/LazyImg/LazyImg'
+import MetaHelmet from 'components/MetaHelmet/MetaHelmet'
 
-import createRepoBitbucket from '../../../assets/bitbucket/create-repo.png'
-import createProjectBitbucket from '../../../assets/bitbucket/create-project.png'
-import ButtonShowInfo from '../../../components/ButtonShowInfo/ButtonShowInfo'
+import createRepoBitbucket from 'assets/bitbucket/create-repo.png'
+import createProjectBitbucket from 'assets/bitbucket/create-project.png'
+import ButtonShowInfo from 'components/ButtonShowInfo/ButtonShowInfo'
 import GitIgnore from '../GitIgnore'
 
 export default function Bitbucket() {
