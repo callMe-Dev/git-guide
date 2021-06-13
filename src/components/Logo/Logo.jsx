@@ -14,14 +14,13 @@ export default function Logo({ isDark, setShowMenu }) {
   const closeClickMenu = () => {
     setShowMenu(false)
   }
+
   return (
     <Link to='/' onClick={closeClickMenu} className='NavMobile__link'>
-      {isDark === 'light' && (
-        <LazyImg source={gitLogoMobile} imgAlt='git logo' />
-      )}
-      {isDark === 'dark' && (
-        <LazyImg source={gitDarkLogoMobile} imgAlt='git logo' />
-      )}
+      <LazyImg
+        source={isDark === 'dark' ? gitDarkLogoMobile : gitLogoMobile}
+        imgAlt='git logo'
+      />
     </Link>
   )
 }
