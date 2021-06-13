@@ -1,14 +1,12 @@
-import React, { useState, useRef, useEffect } from 'react'
+import React, { useState, useEffect } from 'react'
 import PropTypes from 'prop-types'
 
 /**
  *
  * @param {Function} setImgTheme
- *
  * @returns JSX.Element
  * */
 export default function DarkMode({ setImgTheme }) {
-  const toggleRef = useRef()
   const [theme, setTheme] = useState(localStorage.getItem('theme') || 'light')
 
   const lightIcon = 'fa-lightbulb'
@@ -16,14 +14,7 @@ export default function DarkMode({ setImgTheme }) {
   const [icon, setIcon] = useState(lightIcon)
   const body = document.body
 
-  useEffect(() => {
-    checkTheme()
-  }, [])
-
   const checkTheme = () => {
-    if (!theme) {
-      localStorage.setItem('theme', 'light')
-    }
     if (theme === 'dark') {
       body.classList.add('Dark')
       setIcon(darkIcon)
@@ -33,40 +24,43 @@ export default function DarkMode({ setImgTheme }) {
     }
   }
 
-  const changeTheme = () => {
-    if (toggleRef.current.checked) {
+  useEffect(() => {
+    checkTheme()
+  }, [])
+
+  const handleChangeTheme = (event) => {
+    const checked = event.target.checked
+
+    if (checked) {
+      body.classList.replace('Light', 'Dark')
       setTheme('Dark')
       setImgTheme('dark')
       setIcon(darkIcon)
       localStorage.setItem('theme', 'dark')
-      body.classList.replace('Light', 'Dark')
     } else {
+      body.classList.replace('Dark', 'Light')
       setTheme('light')
       setImgTheme('light')
       setIcon(lightIcon)
       localStorage.setItem('theme', 'light')
-      body.classList.replace('Dark', 'Light')
     }
   }
 
   return (
     <div className='DarkMode'>
-      <div>
-        <span className='text-2xl self-center'>
-          <i className={`fas DarkMode__Icon ${icon}`}></i>
-        </span>
-        <label className='DarkMode__Switch'>
-          <input
-            ref={toggleRef}
-            type='checkbox'
-            onChange={changeTheme}
-            checked={theme === 'light' ? false : true}
-            name=''
-            id=''
-          />
-          <span className='Slider Round'></span>
-        </label>
-      </div>
+      <span className='text-2xl self-center'>
+        <i className={`fas DarkMode__Icon ${icon}`}></i>
+      </span>
+      <label className='DarkMode__Switch'>
+        <input
+          type='checkbox'
+          onChange={handleChangeTheme}
+          name=''
+          id=''
+          checked={theme === 'light' ? false : true}
+        />
+        <span className='Slider Round'></span>
+      </label>
     </div>
   )
 }
