@@ -45,7 +45,8 @@ export default function CommandsContainer({ setTheme, setShowMenu }) {
       <CommandsContainerContent>
         <button
           className='CommandsContainer__content-btnKnowMore'
-          onClick={() => handlePushView('commands')}>
+          onClick={() => handlePushView('commands')}
+        >
           Conocer Comandos
         </button>
       </CommandsContainerContent>

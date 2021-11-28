@@ -16,7 +16,8 @@ export default function CommandsBtnBlue({
   return (
     <button
       className='CommandsContainer__content-btnBlue'
-      onClick={() => handlePushView(`${route}`)}>
+      onClick={() => handlePushView(`${route}`)}
+    >
       {btnText}
     </button>
   )

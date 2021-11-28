@@ -12,7 +12,8 @@ export default function CommandsContainerOS({ handlePushView }) {
         <CommandsBtnOs osName='MacOs' handlePushView={handlePushView} />
         <button
           className='CommandsContainer__content-btnConfig'
-          onClick={() => handlePushView('config')}>
+          onClick={() => handlePushView('config')}
+        >
           Configurar
         </button>
       </div>

@@ -24,7 +24,8 @@ export default function GitLab() {
             target='_blank'
             rel='noreferrer'
             accessKey='git install windows'
-            href='https://gitlab.com/'>
+            href='https://gitlab.com/'
+          >
             GitLab
           </a>
           &nbsp; debes dirigirte a la vista de Projects y elegir la opción{' '}

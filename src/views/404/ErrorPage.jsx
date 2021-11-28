@@ -30,7 +30,8 @@ export default function ErrorPage() {
         <button
           className='ErrorPage__content-btn'
           type='button'
-          onClick={handleClickToHome}>
+          onClick={handleClickToHome}
+        >
           VOLVAMOS AL INICIO
         </button>
       </div>
