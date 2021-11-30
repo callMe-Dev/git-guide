@@ -4,9 +4,7 @@ import { BrowserRouter as Router } from 'react-router-dom'
 import MenuMobile from 'components/MenuMobile/MenuMobile'
 import NavMobile from 'components/NavMobile/NavMobile'
 import BtnToTop from 'components/BtnToTop/BtnToTop'
-// Sidebar
 import SideBar from '../SideBar/SideBar'
-// Routes
 import Routes from '../Routes/Routes'
 
 /* * * * * * * * * * * * ** * * * * * * * */

@@ -1,6 +1,6 @@
 import React from 'react'
 import PropTypes from 'prop-types'
-import { useHistory } from 'react-router-dom'
+import { useNavigate } from 'react-router-dom'
 import CommandsContainerRepositories from './CommandsContainer/CommandsContainerRepositories'
 import CommandsContainerContent from './CommandsContainerContent/CommandsContainerContent'
 import CommandsContainerOS from './CommandsContainer/CommandsContainerOS'
@@ -13,7 +13,7 @@ import CommandsBtnBlue from './Btns/CommandsBtnBlue'
  * @returns JSX.Element
  */
 export default function CommandsContainer({ setTheme, setShowMenu }) {
-  let history = useHistory()
+  let navigate = useNavigate()
 
   /**
    *  @param {string} viewText
@@ -21,7 +21,7 @@ export default function CommandsContainer({ setTheme, setShowMenu }) {
   const handlePushView = (viewText = '') => {
     if (viewText === undefined) return
 
-    history.push(`/${viewText}`)
+    navigate(`/${viewText}`, { replace: true })
     setShowMenu(false)
     window.scrollTo(0, 0)
   }
@@ -45,8 +45,7 @@ export default function CommandsContainer({ setTheme, setShowMenu }) {
       <CommandsContainerContent>
         <button
           className='CommandsContainer__content-btnKnowMore'
-          onClick={() => handlePushView('commands')}
-        >
+          onClick={() => handlePushView('commands')}>
           Conocer Comandos
         </button>
       </CommandsContainerContent>

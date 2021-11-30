@@ -27,14 +27,7 @@
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "lint": "eslint src/**/*.js src/**/*.jsx",
     "format": "prettier --write \"**/*.{js,jsx,json,md,tsx,ts}\""
-  },
-  "eslintConfig": {
-    "extends": [
-      "react-app",
-      "react-app/jest"
-    ]
   },
   "browserslist": {
     "production": [
@@ -49,8 +42,6 @@
     ]
   },
   "devDependencies": {
-    "eslint": "^8.3.0",
-    "eslint-plugin-react": "^7.27.1",
     "prettier": "2.5.0"
   }
 }

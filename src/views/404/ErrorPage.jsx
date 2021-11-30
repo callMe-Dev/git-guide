@@ -1,17 +1,15 @@
 import React from 'react'
-import { useLocation, useHistory } from 'react-router'
+import { useLocation, useNavigate } from 'react-router'
 
 import MetaHelmet from 'components/MetaHelmet/MetaHelmet'
 import errorAnimalIllustration from 'assets/page-404/error-animal.svg'
 
 export default function ErrorPage() {
   const location = useLocation()
-  const history = useHistory()
-
-  console.log(location.pathname, window.location.pathname)
+  const navigate = useNavigate()
 
   const handleClickToHome = () => {
-    history.push('/')
+    navigate('/', { replace: true })
     window.scrollTo(0, 0)
   }
 
@@ -30,8 +28,7 @@ export default function ErrorPage() {
         <button
           className='ErrorPage__content-btn'
           type='button'
-          onClick={handleClickToHome}
-        >
+          onClick={handleClickToHome}>
           VOLVAMOS AL INICIO
         </button>
       </div>
