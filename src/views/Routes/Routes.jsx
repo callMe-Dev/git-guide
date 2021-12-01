@@ -1,16 +1,16 @@
 import { useRoutes } from 'react-router'
-import ErrorPage from '../404/ErrorPage'
-import Test from '../Test/Test'
-import InstallWindows from '../os_views/InstallWindows/InstallWindows'
-import InstallLinux from '../os_views/InstallLinux/InstallLinux'
-import InstallMacOs from '../os_views/InstallMacOs/InstallMacos'
 import BitBucket from '../Repositories/Bitbucket/Bitbucket'
-import GitConfigView from '../GitConfigView/GitConfigView'
+import CommandsContainerRoute from 'components/CommandsContainer/CommandsContainerRoute'
 import ContentHome from '../ContentHome/ContentHome'
+import ErrorPage from '../404/ErrorPage'
+import GitConfigView from '../GitConfigView/GitConfigView'
 import GitHub from '../Repositories/GitHub/Github'
 import GitLab from '../Repositories/GitLab/GitLab'
+import InstallLinux from '../os_views/InstallLinux/InstallLinux'
+import InstallMacOs from '../os_views/InstallMacOs/InstallMacos'
+import InstallWindows from '../os_views/InstallWindows/InstallWindows'
+import Test from '../Test/Test'
 import Tutorials from '../Tutorials/Tutorials'
-import CommandsContainerRoute from 'components/CommandsContainer/CommandsContainerRoute'
 
 export default function Routes() {
   const routes = useRoutes([
