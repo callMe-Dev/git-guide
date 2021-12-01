@@ -1,4 +1,3 @@
-import React from 'react'
 import Markdown from 'react-markdown'
 // Plugins
 import rehypeRaw from 'rehype-raw'
@@ -25,8 +24,7 @@ export default function MarkdownContent() {
               h3: 'h2',
               strong: 'strong'
             }}
-            rehypePlugins={[rehypeRaw, rehypeSanitize, rehypeHighlight]}
-          >
+            rehypePlugins={[rehypeRaw, rehypeSanitize, rehypeHighlight]}>
             {content}
           </Markdown>
         </div>

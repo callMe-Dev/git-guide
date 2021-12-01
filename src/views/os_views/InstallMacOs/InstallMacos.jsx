@@ -1,4 +1,3 @@
-import React from 'react'
 import MetaHelmet from 'components/MetaHelmet/MetaHelmet'
 import AnchorTag from 'components/AnchorTag/AnchorTag'
 

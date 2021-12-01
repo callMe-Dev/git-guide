@@ -1,7 +1,5 @@
-import React from 'react'
 import AnchorTag from 'components/AnchorTag/AnchorTag'
 import MetaHelmet from 'components/MetaHelmet/MetaHelmet'
-
 import ButtonShowInfo from 'components/ButtonShowInfo/ButtonShowInfo'
 import ComunidadContent from 'components/ComunidadContent/ComunidadContent'
 

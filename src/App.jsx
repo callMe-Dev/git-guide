@@ -1,4 +1,3 @@
-// Views
 import Layout from './views/Layout/Layout'
 
 function App() {

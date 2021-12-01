@@ -1,4 +1,3 @@
-import React from 'react'
 import PropTypes from 'prop-types'
 
 /**
@@ -16,8 +15,7 @@ export default function CommandsBtnBlue({
   return (
     <button
       className='CommandsContainer__content-btnBlue'
-      onClick={() => handlePushView(`${route}`)}
-    >
+      onClick={() => handlePushView(`${route}`)}>
       {btnText}
     </button>
   )

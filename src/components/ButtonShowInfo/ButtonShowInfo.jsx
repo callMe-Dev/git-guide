@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import { useState } from 'react'
 import PropTypes from 'prop-types'
 
 /**
@@ -23,11 +23,11 @@ export default function ButtonShowInfo({
       <button
         className='buttonToShowInfo__btn'
         onClick={handleShowInfo}
-        id={showInfo ? 'btnActive' : ' '}
-      >
+        id={showInfo ? 'btnActive' : ' '}>
         <i
-          className={'far fa-caret-square-right' + (showInfo ? ' rotate' : ' ')}
-        ></i>
+          className={
+            'far fa-caret-square-right' + (showInfo ? ' rotate' : ' ')
+          }></i>
 
         {showInfo
           ? textWithState.length > 0

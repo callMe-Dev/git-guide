@@ -1,4 +1,3 @@
-import React from 'react'
 import ConfigTerminal from './configTerminal/configTerminal'
 import ConfigManual from './configManual/configManual'
 import EditorConfig from './editorConfig/editorConfig'

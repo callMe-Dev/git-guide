@@ -1,4 +1,3 @@
-import React from 'react'
 import PropTypes from 'prop-types'
 
 /**
@@ -13,8 +12,7 @@ export default function CommandName({ extCmdName, url }) {
       <a
         className='CommandContainer__command__name'
         // This sends a command for its id
-        href={`/commands/#${url}`}
-      >
+        href={`/commands/#${url}`}>
         <i className='fas fa-hashtag'></i>
         <span>git</span> {extCmdName}
       </a>

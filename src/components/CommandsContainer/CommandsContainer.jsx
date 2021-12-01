@@ -1,4 +1,3 @@
-import React from 'react'
 import { Link } from 'react-router-dom'
 import CommandName from './CommandName/CommandName'
 import { commands } from 'docs/command'
@@ -30,8 +29,7 @@ function CommandsContainer() {
       <Link
         className='CommandContainer__title'
         to='/commands'
-        onClick={scrollToTop}
-      >
+        onClick={scrollToTop}>
         Comandos
       </Link>
       {gitCommandsData}

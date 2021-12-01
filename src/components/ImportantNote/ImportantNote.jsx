@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import { useState } from 'react'
 import PropTypes from 'prop-types'
 
 /**
@@ -17,8 +17,7 @@ export default function ImportantNote({ content }) {
         <i
           className={
             'fas fa-caret-right ' + `${showImportantNote ? ' rotate' : ''}`
-          }
-        ></i>
+          }></i>
         <h3 className='importantNote__title'>Important...</h3>
       </div>
       {showImportantNote ? <>{content}</> : ''}

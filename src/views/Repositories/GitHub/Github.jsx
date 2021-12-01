@@ -1,15 +1,14 @@
-import React from 'react'
-import repoPublicPrivate from 'assets/github/create-repository-public-private.png'
+import AnchorTag from 'components/AnchorTag/AnchorTag'
 import ButtonShowInfo from 'components/ButtonShowInfo/ButtonShowInfo'
+import GitIgnore from '../GitIgnore'
 import ImportantNote from 'components/ImportantNote/ImportantNote'
+import LazyImg from 'components/LazyImg/LazyImg'
+import MetaHelmet from 'components/MetaHelmet/MetaHelmet'
 import repoButton from 'assets/github/create-repository-button.png'
 import repoCommands from 'assets/github/github-repo-commands.png'
 import repoCreate from 'assets/github/github-repo-new.png'
 import repoName from 'assets/github/github-repo-name.png'
-import MetaHelmet from 'components/MetaHelmet/MetaHelmet'
-import AnchorTag from 'components/AnchorTag/AnchorTag'
-import LazyImg from 'components/LazyImg/LazyImg'
-import GitIgnore from '../GitIgnore'
+import repoPublicPrivate from 'assets/github/create-repository-public-private.png'
 
 export default function Github() {
   return (

@@ -9,7 +9,6 @@ import GitLab from '../Repositories/GitLab/GitLab'
 import InstallLinux from '../os_views/InstallLinux/InstallLinux'
 import InstallMacOs from '../os_views/InstallMacOs/InstallMacos'
 import InstallWindows from '../os_views/InstallWindows/InstallWindows'
-import Test from '../Test/Test'
 import Tutorials from '../Tutorials/Tutorials'
 
 export default function Routes() {
@@ -53,10 +52,6 @@ export default function Routes() {
     {
       path: '/commands',
       element: <CommandsContainerRoute />
-    },
-    {
-      path: '/test',
-      element: <Test />
     },
     {
       path: '*',

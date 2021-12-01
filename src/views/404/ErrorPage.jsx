@@ -1,11 +1,9 @@
-import React from 'react'
-import { useLocation, useNavigate } from 'react-router'
+import { useNavigate } from 'react-router'
 
 import MetaHelmet from 'components/MetaHelmet/MetaHelmet'
 import errorAnimalIllustration from 'assets/page-404/error-animal.svg'
 
 export default function ErrorPage() {
-  const location = useLocation()
   const navigate = useNavigate()
 
   const handleClickToHome = () => {

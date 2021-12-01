@@ -1,5 +1,3 @@
-import React from 'react'
-
 export default function fedora() {
   return (
     <article className='dist__content'>
