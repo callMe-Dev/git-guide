@@ -1,4 +1,3 @@
-import React from 'react'
 import ButtonShowInfo from 'components/ButtonShowInfo/ButtonShowInfo'
 import MetaHelmet from 'components/MetaHelmet/MetaHelmet'
 // Distros

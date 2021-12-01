@@ -1,4 +1,3 @@
-import React from 'react'
 import installGitWizard from 'assets/winAssests/install-git-windows.png'
 import MetaHelmet from 'components/MetaHelmet/MetaHelmet'
 import LazyImg from 'components/LazyImg/LazyImg'

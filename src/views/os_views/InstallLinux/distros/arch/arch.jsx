@@ -1,5 +1,3 @@
-import React from 'react'
-
 export default function arch() {
   return (
     <article className='dist__content'>

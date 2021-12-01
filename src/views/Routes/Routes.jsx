@@ -1,37 +1,63 @@
-import React from 'react'
-import { Route, Switch } from 'react-router'
-
-import ListCommands from 'components/CommandsContainer/ListCommands/ListCommands'
-import CommandsContainer from 'components/CommandsContainer/CommandsContainer'
+import { useRoutes } from 'react-router'
+import BitBucket from '../Repositories/Bitbucket/Bitbucket'
+import CommandsContainerRoute from 'components/CommandsContainer/CommandsContainerRoute'
+import ContentHome from '../ContentHome/ContentHome'
 import ErrorPage from '../404/ErrorPage'
-import Test from '../Test/Test'
+import GitConfigView from '../GitConfigView/GitConfigView'
+import GitHub from '../Repositories/GitHub/Github'
+import GitLab from '../Repositories/GitLab/GitLab'
+import InstallLinux from '../os_views/InstallLinux/InstallLinux'
+import InstallMacOs from '../os_views/InstallMacOs/InstallMacos'
+import InstallWindows from '../os_views/InstallWindows/InstallWindows'
+import Tutorials from '../Tutorials/Tutorials'
 
-import { routes } from './routes'
-
-/************ ROUTES ***************/
 export default function Routes() {
-  return (
-    <Switch>
-      {routes.map((route, index) => (
-        <Route key={index} path={route.path} exact={route.exact}>
-          {route.component}
-        </Route>
-      ))}
+  const routes = useRoutes([
+    {
+      path: '/',
+      element: <ContentHome />
+    },
+    {
+      path: '/windows',
+      element: <InstallWindows />
+    },
+    {
+      path: '/macos',
+      element: <InstallMacOs />
+    },
+    {
+      path: '/linux',
+      element: <InstallLinux />
+    },
+    {
+      path: '/config',
+      element: <GitConfigView />
+    },
+    {
+      path: '/github',
+      element: <GitHub />
+    },
+    {
+      path: '/gitlab',
+      element: <GitLab />
+    },
+    {
+      path: '/bitbucket',
+      element: <BitBucket />
+    },
+    {
+      path: '/tutoriales',
+      element: <Tutorials />
+    },
+    {
+      path: '/commands',
+      element: <CommandsContainerRoute />
+    },
+    {
+      path: '*',
+      element: <ErrorPage />
+    }
+  ])
 
-      <Route path='/commands'>
-        {/*
-          The div is inside the <Route> since Switch detects it as
-          computedMatch which gives an error in React
-         */}
-        <div className='Layout__noView'>
-          <CommandsContainer />
-        </div>
-        <ListCommands />
-      </Route>
-
-      <Route path='/test' component={Test} />
-
-      <Route component={ErrorPage} />
-    </Switch>
-  )
+  return routes
 }

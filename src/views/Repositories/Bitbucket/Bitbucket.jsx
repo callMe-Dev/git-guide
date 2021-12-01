@@ -1,4 +1,3 @@
-import React from 'react'
 import LazyImg from 'components/LazyImg/LazyImg'
 import MetaHelmet from 'components/MetaHelmet/MetaHelmet'
 

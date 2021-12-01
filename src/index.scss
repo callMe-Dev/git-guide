@@ -1,6 +1,5 @@
 // Root Styles
 @import './scss/root.scss';
-
 // Mixins
 @import './scss/mixins/underlineText';
 @import './scss/mixins/userNoSelect';
@@ -14,15 +13,12 @@
 @import './scss/mixins/_shadowHover.scss';
 @import './scss/mixins/scaleHover';
 @import './scss/mixins/afterBtn';
-
 /* Globals */
 @import './scss/global/globals.scss';
 @import './scss/App.scss';
 @import './views/SideBar/SideBar.scss';
-
 /* Views */
 @import './views/views';
-
 /* SCSS Components Files */
 @import './views/Layout/Layout.scss';
 @import './components/index.scss';

@@ -1,4 +1,3 @@
-import React from 'react'
 import PropTypes from 'prop-types'
 import cancelLogo from 'assets/cancel.svg'
 import menuImg from 'assets/menu.svg'

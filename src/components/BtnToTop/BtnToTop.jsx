@@ -13,7 +13,8 @@ export default function BtnToTop({ inView }) {
   return (
     <div
       className={'BtnToTop ' + `${!inView ? 'view' : 'noView'}`}
-      onClick={scrollToTop}>
+      onClick={scrollToTop}
+    >
       <LazyImg
         source={arrowTop}
         imgAlt='arrow to top'

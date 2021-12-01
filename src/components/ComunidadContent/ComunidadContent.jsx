@@ -1,4 +1,3 @@
-import React from 'react'
 import AnchorTag from '../AnchorTag/AnchorTag'
 
 export default function ComunidadContent() {
