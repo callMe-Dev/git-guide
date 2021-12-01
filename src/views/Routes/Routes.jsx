@@ -1,11 +1,6 @@
-import React from 'react'
 import { useRoutes } from 'react-router'
-
-import ListCommands from 'components/CommandsContainer/ListCommands/ListCommands'
-import CommandsContainer from 'components/CommandsContainer/CommandsContainer'
 import ErrorPage from '../404/ErrorPage'
 import Test from '../Test/Test'
-
 import InstallWindows from '../os_views/InstallWindows/InstallWindows'
 import InstallLinux from '../os_views/InstallLinux/InstallLinux'
 import InstallMacOs from '../os_views/InstallMacOs/InstallMacos'
@@ -15,17 +10,7 @@ import ContentHome from '../ContentHome/ContentHome'
 import GitHub from '../Repositories/GitHub/Github'
 import GitLab from '../Repositories/GitLab/GitLab'
 import Tutorials from '../Tutorials/Tutorials'
-
-function CommandsContainerRoute() {
-  return (
-    <>
-      <div className='Layout__noView'>
-        <CommandsContainer />
-      </div>
-      <ListCommands />
-    </>
-  )
-}
+import CommandsContainerRoute from 'components/CommandsContainer/CommandsContainerRoute'
 
 export default function Routes() {
   const routes = useRoutes([
