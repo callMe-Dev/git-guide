@@ -29,7 +29,8 @@ function CommandsContainer() {
       <Link
         className='CommandContainer__title'
         to='/commands'
-        onClick={scrollToTop}>
+        onClick={scrollToTop}
+      >
         Comandos
       </Link>
       {gitCommandsData}
