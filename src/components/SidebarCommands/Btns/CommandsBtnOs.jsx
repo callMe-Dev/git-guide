@@ -12,7 +12,8 @@ export default function CommandsBtnOs({ osName, handlePushView }) {
   return (
     <button
       className='CommandsContainer__content-btnOs'
-      onClick={() => handlePushView(`${funcText}`)}>
+      onClick={() => handlePushView(`${funcText}`)}
+    >
       {osName}
     </button>
   )

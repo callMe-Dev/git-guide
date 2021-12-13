@@ -26,7 +26,8 @@ export default function InstallWindows() {
           href='https://git-scm.com/'
           target='_blank'
           rel='noreferrer'
-          accessKey='git install windows'>
+          accessKey='git install windows'
+        >
           <i className='fas fa-paperclip'></i>Pagina de Git para descargar el
           .exe
         </a>

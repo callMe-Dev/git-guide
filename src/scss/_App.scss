@@ -3,7 +3,6 @@
   min-height: 100vh;
   scroll-behavior: smooth;
 
-  &__grid {
     @media (min-width: $ipad) {
       display: grid;
       column-gap: 2rem;
@@ -17,5 +16,4 @@
     @media (min-width: $laptop) {
       grid-template-columns: 430px 1fr;
     }
-  }
 }
