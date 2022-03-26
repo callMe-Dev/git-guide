@@ -1,5 +1,5 @@
 import MetaHelmet from '../../MetaHelmet/MetaHelmet'
-import MarkdownContent from 'docs/MarkdownContent/MarkdownContent'
+import MarkdownContent from 'docs/MarkdownContent'
 
 export default function ListCommands() {
   return (

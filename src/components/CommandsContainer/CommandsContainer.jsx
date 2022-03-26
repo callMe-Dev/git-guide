@@ -4,7 +4,7 @@ import { commands } from 'docs/command'
 
 function CommandsContainer() {
   /**
-   * @file gitCommand {
+   * @type gitCommand {
    *   @param {string} name
    *   @param {string} gitCmd
    *   @param {string} description
