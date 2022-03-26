@@ -1,7 +1,7 @@
 import { useRoutes } from 'react-router'
 import BitBucket from '../Repositories/Bitbucket/Bitbucket'
 import CommandsContainerRoute from 'components/CommandsContainer/CommandsContainerRoute'
-import ContentHome from '../ContentHome/ContentHome'
+import ContentHome from '../ContentHome'
 import ErrorPage from '../404/ErrorPage'
 import GitConfigView from '../GitConfigView/GitConfigView'
 import GitHub from '../Repositories/GitHub/Github'
