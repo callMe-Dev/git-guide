@@ -7,7 +7,6 @@ import BtnToTop from 'components/BtnToTop/BtnToTop'
 import SideBar from '../SideBar/SideBar'
 import Routes from '../Routes/Routes'
 
-/* * * * * * * * * * * * ** * * * * * * * */
 export default function Layout() {
   const [showMenu, setShowMenu] = useState(false)
   const [darkTheme, setDarkTheme] = useState(
@@ -40,4 +39,3 @@ export default function Layout() {
     </Router>
   )
 }
-/* * * * * * * * * * * * ** * * * * * * * */
